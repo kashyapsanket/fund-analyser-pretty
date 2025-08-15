@@ -12,6 +12,33 @@ from core.transforms import *
 
 from core.api import get_fund_performance
 
+CHART_KEYS = {
+    # Mutual Funds
+    "mf_asset_mix": "mf_asset_mix",
+    "mf_sector_pie": "mf_sector_pie",
+    "mf_mcap_pie": "mf_mcap_pie",
+    "mf_top10_bar": "mf_top10_bar",
+
+    # Direct Stocks
+    "ds_top10_bar": "ds_top10_bar",
+    "ds_sector_pie": "ds_sector_pie",
+    "ds_mcap_pie": "ds_mcap_pie",
+
+    # Combined
+    "cmb_asset_mix": "cmb_asset_mix",
+    "cmb_equity_source": "cmb_equity_source",
+    "cmb_sector_pie": "cmb_sector_pie",
+    "cmb_mcap_pie": "cmb_mcap_pie",
+    "cmb_top10_bar": "cmb_top10_bar",
+
+    # Overlap
+    "ov_heatmap": "ov_heatmap",
+}
+
+def st_plot(fig, key):
+    """Standardized plotly renderer with a stable unique key."""
+    st.plotly_chart(fig, use_container_width=True, config=PLOT_CFG, key=key)
+
 
 def _fmt_inr(v: float) -> str:
     try:
@@ -37,486 +64,6 @@ def render(
     # ===========================================================
     # TAB 1: MUTUAL FUNDS
     # ===========================================================
-    '''
-    with tabs[0]:
-        st.caption("Underlying distribution, sector & market-cap splits, top holdings and fund track record.")
-
-        mf_rows = st.session_state.get("mf_portfolio", [])
-        if not mf_rows:
-            st.info("Add mutual funds in Step 1 to see your personalized breakdown.")
-        elif holdings_info is None or holdings_info.empty:
-            st.info("No holdings data available. Ensure holdings_info is loaded.")
-        else:
-            # ---------- Mini chart helpers ----------
-            def donut(labels, values, title, subtitle, height=320):
-                fig = go.Figure(
-                    go.Pie(
-                        labels=labels,
-                        values=values,
-                        hole=0.45,
-                        textinfo="percent",  # keep inner labels light
-                        hovertemplate="%{label}: ₹%{value:,.0f} (%{percent})<extra></extra>",
-                    )
-                )
-                fig.update_layout(
-                    height=height,
-                    margin=dict(l=10, r=10, t=64, b=10),
-                    showlegend=True,
-                    legend=dict(orientation="v", x=1.02, y=0.5),
-                    title={
-                        "text": f"<b>{title}</b><br><span style='font-size:12px;color:#A0A0A0'>{subtitle}</span>",
-                        "y": 0.98, "x": 0.02, "xanchor": "left", "yanchor": "top",
-                    },
-                )
-                return fig
-
-            def hbar(x, y, title, subtitle, height=300):
-                total = max(float(x.sum()), 1e-9)
-                fig = go.Figure()
-                fig.add_bar(
-                    x=x, y=y, orientation="h",
-                    text=[f"{(v/total*100):.1f}%" for v in x],
-                    textposition="auto",
-                    hovertemplate="%{y}: ₹%{x:,.0f} (%{text})<extra></extra>",
-                )
-                fig.update_layout(
-                    height=height,
-                    margin=dict(l=10, r=10, t=64, b=10),
-                    xaxis_title="Rupees", yaxis_title="",
-                    title={
-                        "text": f"<b>{title}</b><br><span style='font-size:12px;color:#A0A0A0'>{subtitle}</span>",
-                        "y": 0.98, "x": 0.02, "xanchor": "left", "yanchor": "top",
-                    },
-                )
-                return fig
-
-            # ---------- 1) Underlying Asset Distribution ----------
-            alloc_df, meta = mf_asset_allocation_by_fund_name(mf_rows, holdings_info)
-            total_mf = float(meta.get("total_mf", 0.0))
-            show_bar = bool(meta.get("display_as_bar", False))
-
-            if total_mf <= 0 or alloc_df["value"].abs().sum() == 0:
-                st.info("No calculable exposure yet for the selected funds.")
-            else:
-                if show_bar:
-                    order = ["Equity", "Debt", "Cash"]
-                    plot_df = alloc_df.set_index("asset_class").loc[order].reset_index()
-                    st.plotly_chart(
-                        hbar(
-                            x=plot_df["value"],
-                            y=plot_df["asset_class"],
-                            title="Your Investment’s Underlying Distribution",
-                            subtitle="Scaled to your investments; derivatives are netted into Equity/Cash per AMC rules.",
-                        ),
-                        use_container_width=True,
-                    )
-                else:
-                    st.plotly_chart(
-                        donut(
-                            labels=alloc_df["asset_class"],
-                            values=alloc_df["value"],
-                            title="Your Investment’s Underlying Distribution",
-                            subtitle="Scaled to your investments; derivatives are netted into Equity/Cash per AMC rules.",
-                        ),
-                        use_container_width=True,
-                    )
-
-                with st.expander("Details", expanded=False):
-                    st.dataframe(
-                        alloc_df.assign(**{"Value (₹)": alloc_df["value"].map(_fmt_inr)})[
-                            ["asset_class", "Value (₹)", "pct"]
-                        ].rename(columns={"asset_class": "Asset Class", "pct": "% of MF"}),
-                        use_container_width=True,
-                        hide_index=True,
-                    )
-
-            st.markdown("---")
-
-            # ---------- 2) Sector & Market-Cap Distribution (net equity only) ----------
-            sm_out = mf_sector_and_mcap_exposure_by_fund_name(
-                mf_portfolio=mf_rows,
-                holdings_df=holdings_info,
-                equities_info=equities_info,
-                small_slice_threshold=0.03,
-            )
-            sector_df = sm_out["sector"]
-            mcap_df   = sm_out["market_cap"]
-            diags     = sm_out["diagnostics"]
-
-            c1, c2 = st.columns(2)
-            with c1:
-                st.plotly_chart(
-                    donut(
-                        labels=sector_df["label"],
-                        values=sector_df["value"],
-                        title="Sector Distribution",
-                        subtitle="Net equity (positives only); small slices grouped as Other.",
-                    ),
-                    use_container_width=True,
-                ) if not sector_df.empty else st.info("No positive net equity exposure for sectors.")
-
-            with c2:
-                st.plotly_chart(
-                    donut(
-                        labels=mcap_df["label"],
-                        values=mcap_df["value"],
-                        title="Market-Cap Distribution",
-                        subtitle="Net equity (positives only); small slices grouped as Other.",
-                    ),
-                    use_container_width=True,
-                ) if not mcap_df.empty else st.info("No positive net equity exposure for market-cap.")
-
-            if diags.get("negatives_total", 0) < 0:
-                st.caption("Note: shorts are excluded from the pies and shown only in diagnostics.")
-
-            st.markdown("---")
-
-            # ---------- 3) Top 10 Underlying Net Stock Holdings ----------
-            top_out = mf_top_net_holdings_by_fund_name(
-                mf_portfolio=mf_rows,
-                holdings_df=holdings_info,
-                equities_info=equities_info,
-                top_n=10,
-            )
-            df_top = top_out["top_holdings"]
-            if df_top.empty:
-                st.info("No positive net equity exposure available to rank.")
-            else:
-                st.plotly_chart(
-                    hbar(
-                        x=df_top["value"],
-                        y=df_top["company_name"],
-                        title="Top 10 Underlying Net Stock Holdings",
-                        subtitle="Net equity (positives only); hover for rupee values and fund count.",
-                        height=360,
-                    ),
-                    use_container_width=True,
-                )
-                with st.expander("Details", expanded=False):
-                    show_df = df_top.assign(**{"Value (₹)": df_top["value"].map(_fmt_inr)})[
-                        ["company_name", "isin", "Value (₹)", "pct_of_equity", "fund_count"]
-                    ].rename(columns={"company_name": "Company", "pct_of_equity": "% of Equity", "fund_count": "Funds"})
-                    st.dataframe(show_df, hide_index=True, use_container_width=True)
-
-            st.markdown("---")
-            st.markdown("#### Fund Track Record")
-            st.caption("Weights reflect your amounts; returns are CAGR from the API as of the latest NAV.")
-
-            # 1) Build selected funds table (fund_name, amc, amount, weight)
-            sel_rows = []
-            for r in (mf_rows or []):
-                fn = (r.get("fund_name", "") or "").strip()
-                amt = float(r.get("amount", 0) or 0)
-                if fn and amt > 0:
-                    sel_rows.append({"fund_name": fn, "amc": r.get("amc_name", ""), "amount": amt})
-
-            sel_df = pd.DataFrame(sel_rows)
-            if sel_df.empty:
-                st.info("No funds selected for track record.")
-            else:
-                sel_df["fn_norm"] = sel_df["fund_name"].astype(str).str.strip().str.lower()
-
-                # 2) Prepare fund_info safely (no boolean DF usage)
-                fi = fund_info.copy() if fund_info is not None else pd.DataFrame()
-                if "fund_name" not in fi.columns: fi["fund_name"] = ""
-                if "fund_code" not in fi.columns: fi["fund_code"] = None
-                if "amc" not in fi.columns: fi["amc"] = ""
-                if "category" not in fi.columns: fi["category"] = ""
-                fi["fn_norm"] = fi["fund_name"].astype(str).str.strip().str.lower()
-
-                # 3) Merge to get fund_code (and canonical AMC/category if present)
-                m = sel_df.merge(
-                    fi[["fn_norm", "fund_code", "amc", "category"]],
-                    on="fn_norm", how="left"
-                )
-                total = float(m["amount"].sum())
-                m["weight"] = 0.0 if total == 0 else m["amount"] / total
-
-                # 4) Fetch API performance (cached) per fund
-                rows = []
-                for _, r in m.iterrows():
-                    code = r.get("fund_code", None)
-                    perf = get_fund_performance(int(code)) if pd.notna(code) else None
-                    rets = (perf or {}).get("returns", {}) or {}
-                    rows.append({
-                        "AMC": r.get("amc") or r.get("amc_x") or "",
-                        "Fund": r.get("fund_name", ""),
-                        "Category": r.get("category", ""),
-                        "Amount (₹)": _fmt_inr(r.get("amount", 0.0)),
-                        "Weight": f"{float(r.get('weight', 0.0))*100:.1f}%",
-                        "NAV": f"{(perf or {}).get('nav', float('nan')):.2f}" if perf else "—",
-                        "1M":  f"{rets.get('1M', float('nan'))*100:.1f}%"  if pd.notna(rets.get('1M',  float('nan'))) else "—",
-                        "3M":  f"{rets.get('3M', float('nan'))*100:.1f}%"  if pd.notna(rets.get('3M',  float('nan'))) else "—",
-                        "6M":  f"{rets.get('6M', float('nan'))*100:.1f}%"  if pd.notna(rets.get('6M',  float('nan'))) else "—",
-                        "1Y":  f"{rets.get('1Y', float('nan'))*100:.1f}%"  if pd.notna(rets.get('1Y',  float('nan'))) else "—",
-                        "3Y":  f"{rets.get('3Y', float('nan'))*100:.1f}%"  if pd.notna(rets.get('3Y',  float('nan'))) else "—",
-                        "5Y":  f"{rets.get('5Y', float('nan'))*100:.1f}%"  if pd.notna(rets.get('5Y',  float('nan'))) else "—",
-                        "10Y": f"{rets.get('10Y',float('nan'))*100:.1f}%"  if pd.notna(rets.get('10Y', float('nan'))) else "—",
-                        "SI":  f"{rets.get('SI', float('nan'))*100:.1f}%"  if pd.notna(rets.get('SI',  float('nan'))) else "—",
-                        "As of": (perf or {}).get("as_of", "—"),
-                        "_w": float(r.get("weight", 0.0)),
-                        "_rets": rets,
-                    })
-
-                perf_df = pd.DataFrame(rows)
-
-                # 5) Weighted KPIs (only across horizons that exist)
-                def wavg(key: str):
-                    if perf_df.empty: return None
-                    acc = 0.0; seen = False
-                    for _, rr in perf_df.iterrows():
-                        v = (rr.get("_rets") or {}).get(key, float("nan"))
-                        if pd.notna(v):
-                            acc += float(v) * float(rr.get("_w", 0.0))
-                            seen = True
-                    return acc if seen else None
-
-                summary = {k: wavg(k) for k in ["1Y", "3Y", "5Y", "10Y", "SI"]}
-
-                # 6) Display table (clean columns)
-                show_cols = ["AMC","Fund","Category","Amount (₹)","Weight","NAV","1M","3M","6M","1Y","3Y","5Y","10Y","SI","As of"]
-                st.dataframe(perf_df[show_cols], hide_index=True, use_container_width=True)
-
-                k1, k2, k3, k4, k5 = st.columns(5)
-                for col, key in zip([k1, k2, k3, k4, k5], ["1Y", "3Y", "5Y", "10Y", "SI"]):
-                    with col:
-                        val = summary.get(key, None)
-                        st.metric(
-                            label=f"Weighted {key} CAGR",
-                            value=(f"{val*100:.1f}%" if isinstance(val, float) and pd.notna(val) else "—"),
-                        )
-    
-
-    with tabs[0]:
-        st.caption("Deep dive into the underlying composition of your mutual fund investments.")
-
-        mf_rows = st.session_state.get("mf_portfolio", [])
-        if not mf_rows:
-            st.info("Add mutual funds in Step 1 to see your personalized breakdown.")
-        elif holdings_info is None or holdings_info.empty:
-            st.info("No holdings data available. Ensure holdings_info is loaded.")
-        else:
-            EPS = 1e-8
-
-            def _z(v: float) -> float:
-                """Clamp tiny magnitudes to 0.0 to avoid '-0.0' in display text."""
-                return 0.0 if abs(float(v)) < EPS else float(v)
-
-            def donut(labels, values, title, subtitle, height=360):
-                vals = [ _z(v) for v in values ]
-                fig = go.Figure(
-                    go.Pie(
-                        labels=labels, values=vals, hole=0.45,
-                        textinfo="percent",
-                        hovertemplate="%{label}: ₹%{value:,.0f} (%{percent})<extra></extra>",
-                    )
-                )
-                fig.update_layout(
-                    height=height,
-                    margin=dict(l=16, r=16, t=40, b=16),  # ⬅️ more top padding
-                    showlegend=True,
-                    legend=dict(orientation="v", x=1.02, y=0.5),
-                    title={
-                        "text": f"<b>{title}</b><br><span style='font-size:12px;color:#A0A0A0'>{subtitle}</span>",
-                        "y": 0.995, "x": 0.02, "xanchor": "left", "yanchor": "top",
-                    },
-                )
-                return fig
-
-            def hbar(x, y, title, subtitle, height=360):
-                xx = [ _z(v) for v in x ]
-                total = max(float(np.array(xx).sum()), 1e-9)
-                fig = go.Figure()
-                fig.add_bar(
-                    x=xx, y=y, orientation="h",
-                    text=[f"{(float(v)/total*100):.1f}%" for v in xx], textposition="auto",
-                    hovertemplate="%{y}: ₹%{x:,.0f} (%{text})<extra></extra>",
-                )
-                fig.update_layout(
-                    height=height,
-                    margin=dict(l=16, r=16, t=80, b=16),  # ⬅️ more top padding
-                    xaxis_title="Rupees", yaxis_title="",
-                    title={
-                        "text": f"<b>{title}</b><br><span style='font-size:12px;color:#A0A0A0'>{subtitle}</span>",
-                        "y": 0.995, "x": 0.02, "xanchor": "left", "yanchor": "top",
-                    },
-                )
-                return fig
-
-
-            # 1) Asset mix
-            alloc_df, meta = mf_asset_allocation_by_fund_name(mf_rows, holdings_info)
-            total_mf = float(meta.get("total_mf", 0.0))
-            df_show = alloc_df.copy()
-            df_show["value"] = df_show["value"].apply(_z)  # ⬅️ kills “-0.0”
-            df_show["% of MF"] = df_show["pct"].map(lambda v: f"{float(v):.1f}%")
-            df_show["Value (₹)"] = df_show["value"].map(lambda v: f"₹{float(v):,.0f}")
-
-            if meta.get("display_as_bar", False):
-                plot_df = df_show.sort_values("value", ascending=True)
-                st.plotly_chart(
-                    hbar(plot_df["value"], plot_df["asset_class"], "Your Investment’s Underlying Distribution",
-                        "Net Equity = Equity + Derivatives | Net Cash rule: Axis/Motilal = Cash; others = Cash − Derivatives."),
-                    use_container_width=True
-                )
-            else:
-                st.plotly_chart(
-                    donut(df_show["asset_class"], df_show["value"], "Your Investment’s Underlying Distribution",
-                        "Net Equity = Equity + Derivatives | Net Cash rule: Axis/Motilal = Cash; others = Cash − Derivatives."),
-                    use_container_width=True
-                )
-            with st.expander("Details", expanded=False):
-                st.dataframe(df_show[["asset_class","Value (₹)","% of MF"]], hide_index=True, use_container_width=True)
-
-            st.markdown("---")
-
-            # 2) Sector pie (industry_rating)
-            sm = mf_sector_and_mcap_exposure_by_fund_name(mf_rows, holdings_info, equities_info, small_slice_threshold=0.03)
-            sector_df = sm["sector"]
-            if sector_df.empty:
-                st.info("No positive net equity exposure available for sector distribution.")
-            else:
-                sd = sector_df.copy()
-                sd["% of Equity"] = sd["pct"].map(lambda v: f"{float(v):.1f}%")
-                sd["Value (₹)"] = sd["value"].map(lambda v: f"₹{float(v):,.0f}")
-                st.plotly_chart(
-                    donut(sd["label"], sd["value"], "Underlying Net Sector Distribution",
-                        "User-weighted net equity (positives only). Small slices grouped as Other."),
-                    use_container_width=True
-                )
-                with st.expander("Details", expanded=False):
-                    st.dataframe(sd[["label","Value (₹)","% of Equity"]].rename(columns={"label":"Sector"}),
-                                hide_index=True, use_container_width=True)
-
-            st.markdown("---")
-
-            # 3) Market-cap pie
-            mcap_df = sm["market_cap"]
-            if mcap_df.empty:
-                st.info("No positive net equity exposure available for market-cap distribution.")
-            else:
-                mc = mcap_df.copy()
-                mc["% of Equity"] = mc["pct"].map(lambda v: f"{float(v):.1f}%")
-                mc["Value (₹)"] = mc["value"].map(lambda v: f"₹{float(v):,.0f}")
-                st.plotly_chart(
-                    donut(mc["label"], mc["value"], "Underlying Net Market-Cap Distribution",
-                        "User-weighted net equity (positives only). Small slices grouped as Other."),
-                    use_container_width=True
-                )
-                with st.expander("Details", expanded=False):
-                    st.dataframe(mc[["label","Value (₹)","% of Equity"]].rename(columns={"label":"Market Cap"}),
-                                hide_index=True, use_container_width=True)
-
-            st.markdown("---")
-
-            # 4) Top 10 underlying net stocks
-            df_top = mf_top_net_holdings_by_fund_name(mf_rows, holdings_info, equities_info, top_n=10)
-            if df_top.empty:
-                st.info("No positive net equity exposure available to rank.")
-            else:
-                tt = df_top.copy()
-                tt["% of Equity"] = tt["pct_of_equity"].map(lambda v: f"{float(v):.1f}%")
-                st.plotly_chart(
-                    hbar(tt["value"], tt["company_name"], "Top 10 Underlying Net Stock Holdings",
-                        "User-weighted net equity (positives only). Hover for rupee values; labels show % of equity."),
-                    use_container_width=True
-                )
-                with st.expander("Details", expanded=False):
-                    show = tt.assign(**{"Value (₹)": tt["value"].map(lambda v: f"₹{float(v):,.0f}")})[
-                        ["company_name","isin","Value (₹)","% of Equity"]
-                    ].rename(columns={"company_name":"Company"})
-                    st.dataframe(show, hide_index=True, use_container_width=True)
-            
-            st.markdown("---")
-            st.subheader("Fund Track Record")
-
-            # Build a clean list of selected funds with codes & weights
-            mf_rows = st.session_state.get("mf_portfolio", []) or []
-            if not mf_rows or fund_info is None or fund_info.empty:
-                st.info("No funds to show. Add funds in Step 1.")
-            else:
-                sel = [r for r in mf_rows if float(r.get("amount", 0) or 0) > 0 and (r.get("fund_name") or "").strip()]
-                if not sel:
-                    st.info("No funds to show. Add funds in Step 1.")
-                else:
-                    total_amt = sum(float(r["amount"]) for r in sel)
-                    fi = fund_info.copy()
-                    for c in ["fund_name","fund_code"]:
-                        if c not in fi.columns: fi[c] = None
-                    fi["fund_name_norm"] = fi["fund_name"].astype(str).str.strip().str.lower()
-
-                    rows = []
-                    for r in sel:
-                        fn = (r["fund_name"] or "").strip()
-                        amt = float(r["amount"])
-                        code = None
-                        match = fi.loc[fi["fund_name_norm"] == fn.lower()]
-                        if not match.empty and pd.notna(match.iloc[0].get("fund_code")):
-                            code = match.iloc[0]["fund_code"]
-
-                        perf = None
-                        try:
-                            if code not in (None, "", 0):
-                                perf = get_fund_performance(code)
-                        except Exception:
-                            perf = None
-
-                        row = {
-                            "Fund": fn,
-                            "Amount (₹)": amt,
-                            "Weight %": (amt / total_amt * 100.0) if total_amt > 0 else 0.0,
-                            "NAV": None,
-                            "As of": None,
-                            "1M": None, "3M": None, "6M": None,
-                            "1Y": None, "3Y": None, "5Y": None, "10Y": None, "SI": None,
-                        }
-                        if perf:
-                            row["NAV"] = float(perf.get("nav", None))
-                            row["As of"] = perf.get("as_of", None)
-                            rets = perf.get("returns", {}) or {}
-                            for k in ["1M","3M","6M","1Y","3Y","5Y","10Y","SI"]:
-                                v = rets.get(k, None)
-                                row[k] = float(v) if v is not None else None
-                        rows.append(row)
-
-                    df_tr = pd.DataFrame(rows)
-
-                    # Weighted composite for horizons (only where data exists)
-                    weights = (df_tr["Amount (₹)"] / df_tr["Amount (₹)"].sum()) if df_tr["Amount (₹)"].sum() > 0 else 0.0
-                    summary = {"Fund": "Weighted (by amount)", "Amount (₹)": df_tr["Amount (₹)"].sum(), "Weight %": 100.0, "NAV": None, "As of": None}
-                    for k in ["1M","3M","6M","1Y","3Y","5Y","10Y","SI"]:
-                        if k in df_tr:
-                            valid = df_tr[k].where(df_tr[k].notna(), None)
-                            if valid is not None and valid.notna().any():
-                                summary[k] = float((df_tr[k].fillna(0.0) * weights).sum())
-                            else:
-                                summary[k] = None
-
-                    # Display formatting
-                    show = df_tr.copy()
-                    show["Amount (₹)"] = show["Amount (₹)"].map(lambda v: f"₹{_z(v):,.0f}")
-                    show["Weight %"] = show["Weight %"].map(lambda v: f"{float(v):.1f}%")
-                    if "NAV" in show:
-                        show["NAV"] = show["NAV"].map(lambda v: "" if pd.isna(v) else f"{float(v):,.2f}")
-                    for k in ["1M","3M","6M","1Y","3Y","5Y","10Y","SI"]:
-                        if k in show:
-                            show[k] = show[k].map(lambda v: "" if pd.isna(v) else f"{float(v)*100:.1f}%")
-
-                    st.dataframe(
-                        show[["Fund","Amount (₹)","Weight %","NAV","As of","1M","3M","6M","1Y","3Y","5Y","10Y","SI"]],
-                        hide_index=True, use_container_width=True
-                    )
-
-                    # Weighted summary (optional row beneath)
-                    with st.expander("Weighted summary (CAGR)"):
-                        sum_df = pd.DataFrame([summary])
-                        for k in ["1M","3M","6M","1Y","3Y","5Y","10Y","SI"]:
-                            if k in sum_df:
-                                sum_df[k] = sum_df[k].map(lambda v: "" if v is None else f"{float(v)*100:.1f}%")
-                        sum_df["Amount (₹)"] = sum_df["Amount (₹)"].map(lambda v: f"₹{_z(v):,.0f}")
-                        st.dataframe(sum_df[["Fund","Amount (₹)","Weight %","1M","3M","6M","1Y","3Y","5Y","10Y","SI"]],
-                                    hide_index=True, use_container_width=True)
-    '''
 
 # --- MUTUAL FUNDS TAB ---------------------------------------------------------
 # --- MUTUAL FUNDS TAB ---------------------------------------------------------
@@ -624,9 +171,9 @@ def render(
             )
             if meta.get("display_as_bar", False):
                 plot_df = df_show.sort_values("value", ascending=True)
-                st.plotly_chart(hbar(plot_df["value"], plot_df["asset_class"]), use_container_width=True, config=PLOT_CFG)
+                st.plotly_chart(hbar(plot_df["value"], plot_df["asset_class"]), use_container_width=True, config=PLOT_CFG, key="alpha")
             else:
-                st.plotly_chart(donut(df_show["asset_class"], df_show["value"]), use_container_width=True, config=PLOT_CFG)
+                st.plotly_chart(donut(df_show["asset_class"], df_show["value"]), use_container_width=True, config=PLOT_CFG, key = "alpha_2")
 
             with st.expander("Details", expanded=False):
                 st.dataframe(
@@ -656,7 +203,7 @@ def render(
                     "What sectors have I invested in?",
                     "Sectoral distribution as a percentage of net equity in your portfolio"
                 )
-                st.plotly_chart(donut(sd["label"], sd["value"]), use_container_width=True, config=PLOT_CFG)
+                st.plotly_chart(donut(sd["label"], sd["value"]), use_container_width=True, config=PLOT_CFG, key="alpha_3")
                 with st.expander("Details", expanded=False):
                     st.dataframe(
                         sd[["label", "Value (₹)", "% of Equity"]].rename(columns={"label": "Sector"}),
@@ -678,7 +225,7 @@ def render(
                     "What Market-Caps have I invested in?",
                     "Market-Cap distribution as a percentage of net equity in your portfolio"
                 )
-                st.plotly_chart(donut(mc["label"], mc["value"]), use_container_width=True, config=PLOT_CFG)
+                st.plotly_chart(donut(mc["label"], mc["value"]), use_container_width=True, config=PLOT_CFG, key="aplha_4")
                 with st.expander("Details", expanded=False):
                     st.dataframe(
                         mc[["label", "Value (₹)", "% of Equity"]].rename(columns={"label": "Market Cap"}),
@@ -705,6 +252,7 @@ def render(
                     hbar_with_text(tt["value"], tt["company_name"], tt["% of Portfolio"]),
                     use_container_width=True,
                     config=PLOT_CFG,
+                    key = "alpha_5"
                 )
                 with st.expander("Details", expanded=False):
                     show = tt.assign(**{"Value (₹)": tt["value"].map(lambda v: f"₹{float(v):,.0f}")})[
@@ -969,6 +517,7 @@ def render(
                         hbar_with_text(df_top["value"], df_top["company_name"], df_top["% of Direct"]),
                         use_container_width=True,
                         config=PLOT_CFG,
+                        key = "beta"
                     )
                     with st.expander("Details", expanded=False):
                         show = df_top.assign(**{"Value (₹)": df_top["value"].map(_fmt_inr)})[
@@ -995,7 +544,7 @@ def render(
                             "Sector Distribution",
                             "Positive direct equity only. Small slices grouped as Other."
                         )
-                        st.plotly_chart(donut(sd["label"], sd["value"]), use_container_width=True, config=PLOT_CFG)
+                        st.plotly_chart(donut(sd["label"], sd["value"]), use_container_width=True, config=PLOT_CFG, key="beta_2")
                         with st.expander("Details", expanded=False):
                             st.dataframe(
                                 sd[["label","Value (₹)","% of Equity"]].rename(columns={"label": "Sector"}),
@@ -1016,7 +565,7 @@ def render(
                             "Market-Cap Distribution",
                             "Positive direct equity only. Small slices grouped as Other."
                         )
-                        st.plotly_chart(donut(mc["label"], mc["value"]), use_container_width=True, config=PLOT_CFG)
+                        st.plotly_chart(donut(mc["label"], mc["value"]), use_container_width=True, config=PLOT_CFG, key="beta_3")
                         with st.expander("Details", expanded=False):
                             st.dataframe(
                                 mc[["label","Value (₹)","% of Equity"]].rename(columns={"label": "Market Cap"}),
@@ -1763,12 +1312,12 @@ def render(
                 plot_df = df_mix.sort_values("value", ascending=True)
                 st.plotly_chart(
                     hbar_with_text(plot_df["value"], plot_df["asset_class"], plot_df["% of Total"]),
-                    use_container_width=True, config=PLOT_CFG
+                    use_container_width=True, config=PLOT_CFG, key="gamma"
                 )
             else:
                 st.plotly_chart(
                     donut(df_mix["asset_class"], df_mix["value"]),
-                    use_container_width=True, config=PLOT_CFG
+                    use_container_width=True, config=PLOT_CFG, key="gamma_3"
                 )
             with st.expander("Details", expanded=False):
                 st.dataframe(df_mix[["asset_class","Value (₹)","% of Total"]], hide_index=True, use_container_width=True)
@@ -1791,10 +1340,10 @@ def render(
                 df_src["% of Equity"] = df_src["value"] / total_eq * 100.0
                 st.plotly_chart(
                     hbar_with_text(df_src["value"], df_src["source"], df_src["% of Equity"].map(lambda v: f"{float(v):.1f}%")),
-                    use_container_width=True, config=PLOT_CFG
+                    use_container_width=True, config=PLOT_CFG, key="gamma_4"
                 )
             else:
-                st.plotly_chart(donut(["Direct Equity","MF Equity"], [dir_eq, mf_eq]), use_container_width=True, config=PLOT_CFG)
+                st.plotly_chart(donut(["Direct Equity","MF Equity"], [dir_eq, mf_eq]), use_container_width=True, config=PLOT_CFG, key="gamma_5")
 
             st.markdown("---")
 
@@ -1814,7 +1363,7 @@ def render(
                     if sector_df.empty:
                         st.info("No industry data.")
                     else:
-                        st.plotly_chart(donut(sector_df["label"], sector_df["value"]), use_container_width=True, config=PLOT_CFG)
+                        st.plotly_chart(donut(sector_df["label"], sector_df["value"]), use_container_width=True, config=PLOT_CFG, key="gamma_6")
                         with st.expander("Details", expanded=False):
                             show = sector_df.copy()
                             show["Value (₹)"] = show["value"].map(_fmt_inr)
@@ -1833,7 +1382,7 @@ def render(
                     if mcap_df.empty:
                         st.info("No market-cap data.")
                     else:
-                        st.plotly_chart(donut(mcap_df["label"], mcap_df["value"]), use_container_width=True, config=PLOT_CFG)
+                        st.plotly_chart(donut(mcap_df["label"], mcap_df["value"]), use_container_width=True, config=PLOT_CFG, key="gamma_7")
                         with st.expander("Details", expanded=False):
                             show = mcap_df.copy()
                             show["Value (₹)"] = show["value"].map(_fmt_inr)
@@ -1874,7 +1423,7 @@ def render(
                 labels_pct = df_top["pct_of_total_investment"].map(lambda v: f"{float(v):.1f}%")
                 st.plotly_chart(
                     hbar_with_text(df_top["value"], df_top["company_name"], labels_pct),
-                    use_container_width=True, config=PLOT_CFG
+                    use_container_width=True, config=PLOT_CFG, key="gamma_8"
                 )
                 with st.expander("Details", expanded=False):
                     show = df_top.copy()
@@ -2044,7 +1593,7 @@ def render(
                     height=520,
                     margin=dict(l=16, r=16, t=16, b=16),
                 )
-                st.plotly_chart(fig, use_container_width=True, config=PLOT_CFG)
+                st.plotly_chart(fig, use_container_width=True, config=PLOT_CFG, key="gamma_9")
 
                 with st.expander("Pairwise details", expanded=False):
                     # Flatten to a long table for sorting/filtering
