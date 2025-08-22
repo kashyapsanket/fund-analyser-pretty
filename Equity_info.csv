@@ -1,0 +1,1873 @@
+,isin,company_name,industry_rating,market_cap
+0,INE466L01038,360 One WAM Limited,Capital Markets,Mid Cap
+1,US88579Y1010,3M CO,Industrial Conglomerates,Unknown
+2,INE470A01017,3M India Limited,Diversified,Mid Cap
+3,INE111B01023,63 Moons Technologies Limited,IT - Software,Small Cap
+4,INE117A01022,ABB India Limited,Electrical Equipment,Large Cap
+5,INE012A01025,ACC Limited,Cement & Cement Products,Mid Cap
+6,INE982B01027,ADF Foods Limited,Food Products,Small Cap
+7,INE14LE01019,ADITYA BIRLA LIFESTYLE BRANDS LIMITED,Retailing,Small Cap
+8,US00130H1059,AES Corp/VA,Independent Power Producers & Energy Traders,Unknown
+9,US0010551028,AFLAC INC,Life & Health Insurance,Unknown
+10,INE321D01016,AG Ventures  Limited,Chemicals & Petrochemicals,Small Cap
+11,INE415A01038,AGI Greenpac Ltd.,Industrial Products,Small Cap
+12,INE583L01014,AGS Transact Technologies Limited,Financial Technology (Fintech),Small Cap
+13,INE212H01026,AIA Engineering Limited,Industrial Products,Mid Cap
+14,HK0000069689,AIA Group Ltd,Life & Health Insurance,Unknown
+15,US0311001004,AMETEK Inc,Electrical Components & Equipment,Unknown
+16,US8318652091,AO Smith Corp,Building Products,Unknown
+17,INE702C01027,APL Apollo Tubes Limited,Industrial Products,Mid Cap
+18,US0394831020,ARCHER-DANIELS-MIDLAND CO,Agricultural Products & Services,Unknown
+19,INE491J01022,ASK Automotive Ltd.,Auto Components,Small Cap
+20,KYG0535Q1331,ASM Pacific Technology ORD SHS,Semiconductor Materials & Equipment,Unknown
+21,USN070592100,ASML Holding NV,Semiconductor Materials & Equipment,Unknown
+22,US00206R1023,AT&T Inc.,Telecommunication Services,Unknown
+23,INE949L01017,AU Small Finance Bank Limited,Banks,Mid Cap
+24,INE699H01024,AWL Agri Business Limited,Agricultural Food & other Products,Mid Cap
+25,INE883F01010,Aadhar Housing Finance Limited,Finance,Small Cap
+26,INE767A01016,Aarti Drugs Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+27,INE769A01020,Aarti Industries Limited,Chemicals & Petrochemicals,Small Cap
+28,INE0LRU01027,Aarti Pharmalabs Limited,Pharmaceuticals & Biotechnology,Small Cap
+29,INE216P01012,Aavas Financiers Limited,Finance,Small Cap
+30,US00287Y1091,AbbVie Inc,Biotechnology,Unknown
+31,INE358A01014,Abbott India Limited,Pharmaceuticals & Biotechnology,Mid Cap
+32,US0028241000,Abbott Laboratories,Health Care Equipment,Unknown
+33,INE793A01012,Accelya Solutions India Limited,IT - Software,Small Cap
+34,IE00B4BNMY34,Accenture Plc,It Consulting & Other Services,Unknown
+35,TW0002345006,Accton Technology Corporation,Communications Equipment,Unknown
+36,INE622W01025,Acme Solar Holdings Ltd,Power,Small Cap
+37,INE731H01025,Action Construction Equipment Limited,"Agricultural, Commercial & Construction Vehicles",Small Cap
+38,INE00FF01025,Acutaas Chemicals Limited,Pharmaceuticals & Biotechnology,Small Cap
+39,INE931S01010,Adani Energy Solutions Limited,Power,Large Cap
+40,INE423A01024,Adani Enterprises Limited,Metals & Minerals Trading,Large Cap
+41,INE364U01010,Adani Green Energy Limited,Power,Large Cap
+42,INE742F01042,Adani Ports and Special Economic Zone Limited,Transport Infrastructure,Large Cap
+43,INE814H01011,Adani Power Limited,Power,Large Cap
+44,INE674K01013,Aditya Birla Capital Limited,Finance,Mid Cap
+45,INE647O01011,Aditya Birla Fashion and Retail Limited,Retailing,Small Cap
+46,INE055A01016,Aditya Birla Real Estate Limited,"Paper, Forest & Jute Products",Small Cap
+47,INE404A01024,Aditya Birla Sun Life AMC Limited,Capital Markets,Small Cap
+48,INE819V01029,Aditya Infotech Limited,Industrial Manufacturing,Unknown
+49,INE679V01027,Aditya Vision Limited,Retailing,Small Cap
+50,US00724F1012,Adobe Inc,Application Software,Unknown
+51,INE045A01017,Ador Welding Ltd.,Industrial Products,Small Cap
+52,KYG0097V1086,Advanced Energy Solution Holding Co Ltd,Electrical Components & Equipment,Unknown
+53,INE837H01020,Advanced Enzyme Technologies Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+54,US0079031078,Advanced Micro Devices Inc,Semiconductors,Unknown
+55,INE28GN01010,Advent Hotels International Private Ltd.,Leisure Services,Unknown
+56,INE208C01025,Aegis Logistics Limited,Gas,Small Cap
+57,INE0INX01018,Aegis Vopak Terminals Limited,Oil,Small Cap
+58,INE024001021,Aeroflex Industries Limited,Industrial Products,Small Cap
+59,INE0BWX01014,Aether Industries Limited,Chemicals & Petrochemicals,Small Cap
+60,INE101I01011,Afcons Infrastructure Limited,Construction,Small Cap
+61,INE00WC01027,Affle 3i Limited,IT - Services,Small Cap
+62,US00846U1016,Agilent Technologies Co Ltd,Technology,Unknown
+63,INE758C01029,Ahluwalia Contracts (India) Limited,Construction,Small Cap
+64,US0091581068,Air Products & Chemicals Inc,Industrial Gases,Unknown
+65,US0090661010,Airbnb INC,Hotels,Unknown
+66,INE031B01049,Ajanta Pharma Limited,Pharmaceuticals & Biotechnology,Mid Cap
+67,INE274Y01021,Ajax Engineering Limited,"Agricultural, Commercial & Construction Vehicles",Small Cap
+68,JP3119600009,Ajinomoto Co Inc,Packaged Foods & Meats,Unknown
+69,US00971T1016,Akamai Technologies Inc,Internet Services & Infrastructure,Unknown
+70,INE09XN01023,Akums Drugs and Pharmaceuticals Limited,Pharmaceuticals & Biotechnology,Small Cap
+71,INE133A01011,AkzoNobel India Ltd.,Consumer Durables,Small Cap
+72,US0126531013,Albemarle Corp,Specialty Chemicals,Unknown
+73,CH0432492467,Alcon Inc,Health Care Supplies,Unknown
+74,INE426A01027,Alembic Limited,Commercial Services & Supplies,Small Cap
+75,INE901L01018,Alembic Pharmaceuticals Limited,Pharmaceuticals & Biotechnology,Small Cap
+76,US0152711091,Alexandria Real Estate Equities Inc,Health Care REITs,Unknown
+77,KYG017191142,Alibaba Group HoldingLtd.,Broadline Retail,Unknown
+78,BMG0171K1018,Alibaba Health Information Technology Ltd.,Drug Retail,Unknown
+79,INE062D01024,Alicon Castalloy Limited,Auto Components,Small Cap
+80,US0162551016,Align Technology Inc,Health Care Supplies,Unknown
+81,INE03Q201024,Alivus Life Sciences Limited,Pharmaceuticals & Biotechnology,Small Cap
+82,INE540L01014,Alkem Laboratories Limited,Pharmaceuticals & Biotechnology,Mid Cap
+83,INE150B01039,Alkyl Amines Chemicals Limited,Chemicals & Petrochemicals,Small Cap
+84,INE418H01029,Allcargo Logistics Ltd.,Transport Services,Small Cap
+85,IE00BFRT3W74,Allegion plc,Construction,Unknown
+86,US0188021085,Alliant Energy Corp,Electric Utilities,Unknown
+87,INE552Z01027,Allied Blenders And Distillers Ltd.,Beverages,Small Cap
+88,US0200021014,Allstate Corp/The,Property & Casualty Insurance,Unknown
+89,US02043Q1076,Alnylam Pharmaceuticals Inc,Biotechnology,Unknown
+90,INE270A01029,Alok Industries Limited,Textiles & Apparels,Small Cap
+91,US02079K1079,Alphabet Inc,Interactive Media & Services,Unknown
+92,US02079K3059,Alphabet Inc A,Interactive Media & Services,Unknown
+93,US02209S1033,Altria Group Inc,Tobacco,Unknown
+94,INE885A01032,Amara Raja Energy & Mobility Ltd,Auto Components,Small Cap
+95,US0231351067,Amazon Com Inc,Broadline Retail,Unknown
+96,INE371P01015,Amber Enterprises India Limited,Consumer Durables,Small Cap
+97,INE079A01024,Ambuja Cements Limited,Cement & Cement Products,Large Cap
+98,JE00BJ1F3079,Amcor PLC,Paper & Plastic Packaging Products & Materials,Unknown
+99,KYG0260P1028,Amer Sports Incorporation,"Apparel, Accessories and Luxury Goods",Unknown
+100,US0236081024,Ameren Corp,Multi-Utilities,Unknown
+101,US0255371017,American Electric Power Co Inc,Electric Utilities,Unknown
+102,US0258161092,American Express Co,Consumer Finance,Unknown
+103,US0268747849,American International Group Inc,Property & Casualty Insurance,Unknown
+104,US03027X1000,American Tower Corp,Telecom Tower REITs,Unknown
+105,US0304201033,American WaterWorks Co Inc,Water Utilities,Unknown
+106,US03076C1062,Ameriprise Financial Inc,Asset Management & Custody Banks,Unknown
+107,US0311621009,Amgen Inc,Biotechnology,Unknown
+108,US0320951017,Amphenol Corp,Electronic Components,Unknown
+109,INE098F01031,Amrutanjan Health Care Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+110,LU2428739630,Amundi Funds US Pioneer Fund -I15 USD CAP,Mutual Fund/ETF,Unknown
+111,US0326541051,Analog Devices Inc,Semiconductors,Unknown
+112,INE463V01026,Anand Rathi Wealth Limited,Capital Markets,Small Cap
+113,INE242C01024,Anant Raj Limited,Realty,Small Cap
+114,INE435A01051,Andhra Paper Ltd,"Paper, Forest & Jute Products",Small Cap
+115,INE449C01025,Andrew Yule & Company Limited,Agricultural Food & other Products,Small Cap
+116,INE732I01013,Angel One Limited,Capital Markets,Small Cap
+117,KYG040111059,Anta Sports Products Limited,"Apparel, Accessories and Luxury Goods",Unknown
+118,INE0CZ201020,Anthem Biosciences Limited,Pharmaceuticals & Biotechnology,Unknown
+119,INE930P01018,Anupam Rasayan India Ltd,Chemicals & Petrochemicals,Small Cap
+120,IE00BLP1HW54,Aon plc,Insurance Brokers,Unknown
+121,US03743Q1085,Apa Corporation,Oil & Gas Exploration & Production,Unknown
+122,INE372A01015,Apar Industries Limited,Electrical Equipment,Small Cap
+123,INE116A01032,Apcotex Industries Ltd.,Industrial Products,Small Cap
+124,INE988S01028,Apeejay Surrendra Park Hotels Ltd.,Leisure Services,Small Cap
+125,US03769M1062,Apollo Global Management Inc,Diversified Financial Services,Unknown
+126,INE437A01024,Apollo Hospitals Enterprise Limited,Healthcare Services,Large Cap
+127,INE713T01028,Apollo Micro Systems Limited,Aerospace & Defense,Small Cap
+128,INE126J01016,Apollo Pipes Limited,Industrial Products,Small Cap
+129,INE438A01022,Apollo Tyres Limited,Auto Components,Small Cap
+130,US0378331005,Apple Inc,"Technology Hardware, Storage & Peripherals",Unknown
+131,US0382221051,Applied Material (US),Semiconductor Equipment,Unknown
+132,US03831W1080,Applovin Corporation - A,Software,Unknown
+133,JE00BTDN8H13,Aptiv PLC,Automotive Parts & Equipment,Unknown
+134,INE852O01025,Aptus Value Housing Finance India Limited,Finance,Small Cap
+135,BMG0450A1053,Arch Capital Group Ltd,Property & Casualty Insurance,Unknown
+136,INE128X01021,Archean Chemical Industries Limited,Chemicals & Petrochemicals,Small Cap
+137,US04016X1019,Argenx SE,Biotechnology,Unknown
+138,US0404132054,Arista Networks Inc,Communications Equipment,Unknown
+139,US0420682058,Arm Holdings Plc,Semiconductors,Unknown
+140,INE025R01021,Artemis Medicare Services Limited,Healthcare Services,Small Cap
+141,US3635761097,Arthur J Gallagher & Co,Insurance Brokers,Unknown
+142,INE955V01021,Arvind Fashions Limited,Retailing,Small Cap
+143,INE034A01011,Arvind Limited,Textiles & Apparels,Small Cap
+144,INE034S01021,Arvind Smartspaces Ltd.,Realty,Small Cap
+145,INE439A01020,Asahi India Glass Limited,Auto Components,Small Cap
+146,INE348A01023,Ashapura Minechem Limited,Minerals & Mining,Small Cap
+147,INE365D01021,Ashiana Housing Limited,Realty,Small Cap
+148,INE208A01029,Ashok Leyland Limited,"Agricultural, Commercial & Construction Vehicles",Mid Cap
+149,INE442H01029,Ashoka Buildcon Ltd.,Construction,Small Cap
+150,INE021A01026,Asian Paints Limited,Consumer Durables,Large Cap
+151,TW0005274005,Aspeed Technology Inc,Semiconductors,Unknown
+152,US04621X1081,Assurant Inc,Property & Casualty Insurance,Unknown
+153,INE563J01010,Astec LifeSciences Ltd.,Fertilizers & Agrochemicals,Small Cap
+154,INE914M01019,Aster DM Healthcare Limited,Healthcare Services,Small Cap
+155,INE386C01029,Astra Microwave Products Ltd.,Aerospace & Defense,Small Cap
+156,INE203A01020,AstraZeneca Pharma India Limited,Pharmaceuticals & Biotechnology,Small Cap
+157,INE006I01046,Astral Limited,Industrial Products,Mid Cap
+158,US0463531089,Astrazeneca PLC - Spons ADR,Healthcare Services,Unknown
+159,TW0002357001,Asustek Computer Inc,"Technology Hardware, Storage & Peripherals",Unknown
+160,INE0LEZ01016,Ather Energy Limited,Automobiles,Small Cap
+161,US0494681010,Atlassian Corporation Plc,Application Software,Unknown
+162,US0495601058,Atmos Energy Corp,Gas Utilities,Unknown
+163,INE100A01010,Atul Limited,Chemicals & Petrochemicals,Small Cap
+164,INE132H01018,Aurionpro Solutions Ltd.,IT - Software,Small Cap
+165,INE406A01037,Aurobindo Pharma Limited,Pharmaceuticals & Biotechnology,Mid Cap
+166,INE206F01022,Authum Investment And Infrastructure Limited,Finance,Mid Cap
+167,US0527691069,Autodesk,Application Software,Unknown
+168,US0530151036,Automatic Data Processing Inc,Data Processing & Outsourced Services,Unknown
+169,INE449A01011,Automotive Axles Ltd,Auto Components,Small Cap
+170,US0533321024,Autozone Inc,Automotive Retail,Unknown
+171,INE0LCL01028,Avalon Technologies Limited,Electrical Equipment,Small Cap
+172,US0534841012,AvalonBay Communities Inc,Multi-Family Residential REITs,Unknown
+173,INE871C01038,Avanti Feeds Ltd.,Food Products,Small Cap
+174,INE192R01011,Avenue Supermarts Limited,Retailing,Large Cap
+175,US0536111091,Avery Dennison Corp,Paper & Plastic Packaging Products & Materials,Unknown
+176,INE108V01019,Awfis Space Solutions Limited,Commercial Services & Supplies,Small Cap
+177,INE238A01034,Axis Bank Limited,Banks,Large Cap
+178,INE555B01013,Axiscades Technologies Ltd.,Aerospace & Defense,Small Cap
+179,US05464C1018,Axon Enterprise Inc,Aerospace & Defense,Unknown
+180,INE02IJ01035,Azad Engineering Ltd,Electrical Equipment,Small Cap
+181,INE411U01027,BAJAJ HEALTHCARE LIMITED,Pharmaceuticals & Biotechnology,Small Cap
+182,INE373A01013,BASF India Limited,Chemicals & Petrochemicals,Small Cap
+183,INE0N7W01012,BEML Land Assets Limited,Finance,Small Cap
+184,INE258A01016,BEML Limited,"Agricultural, Commercial & Construction Vehicles",Small Cap
+185,INE878K01010,BF Investment Limited,Finance,Small Cap
+186,INE243D01012,BF Utilities Limited,Transport Infrastructure,Small Cap
+187,INE00E101023,BIKAJI FOODS INTERNATIONAL LIMITED,Food Products,Small Cap
+188,INE153T01027,BLS International Services Limited,Leisure Services,Small Cap
+189,HK2388011192,BOC Hong Kong Holdings Ltd,Diversified Banks,Unknown
+190,INE118H01025,BSE Limited,Capital Markets,Mid Cap
+191,US1011211018,BXP Inc.,Office REITs,Unknown
+192,CNE100000296,BYD Co Ltd.,Automobiles & Components,Unknown
+193,HK0285041858,BYD Electronic International Co. Ltd.,Communications Equipment,Unknown
+194,INE01FR01028,Baazar Style Retail Limited,Retailing,Small Cap
+195,KYG070341048,Baidu Inc,Interactive Media & Services,Unknown
+196,INE917I01010,Bajaj Auto Limited,Automobiles,Large Cap
+197,INE933K01021,Bajaj Consumer Care Ltd.,Personal Products,Small Cap
+198,INE193E01025,Bajaj Electricals Ltd.,Consumer Durables,Small Cap
+199,INE296A01032,Bajaj Finance Limited,Finance,Large Cap
+200,INE918I01026,Bajaj Finserv Limited,Finance,Large Cap
+201,INE306A01021,Bajaj Hindusthan Sugar Ltd.,Agricultural Food & other Products,Small Cap
+202,INE118A01012,Bajaj Holdings & Investment Limited,Finance,Large Cap
+203,INE377Y01014,Bajaj Housing Finance Limited,Finance,Large Cap
+204,INE0KQN01018,Bajel Projects Limited,Electrical Equipment,Small Cap
+205,US05722G1004,Baker Hughes Co,Oilfield Services & Equipment,Unknown
+206,INE050E01027,Balaji Amines Ltd.,Chemicals & Petrochemicals,Small Cap
+207,INE787D01026,Balkrishna Industries Limited,Auto Components,Mid Cap
+208,US0584981064,Ball Corp,"Metal, Glass & Plastic Containers",Unknown
+209,INE164A01016,Balmer Lawrie & Company Limited,Diversified,Small Cap
+210,INE119A01028,Balrampur Chini Mills Limited,Agricultural Food & other Products,Small Cap
+211,INE011E01029,Balu Forge Industries Ltd.,Industrial Products,Small Cap
+212,INE213C01025,Banco Products (I) Ltd.,Auto Components,Small Cap
+213,INE545U01014,Bandhan Bank Limited,Banks,Small Cap
+214,CNE1000001Z5,Bank Of China Ltd,Diversified Banks,Unknown
+215,US0605051046,Bank of America Corp,Other Bank,Unknown
+216,INE028A01039,Bank of Baroda,Banks,Large Cap
+217,INE084A01016,Bank of India,Banks,Mid Cap
+218,INE457A01014,Bank of Maharashtra,Banks,Mid Cap
+219,INE459A01010,Bannari Amman Sugars Limited,Agricultural Food & other Products,Small Cap
+220,INE0B9K01025,Bansal Wire Industries Limited,Industrial Products,Small Cap
+221,INE382M01027,Barbeque Nation Hospitality,Leisure Services,Small Cap
+222,INE176A01028,Bata India Limited,Consumer Durables,Small Cap
+223,US0718131099,Baxter International Inc,Health Care Equipment,Unknown
+224,JP3835250006,BayCurrent Consulting Inc,Research & Consulting Services,Unknown
+225,INE462A01022,Bayer Cropscience Limited,Fertilizers & Agrochemicals,Small Cap
+226,US0758871091,Becton Dickinson and Co,Health Care Equipment,Unknown
+227,INE894V01022,Belrise Industries Limited,Auto Components,Small Cap
+228,INE083K01017,Bengal And Assam Company Limited,Miscellaneous,Small Cap
+229,INE463A01038,Berger Paints (I) Limited,Consumer Durables,Mid Cap
+230,US0846707026,Berkshire Hathaway Inc,Multi-Sector Holdings,Unknown
+231,US0865161014,Best Buy Co Inc,Computer & Electronics Retail,Unknown
+232,INE922A01025,Bhansali Engineering Polymers Ltd.,Chemicals & Petrochemicals,Small Cap
+233,INE464A01036,Bharat Bijlee Ltd.,Electrical Equipment,Small Cap
+234,INE171Z01026,Bharat Dynamics Limited,Aerospace & Defense,Mid Cap
+235,INE263A01024,Bharat Electronics Limited,Aerospace & Defense,Large Cap
+236,INE465A01025,Bharat Forge Limited,Auto Components,Mid Cap
+237,INE257A01026,Bharat Heavy Electricals Limited,Electrical Equipment,Mid Cap
+238,INE029A01011,Bharat Petroleum Corporation Limited,Petroleum Products,Large Cap
+239,INE397D01024,Bharti Airtel Limited,Telecom - Services,Large Cap
+240,IN9397D01014,Bharti Airtel Ltd. - PARTLY PAID UP SHARES,Telecom - Services,Unknown
+241,INE343G01021,Bharti Hexacom Limited,Telecom - Services,Mid Cap
+242,KYG1098A1013,Bilibili Inc,Interactive Home Entertainment,Unknown
+243,US09073M1045,Bio Techne Ord,Life Sciences Tools & Services,Unknown
+244,US0905722072,Bio-Rad Laboratories Inc,Biotechnology,Unknown
+245,INE376G01013,Biocon Limited,Pharmaceuticals & Biotechnology,Mid Cap
+246,US09062X1037,Biogen Inc,Biotechnology,Unknown
+247,US09075V1026,Biontech SE,Biotechnology,Unknown
+248,INE340A01012,Birla Corporation Ltd.,Cement & Cement Products,Small Cap
+249,INE557A01011,Birlanu Ltd,Consumer Durables,Small Cap
+250,INE836A01035,Birlasoft Limited,IT - Software,Small Cap
+251,KYG114741062,Bizlink Holding Inc,Electrical Components & Equipment,Unknown
+252,INE676A01027,Black Box Limited,IT - Services,Small Cap
+253,US09290D1019,Blackrock Inc,Asset Management & Custody Banks,Unknown
+254,US09260D1072,Blackstone Inc,Asset Management & Custody Banks,Unknown
+255,INE416D01022,Bliss GVS Pharma Limited,Pharmaceuticals & Biotechnology,Small Cap
+256,US8522341036,Block Inc,Transaction & Payment Processing Services,Unknown
+257,INE233B01017,Blue Dart Express Limited,Transport Services,Small Cap
+258,INE0KBH01020,Blue Jet Healthcare Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+259,INE472A01039,Blue Star Limited,Consumer Durables,Mid Cap
+260,INE0U4101014,Bluspring Enterprises limited,Commercial Services & Supplies,Small Cap
+261,US0970231058,Boeing Co,Aerospace & Defense,Unknown
+262,INE050A01025,Bombay Burmah Trading Corporation Limited,Food Products,Small Cap
+263,INE032A01023,Bombay Dyeing & Mfg Company Ltd.,Textiles & Apparels,Small Cap
+264,US09857L1089,Booking Holdings Inc,"Hotels, Resorts & Cruise Lines",Unknown
+265,INE02PY01013,Borosil Ltd.,Consumer Durables,Small Cap
+266,INE666D01022,Borosil Renewables Ltd.,Industrial Products,Small Cap
+267,INE323A01026,Bosch Limited,Auto Components,Mid Cap
+268,US1011371077,Boston Scientific Corp,Health Care Equipment,Unknown
+269,INE02RE01045,Brainbees Solutions Ltd,Retailing,Small Cap
+270,JP3830800003,Bridgestone Corp,Tires & Rubber,Unknown
+271,INE791I01019,Brigade Enterprises Limited,Realty,Small Cap
+272,INE03NU01014,Brigade Hotel Ventures Limited,Leisure Services,Unknown
+273,US1101221083,Bristol-Myers Squibb Co,Pharmaceuticals,Unknown
+274,INE216A01030,Britannia Industries Limited,Food Products,Large Cap
+275,US11135F1012,Broadcom Inc,Semiconductors,Unknown
+276,US11133T1034,Broadridge Financial Solutions Inc,Data Processing & Outsourced Services,Unknown
+277,US1152361010,Brown & Brown Inc,Insurance Brokers,Unknown
+278,US1156372096,Brown-Forman Corp,Beverages,Unknown
+279,KYG1674K1013,Budweiser Brewing Company APAC Limited,Brewers,Unknown
+280,US12008R1077,Builders Firstsource Inc,Building Products,Unknown
+281,CH1300646267,Bunge Global SA,Agricultural Products & Services,Unknown
+282,INE0BV301023,C.E. Info Systems Limited,IT - Software,Small Cap
+283,US1273871087,CADENCE DESIGN SYSTEM COM,Application Software,Unknown
+284,US14149Y1082,CARDINAL HEALTH INC,Health Care Distributors,Unknown
+285,INE752H01013,CARE Ratings Ltd.,Capital Markets,Small Cap
+286,US12504L1098,CBRE Group Inc,Real Estate Services,Unknown
+287,INE421D01022,CCL Products (India) Limited,Agricultural Food & other Products,Small Cap
+288,US12514G1085,CDW Corporation,Technology Distributors,Unknown
+289,INE482A01020,CEAT Limited,Auto Components,Small Cap
+290,INE486A01021,CESC Limited,Power,Small Cap
+291,US1252691001,CF Industries Holdings Inc Ord Shs,Fertilizers & Agricultural Chemicals,Unknown
+292,INE067A01029,CG Power and Industrial Solutions Limited,Electrical Equipment,Large Cap
+293,US12541W2098,CH Robinson Worldwide Inc,Air Freight & Logistics,Unknown
+294,IL0010824113,CHECK POINT SOFTWARE T ORD,Systems Software,Unknown
+295,INE536H01010,CIE Automotive India Limited,Auto Components,Small Cap
+296,KYG2177B1014,CK Asset Holdings Limited,Real Estate Development,Unknown
+297,KYG217651051,CK Hutchison Holdings Limited,Industrial Conglomerates,Unknown
+298,BMG2178K1009,CK Infrastructure Holdings Ltd,Electric Utilities,Unknown
+299,HK0002007356,CLP Holdings Ltd,Electric Utilities,Unknown
+300,US1258961002,CMS Energy Corp,Multi-Utilities,Unknown
+301,INE925R01014,CMS Info Systems Ltd,Commercial Services & Supplies,Small Cap
+302,INE552D01024,CONFIDENCE PETROLEUM INDIA LIMITED,Gas,Small Cap
+303,INE007A01025,CRISIL Limited,Finance,Mid Cap
+304,INE679A01013,CSB Bank Ltd,Banks,Small Cap
+305,HK1093012172,CSPC Pharmaceutical Group Limited,Pharmaceuticals,Unknown
+306,US1264081035,CSX Corp,Railroads,Unknown
+307,US1266501006,CVS Health Corp,Health Care Services,Unknown
+308,US12769G1004,Caesars Entertainment Inc.,Casinos & Gaming,Unknown
+309,US1331311027,Camden Property Trust,Multi-Family Residential REITs,Unknown
+310,INE052I01032,Camlin Fine Sciences Ltd.,Chemicals & Petrochemicals,Small Cap
+311,US1344291091,Campbell Soup Co,Packaged Foods & Meats,Unknown
+312,INE278Y01022,Campus Activewear Limited,Consumer Durables,Small Cap
+313,INE477A01020,Can Fin Homes Limited,Finance,Small Cap
+314,CA13646K1084,Canadian Pacific Kansas City Limited,Rail Transportation,Unknown
+315,INE476A01022,Canara Bank,Banks,Mid Cap
+316,INE068L01024,Cantabil Retail India Limited,Textiles & Apparels,Small Cap
+317,INE264T01014,Capacit'e Infraprojects Limited,Construction,Small Cap
+318,INE0Z8Z23013,Capital Infra Trust,Construction,Unknown
+319,US14040H1059,Capital One Financial Corp,Consumer Finance,Unknown
+320,INE475E01026,Caplin Point Laboratories Limited,Pharmaceuticals & Biotechnology,Small Cap
+321,INE180C01042,Capri Global Capital Limited,Finance,Small Cap
+322,INE290S01011,CarTrade Tech Limited,Retailing,Small Cap
+323,INE120A01034,Carborundum Universal Limited,Industrial Products,Small Cap
+324,US1431301027,Carmax Inc,Automotive Retail,Unknown
+325,PA1436583006,Carnival Corp,"Hotels, Resorts & Cruise Lines",Unknown
+326,INE0V7W01012,Carraro India Limited,Auto Components,Small Cap
+327,US14448C1045,Carrier Global Corp,Building Products,Unknown
+328,INE482D01024,Carysil Limited,Consumer Durables,Small Cap
+329,US1475281036,Casey'S General Store,Food Retail,Unknown
+330,INE172A01027,Castrol India Limited,Petroleum Products,Small Cap
+331,US1491231015,Caterpillar Inc.,Construction,Unknown
+332,US12503M1080,Cboe Global Markets Inc,Financial Exchanges & Data,Unknown
+333,INE0AG901020,Ceigall India Ltd,Construction,Small Cap
+334,INE0LMW01024,Cello World Limited,Consumer Durables,Small Cap
+335,US03073E1055,Cencora Inc,Health Care Distributors,Unknown
+336,US15135B1017,Centene Corp,Managed Health Care,Unknown
+337,US15189T1079,CenterPoint Energy Inc,Multi-Utilities,Unknown
+338,INE483A01010,Central Bank of India,Banks,Mid Cap
+339,INE736A01011,Central Depository Services (India) Limited,Capital Markets,Small Cap
+340,INE320B01020,Centum Electronics Ltd.,Industrial Manufacturing,Small Cap
+341,INE485A01015,Century Enka Ltd.,Textiles & Apparels,Small Cap
+342,INE348B01021,Century Plyboards (India) Limited,Consumer Durables,Small Cap
+343,INE739E01017,Cera Sanitaryware Limited,Consumer Durables,Small Cap
+344,INE427F01016,Chalet Hotels Limited,Leisure Services,Small Cap
+345,INE085A01013,Chambal Fertilizers & Chemicals Limited,Fertilizers & Agrochemicals,Small Cap
+346,US1598641074,Charles River Laboratories International Inc,Life Sciences Tools & Services,Unknown
+347,US8085131055,Charles Schwab Corp,Finance,Unknown
+348,US16119P1084,Charter Communications Inc,Cable & Satellite,Unknown
+349,INE488A01050,Chemplast Sanmar Limited,Chemicals & Petrochemicals,Small Cap
+350,TW0008210006,Chenbro Micom Co Ltd,"Technology Hardware, Storage & Peripherals",Unknown
+351,INE178A01016,Chennai Petroleum Corporation Limited,Petroleum Products,Small Cap
+352,US1667641005,Cheveron Corp,Integrated Oil & Gas,Unknown
+353,CNE1000002H1,China Construct BK-H,Diversified Banks,Unknown
+354,KYG211501005,China Hongqiao Group Limited,Aluminum,Unknown
+355,CNE1000002L3,China Life Insurance Co Ltd,Life & Health Insurance,Unknown
+356,KYG210961051,China Mengniu Dairy Co,Packaged Foods & Meats,Unknown
+357,CNE1000002M1,China Merchants Bank Co. Ltd. - H Shares,Diversified Banks,Unknown
+358,HK0941009539,China Mobile Ltd,Wireless Telecommunication Services,Unknown
+359,HK0688002218,China Overseas Land & Investment Ltd,Real Estate Development,Unknown
+360,CNE1000002Q2,China Petroleum -H-,Integrated Oil & Gas,Unknown
+361,HK0291001490,China Resources Beer (Holdings) Company Limited,Brewers,Unknown
+362,KYG2108Y1052,China Resources Land Ltd,Real Estate Development,Unknown
+363,KYG2122G1064,China Resources Mixc Lifestyle Services Limited,Real Estate Operating Companies,Unknown
+364,HK0836012952,China Resources Power Holdings Co Limited,Independent Power Producers & Energy Traders,Unknown
+365,CNE1000002R0,China Shenhua - H,Coal & Consumable Fuels,Unknown
+366,HK0000049939,China Unicom Hong Kong Ltd,Integrated Telecommunication Services,Unknown
+367,US1696561059,Chipotle Mexican Grill Inc,Restaurants,Unknown
+368,INE102B01014,Choice International Ltd.,Finance,Small Cap
+369,INE149A01033,Cholamandalam Financial Holdings Limited,Finance,Mid Cap
+370,INE121A01024,Cholamandalam Investment and Finance Company Ltd,Finance,Large Cap
+371,INE121A08PJ0,Cholamandalam Investment and Finance Company Ltd (CCD),Finance,Unknown
+372,KYG211461085,Chow Tai Fook Jewellery Group Limited,Other Specialty Retail,Unknown
+373,TW0002360005,Chroma Ate,Electronic Equipment & Instruments,Unknown
+374,CH0044328745,Chubb Ltd,Property & Casualty Insurance,Unknown
+375,US1713401024,Church & Dwight Co Inc,Household Products,Unknown
+376,INE675C01017,Cigniti Technologies Ltd,It - Services,Small Cap
+377,US1720621010,Cincinnati Financial Corp,Property & Casualty Insurance,Unknown
+378,US1729081059,Cintas Corporation,Diversified Support Services,Unknown
+379,INE059A01026,Cipla Limited,Pharmaceuticals & Biotechnology,Large Cap
+380,US17275R1023,Cisco Systems Inc,Communications Equipment,Unknown
+381,HK0267001375,Citic Ltd,Industrial Conglomerates,Unknown
+382,US1729674242,Citigroup Inc,Diversified Banks,Unknown
+383,US1746101054,Citizens Financial Group Inc,Regional Banks,Unknown
+384,INE491A01021,City Union Bank Limited,Banks,Small Cap
+385,INE227W01023,Clean Science and Technology Limited,Chemicals & Petrochemicals,Small Cap
+386,US12572Q1058,Cme Group Inc,Financial Exchanges & Data,Unknown
+387,HK0883013259,Cnooc Ltd,Oil & Gas Exploration & Production,Unknown
+388,INE522F01014,Coal India Limited,Consumable Fuels,Large Cap
+389,US1912161007,Coca Cola Co.,Soft Drinks & Non-alcoholic Beverages,Unknown
+390,GB00BDCPN049,Coca-Cola European Partners US LLC,Beverages,Unknown
+391,INE704P01025,Cochin Shipyard Limited,Industrial Manufacturing,Mid Cap
+392,INE591G01025,Coforge Limited,IT - Software,Mid Cap
+393,US1924461023,Cognizant Tech Solutions,It Consulting & Other Services,Unknown
+394,INE03QK01018,Cohance Lifesciences Limited,Pharmaceuticals & Biotechnology,Small Cap
+395,US19260Q1076,Coinbase Global Inc -Class A,Financial Exchanges & Data,Unknown
+396,INE259A01022,Colgate Palmolive (India) Limited,Personal Products,Mid Cap
+397,US1941621039,Colgate-Palmolive Co,Household Products,Unknown
+398,US20030N1019,Comcast Corporation,Cable & Satellite,Unknown
+399,TW0002313004,Compeq Manufacturing Co Ltd,Electronic Components,Unknown
+400,INE596I01012,Computer Age Management Services Limited,Capital Markets,Small Cap
+401,US2058871029,Conagra Brands Inc,Packaged Foods & Meats,Unknown
+402,INE338H01029,Concord Biotech Limited,Pharmaceuticals & Biotechnology,Small Cap
+403,US20825C1045,ConocoPhillips,Oil & Gas Exploration & Production,Unknown
+404,US2091151041,Consolidated Edison Inc,Multi-Utilities,Unknown
+405,US21036P1084,Constellation Brands Inc,Distillers & Vintners,Unknown
+406,US21037T1097,Constellation Energy,Aerospace & Defense,Unknown
+407,INE111A01025,Container Corporation of India Limited,Transport Services,Mid Cap
+408,US2166485019,Cooper Companies Inc,Health Care Supplies,Unknown
+409,US2172041061,Copart Inc,Diversified Support Services,Unknown
+410,US2193501051,Corning Inc,Electronic Components,Unknown
+411,INE169A01031,Coromandel International Limited,Fertilizers & Agrochemicals,Mid Cap
+412,US2199481068,Corpay Inc,Transaction & Payment Processing Services,Unknown
+413,US22052L1044,Corteva Inc,Fertilizers & Agricultural Chemicals,Unknown
+414,INE757A01017,Cosmo First Limited,Industrial Products,Small Cap
+415,US22160N1090,Costar Group INC,Information Services,Unknown
+416,US22160K1051,Costco Wholesale Corp,Consumer Staples Merchandise Retail,Unknown
+417,US1270971039,Coterra Energy Ord,Oil & Gas Exploration & Production,Unknown
+418,INE00LO01017,Craftsman Automation Limited,Auto Components,Small Cap
+419,INE741K01010,CreditAccess Grameen Limited,Finance,Small Cap
+420,INE220Q01020,Credo Brands Marketing Limited,Retailing,Small Cap
+421,INE0S4R01014,Crizac Ltd,Retailing,Unknown
+422,INE299U01018,Crompton Greaves Consumer Electricals Limited,Consumer Durables,Small Cap
+423,US22788C1053,Crowdstrike Holdings Inc,Systems Software,Unknown
+424,US22822V1017,Crown Castle Inc,Telecom Tower REITs,Unknown
+425,US2310211063,Cummins Inc,Construction Machinery & Heavy Transportation Equipment,Unknown
+426,INE298A01020,Cummins India Limited,Industrial Products,Mid Cap
+427,IL0011334468,CyberArk Software Ltd,Systems Software,Unknown
+428,INE055S01018,Cyient DLM Limited,Aerospace & Defense,Small Cap
+429,INE136B01020,Cyient Limited,IT - Services,Small Cap
+430,INE950I01011,D B Corp Limited,Media,Small Cap
+431,INE284H01025,DAM Capital Advisors Limited,Capital Markets,Small Cap
+432,INE503A01015,DCB Bank Limited,Banks,Small Cap
+433,INE499A01024,DCM Shriram Limited,Diversified,Small Cap
+434,INE500A01029,DCW Limited,Chemicals & Petrochemicals,Small Cap
+435,INE0KL801015,DCX Systems Limited,Aerospace & Defense,Small Cap
+436,INE841L01016,DEE Development Engineers Limited,Industrial Manufacturing,Small Cap
+437,US25278X1090,DIAMONDBACK ENERGY INC,Exploration & Production,Unknown
+438,INE271C01023,DLF Limited,Realty,Large Cap
+439,US2567461080,DOLLAR TREE INC,Consumer Staples Merchandise Retail,Unknown
+440,US23331A1097,DR Horton Inc,Homebuilding,Unknown
+441,US2333311072,DTE Energy Co,Multi-Utilities,Unknown
+442,US23918K1088,DaVita Inc,Health Care Services,Unknown
+443,INE016A01026,Dabur India Limited,Personal Products,Mid Cap
+444,JP3476480003,Dai-ichi Life Holdings Inc,Life & Health Insurance,Unknown
+445,JP3505000004,Daiwa House Industry,Diversified Real Estate Activities,Unknown
+446,INE00R701025,Dalmia Bharat Limited,Cement & Cement Products,Mid Cap
+447,INE495A01022,Dalmia Bharat Sugar and Industries Limited,Agricultural Food & other Products,Small Cap
+448,US2358511028,Danaher Corp,Trading,Unknown
+449,US2371941053,Darden Restaurants Inc,Restaurants,Unknown
+450,INE0IX101010,Data Patterns (India) Limited,Aerospace & Defense,Small Cap
+451,US23804L1035,Datadog INC,Software,Unknown
+452,INE365B01017,Datamatics Global Services Ltd.,IT - Services,Small Cap
+453,US15677J1088,Dayforce Inc,Human Resource & Employment Services,Unknown
+454,US2435371073,Deckers Outdoor Corp,Footwear,Unknown
+455,INE501A01019,Deepak Fertilizers and Petrochemicals Corporation Limited,Chemicals & Petrochemicals,Small Cap
+456,INE288B01029,Deepak Nitrite Limited,Chemicals & Petrochemicals,Small Cap
+457,US2441991054,Deere & Co,Agricultural & Farm Machinery,Unknown
+458,INE148O01028,Delhivery Limited,Transport Services,Small Cap
+459,US24703L2025,Dell Technologies Inc,"Technology Hardware, Storage & Peripherals",Unknown
+460,US2473617023,Delta Air Lines Inc,Passenger Airlines,Unknown
+461,INE124G01033,Delta Corp Ltd.,Leisure Services,Small Cap
+462,INE947J01015,Den Networks Limited,Entertainment,Small Cap
+463,US25179M1036,Devon Energy Corp,Oil & Gas Exploration & Production,Unknown
+464,INE872J01023,Devyani International Limited,Leisure Services,Small Cap
+465,US2521311074,Dexcom Inc,Health Care Equipment,Unknown
+466,INE274G01010,Dhani Services Ltd.,Finance,Small Cap
+467,INE435G01025,Dhanuka Agritech Limited,Fertilizers & Agrochemicals,Small Cap
+468,US25243Q2057,Diageo Sp ADR Rep 4 Sh,Distillers & Vintners,Unknown
+469,INE184O01015,Diffusion Engineers Limited,Industrial Products,Small Cap
+470,US2538681030,Digital Realty Trust Inc,Data Center REITs,Unknown
+471,INE0U4701011,Digitide Solutions Limited,IT - Services,Small Cap
+472,INE917M01012,Dilip Buildcon Ltd.,Construction,Small Cap
+473,INE131C01011,Disa India Ltd.,Industrial Manufacturing,Small Cap
+474,INE836F01026,Dish TV India Limited,Entertainment,Small Cap
+475,INE385W01011,Dishman Carbogen Amcis Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+476,INE753U01022,Divgi Torqtransfer Systems Ltd,Auto Components,Small Cap
+477,INE361B01024,Divi's Laboratories Limited,Pharmaceuticals & Biotechnology,Large Cap
+478,INE935N01020,Dixon Technologies (India) Limited,Consumer Durables,Mid Cap
+479,US2561631068,"DocuSign, Inc",Application Software,Unknown
+480,INE021O01019,Dodla Dairy Limited,Food Products,Small Cap
+481,US2566771059,Dollar General Corp,Consumer Staples Merchandise Retail,Unknown
+482,INE325C01035,Dollar Industries Limited,Textiles & Apparels,Small Cap
+483,US25746U1097,Dominion Energy Inc,Multi-Utilities,Unknown
+484,US25754A2015,Domino's Pizza Inc,Restaurants,Unknown
+485,INE321T01012,Doms Industries Limited,Household Products,Small Cap
+486,US25809K1051,DoorDash Inc,Media,Unknown
+487,US2600031080,Dover Corp,Industrial Machinery & Supplies & Components,Unknown
+488,US2605571031,Dow Inc,Commodity Chemicals,Unknown
+489,INE943P01029,Dr Agarwals Health Care Limited,Healthcare Services,Small Cap
+490,INE600L01024,Dr. Lal Path Labs Limited,Healthcare Services,Small Cap
+491,INE089A01031,Dr. Reddy's Laboratories Limited,Pharmaceuticals & Biotechnology,Large Cap
+492,US26142V1052,DraftKings Inc,Casinos & Gaming,Unknown
+493,INE0JS101016,Dreamfolks Services Limited,Transport Infrastructure,Small Cap
+494,US26614N1028,DuPont de Nemours Inc,Specialty Chemicals,Unknown
+495,US26441C2044,Duke Energy Corp,Electric Utilities,Unknown
+496,US26603R1068,Duolingo Inc,Education Services,Unknown
+497,INE221B01012,Dynamatic Technologies Ltd.,Industrial Manufacturing,Small Cap
+498,TW0003211009,Dynapack International Technology Corporation,Electronic Components,Unknown
+499,US2774321002,EASTMAN CHEMICAL CO,Specialty Chemicals,Unknown
+500,INE126A01031,EID Parry India Limited,Food Products,Small Cap
+501,INE276C01014,EIH Associated Hotels Limited,Leisure Services,Small Cap
+502,INE230A01023,EIH Limited,Leisure Services,Small Cap
+503,US2910111044,EMERSON ELECTRIC CO,Electrical Components & Equipment,Unknown
+504,INE0OV601013,EMS Limited,Other Utilities,Small Cap
+505,KYG3066L1014,ENN Energy Holdings Limited,Gas Utilities,Unknown
+506,US26875P1012,EOG Resources Inc,Oil & Gas Exploration & Production,Unknown
+507,INE0G5901015,EPACK DURABLE LIMITED,Consumer Durables,Small Cap
+508,INE255A01020,EPL Limited,Industrial Products,Small Cap
+509,US26884L1098,EQT Corporation,Oil & Gas Exploration & Production,Unknown
+510,INE818W01011,ESAF Small Finance Bank Limited,Banks,Small Cap
+511,US1651677353,EXPAND ENERGY ORD,Oil & Gas Exploration & Production,Unknown
+512,US30212P3038,EXPEDIA INC,"Hotels, Resorts & Cruise Lines",Unknown
+513,JP3783600004,East Japan Railway,Rail Transportation,Unknown
+514,INE07O001026,Easy Trip Planners Ltd.,Leisure Services,Small Cap
+515,IE00B8KQN827,Eaton Corp PLC,Electrical Components & Equipment,Unknown
+516,US2786421030,Ebay Inc,Broadline Retail,Unknown
+517,US2788651006,Ecolab Inc,Specialty Chemicals,Unknown
+518,INE06HJ01020,Ecos India Mobility & Hospitality Ltd.,Transport Services,Small Cap
+519,INE532F01054,Edelweiss Financial Services Ltd.,Finance,Small Cap
+520,US2810201077,Edison International,Electric Utilities,Unknown
+521,US28176E1082,Edwards Lifesciences Corp,Health Care Equipment,Unknown
+522,INE066A01021,Eicher Motors Limited,Automobiles,Large Cap
+523,INE280B01018,Elantas Beck India Limited,Industrial Products,Small Cap
+524,IL0010811243,Elbit Systems Ltd,Aerospace & Defense,Unknown
+525,INE205B01031,Elecon Engineering Company Limited,Electrical Equipment,Small Cap
+526,US2855121099,Electronic Arts Inc,Interactive Home Entertainment,Unknown
+527,INE02YR01019,Electronics Mart India Limited,Retailing,Small Cap
+528,INE086A01029,Electrosteel Castings Ltd.,Industrial Products,Small Cap
+529,US0367521038,Elevance Health Inc,Managed Health Care,Unknown
+530,INE285A01027,Elgi Equipments Limited,Industrial Products,Small Cap
+531,US5324571083,Eli Lilly & Co,Pharmaceuticals,Unknown
+532,INE050401020,Elin Electronics Ltd.,Consumer Durables,Small Cap
+533,TW0003450003,Elite Advanced Laser Corp,Semiconductors,Unknown
+534,TW0002383007,Elite Material Co Ltd,Electronic Components,Unknown
+535,INE236E01022,Ellenbarrie Industrial Gases Limited,Chemicals & Petrochemicals,Unknown
+536,INE548C01032,Emami Limited,Personal Products,Small Cap
+537,INE069I01010,Embassy Developments Ltd.,Realty,Small Cap
+538,INE041025011,Embassy Office Parks REIT,Realty,Unknown
+539,INE168P01015,Emcure Pharmaceuticals Limited,Pharmaceuticals & Biotechnology,Small Cap
+540,INE913H01037,Endurance Technologies Limited,Auto Components,Small Cap
+541,INE510A01028,Engineers India Limited,Construction,Small Cap
+542,US29355A1079,Enphase Energy Inc,Semiconductor Materials & Equipment,Unknown
+543,US29364G1031,Entergy Corp,Electric Utilities,Unknown
+544,INE010601016,Entero Healthcare Solutions Ltd.,Retailing,Small Cap
+545,INE265F01028,Entertainment Network (India) Ltd.,Entertainment,Small Cap
+546,INE0LLY01014,Enviro Infra Engineers Ltd.,Other Utilities,Small Cap
+547,US29414B1044,Epam Systems Inc,It - Services,Unknown
+548,INE071N01016,Epigral Ltd.,Chemicals & Petrochemicals,Small Cap
+549,US2944291051,Equifax Inc,Research & Consulting Services,Unknown
+550,US29444U7000,Equinix Inc,Data Center REITs,Unknown
+551,INE063P01018,Equitas Small Finance Bank Ltd,Banks,Small Cap
+552,US29476L1070,Equity Residential,Multi-Family Residential REITs,Unknown
+553,US29530P1021,Erie Indemnity Co,Property & Casualty Insurance,Unknown
+554,INE406M01024,Eris Lifesciences Limited,Pharmaceuticals & Biotechnology,Small Cap
+555,INE284A01012,Esab India Ltd.,Industrial Products,Small Cap
+556,INE042A01014,Escorts Kubota Limited,"Agricultural, Commercial & Construction Vehicles",Mid Cap
+557,US2971781057,Essex Property Trust Inc,Multi-Family Residential REITs,Unknown
+558,US5184391044,Estee Lauder Cos Inc,Consumer Durables,Unknown
+559,INE758T01015,Eternal Limited,Retailing,Large Cap
+560,INE0KCE01017,Eureka Forbes Ltd.,Consumer Durables,Small Cap
+561,TW0002618006,Eva Airways Corporation,Passenger Airlines,Unknown
+562,INE128A01029,Eveready Industries India Limited,Household Products,Small Cap
+563,BMG3223R1088,Everest Group Ltd,Reinsurance,Unknown
+564,INE184H01027,Everest Kanto Cylinder Limited,Industrial Manufacturing,Small Cap
+565,US30034W1062,Evergy Inc,Electric Utilities,Unknown
+566,US30040W1080,Eversource Energy,Electric Utilities,Unknown
+567,US30161N1019,Exelon (US),Electric Utilities,Unknown
+568,INE777F01014,Exicom Tele-Systems Ltd,Electrical Equipment,Small Cap
+569,INE777F20014,Exicom Tele-Systems Ltd,Electrical Equipment,Unknown
+570,INE302A01020,Exide Industries Limited,Auto Components,Mid Cap
+571,US3021301094,Expeditors International of Washington I,Air Freight & Logistics,Unknown
+572,INE201K01015,Expleo Solutions Limited,IT - Services,Small Cap
+573,US30225T1025,Extra Space Storage Inc,Self Storage REITs,Unknown
+574,US30231G1022,Exxon Mobil Corporation Ltd.,Integrated Oil & Gas,Unknown
+575,US3156161024,F5 Inc,Communications Equipment,Unknown
+576,INE258B01022,FDC Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+577,INE737H01014,FIEM INDUSTRIES LIMITED,Auto Components,Small Cap
+578,US3377381088,FISERV INC COM,Transaction & Payment Processing Services,Unknown
+579,US3453708600,FORD MOTOR CO,Automobile Manufacturers,Unknown
+580,US35137L2043,FOX-Registered Shares-B,Broadcasting,Unknown
+581,US35137L1052,FOX-Registered Shs-A,Broadcasting,Unknown
+582,INE388Y01029,FSN E-Commerce Ventures Limited,Retailing,Mid Cap
+583,US3030751057,FactSet Research System Inc,Financial Exchanges & Data,Unknown
+584,US3032501047,Fair Isaac & Co Inc,Application Software,Unknown
+585,JP3802300008,Fast Retailing Co Ltd,Apparel Retail,Unknown
+586,US3119001044,Fastenal Co,Trading Companies & Distributors,Unknown
+587,INE007N01010,Fedbank Financial Services Limited,Finance,Small Cap
+588,US3137451015,Federal Realty Investment Trust,Retail REITs,Unknown
+589,INE529A01010,Federal-Mogul Goetze (India) Limited.,Auto Components,Small Cap
+590,US31428X1063,Fedex Corp,Air Freight & Logistics,Unknown
+591,NL0015001FS8,Ferrovial SE,Construction & Engineering,Unknown
+592,INE188A01015,Fertilizers and Chemicals Travancore Limited,Fertilizers & Agrochemicals,Mid Cap
+593,US31620M1062,Fidelity National Information Services I,Transaction & Payment Processing Services,Unknown
+594,US3167731005,Fifth Third Bancorp,Diversified Banks,Unknown
+595,INE816B01035,Filatex India Limited,Textiles & Apparels,Small Cap
+596,INE686Y01026,Fine Organic Industries Limited,Chemicals & Petrochemicals,Small Cap
+597,INE045J01026,Fineotex Chemical Ltd.,Chemicals & Petrochemicals,Small Cap
+598,INE02NC01014,Fino Payments Bank,Banks,Small Cap
+599,INE235A01022,Finolex Cables Limited,Industrial Products,Small Cap
+600,INE183A01024,Finolex Industries Limited,Industrial Products,Small Cap
+601,US3364331070,First Solar Inc,Semiconductors,Unknown
+602,US3379321074,FirstEnergy Corp,Electric Utilities,Unknown
+603,INE684F01012,Firstsource Solutions Limited,Commercial Services & Supplies,Small Cap
+604,INE128S01021,Five Star Business Finance Limited,Finance,Small Cap
+605,INE00Y201027,Flair Writing Industries Limited,Household Products,Small Cap
+606,SG9999000020,Flex Ltd,Electronic Manufacturing Services,Unknown
+607,INE451A01017,Force Motors Ltd.,Automobiles,Small Cap
+608,TW0004746003,Formosa Laboratories Inc,Pharmaceuticals,Unknown
+609,US34959E1091,Fortinet INC,Software,Unknown
+610,INE061F01013,Fortis Healthcare Limited,Healthcare Services,Mid Cap
+611,US34959J1088,Fortive Corp,Industrial Machinery & Supplies & Components,Unknown
+612,INE519A01011,Foseco India Limited,Chemicals & Petrochemicals,Small Cap
+613,US3546131018,Franklin Resources Inc,Asset Management & Custody Banks,Unknown
+614,US35671D8570,Freeport-McMoRan Inc,Non - Ferrous Metals,Unknown
+615,INE139R01012,Fusion Finance Limited,Finance,Small Cap
+616,IN9139R01028,Fusion Finance Limited,Finance,Unknown
+617,INE201P01022,G R Infraprojects Limited,Construction,Small Cap
+618,INE129A01019,GAIL (India) Limited,Gas,Large Cap
+619,INE276A01018,GARWARE TECHNICAL FIBRES LIMITED,Textiles & Apparels,Small Cap
+620,US3696043013,GE Aerospace,Aerospace & Defense,Unknown
+621,US36266G1076,GE HealthCare Technologies Inc,Health Care Equipment,Unknown
+622,US36828A1016,GE Vernova Inc,Heavy Electrical Equipment,Unknown
+623,INE200A01026,GE Vernova T&D India Limited,Electrical Equipment,Mid Cap
+624,INE539A01019,GHCL Limited,Chemicals & Petrochemicals,Small Cap
+625,INE0PA801013,GHCL Textiles Limited,Textiles & Apparels,Small Cap
+626,INE528A01020,GKW Ltd.,Finance,Small Cap
+627,KYG393871085,GLOBALFOUNDRIES INC,Semiconductor Mfg,Unknown
+628,INE541A01023,GMM Pfaudler Limited,Industrial Manufacturing,Small Cap
+629,INE776C01039,GMR Airports Limited,Transport Infrastructure,Mid Cap
+630,INE934S01014,GNA Axles Ltd.,Auto Components,Small Cap
+631,INE18JU01028,GNG Electronics Ltd.,IT - Hardware,Unknown
+632,INE077F01035,GOCL Corporation Limited,Chemicals & Petrochemicals,Small Cap
+633,INE486R01017,GPT Healthcare Limited,Healthcare Services,Small Cap
+634,INE524A01029,Gabriel India Limited,Auto Components,Small Cap
+635,HK0027032686,Galaxy Entertainment Group Ltd,Casinos & Gaming,Unknown
+636,INE600K01018,Galaxy Surfactants Limited,Chemicals & Petrochemicals,Small Cap
+637,INE717W01049,Gandhar Oil Refinery (India) Limited,Petroleum Products,Small Cap
+638,INE460C01014,Ganesh Housing Corporation Ltd.,Realty,Small Cap
+639,INE845D01014,Ganesha Ecosphere Ltd,Textiles & Apparels,Small Cap
+640,INE382Z01011,Garden Reach Shipbuilders & Engineers Limited,Aerospace & Defense,Small Cap
+641,CH0114405324,Garmin Ltd,Consumer Electronics,Unknown
+642,US3666511072,Gartner Inc,IT Consulting & Other Services,Unknown
+643,INE291A01017,Garware Hi-Tech Films Ltd.,Industrial Products,Small Cap
+644,INE079J01017,Gateway Distriparks Limited,Transport Services,Small Cap
+645,KYG3777B1032,Geely Auto,Automobile Manufacturers,Unknown
+646,US6687711084,Gen Digital Inc,Systems Software,Unknown
+647,US3687361044,Generac Holdings Inc,Electrical Components & Equipment,Unknown
+648,US3695501086,General Dynamics Corp,Aerospace & Defense,Unknown
+649,INE481Y01014,General Insurance Corporation of India,Insurance,Mid Cap
+650,US3703341046,General Mills Inc,Packaged Foods & Meats,Unknown
+651,US37045V1008,General Motors Co,Automobile Manufacturers,Unknown
+652,US3724601055,Genuine Parts Co,Distributors,Unknown
+653,INE955D01029,Genus Power Infrastructures Limited,Electrical Equipment,Small Cap
+654,INE007B01023,Geojit Financial Services Limited,Capital Markets,Small Cap
+655,US3755581036,Gilead Sciences Inc.,Biotechnology,Unknown
+656,INE322A01010,Gillette India Limited,Personal Products,Small Cap
+657,INE068V01023,Gland Pharma Limited,Pharmaceuticals & Biotechnology,Small Cap
+658,INE159A01016,GlaxoSmithKline Pharmaceuticals Limited,Pharmaceuticals & Biotechnology,Mid Cap
+659,INE935A01035,Glenmark Pharmaceuticals Limited,Pharmaceuticals & Biotechnology,Mid Cap
+660,INE474Q01031,Global Health Limited,Healthcare Services,Mid Cap
+661,US37940X1028,Global Payments Inc,Transaction & Payment Processing Services,Unknown
+662,US37954Y6326,Global X Artificial Intelligence & Technology ETF,nan,Unknown
+663,IE00BMH5YR69,Global X Autonomous & Electric Vehicles UCITS ETF,nan,Unknown
+664,HK0000562659,Global X China Electric Vehicle and Battery ETF,nan,Unknown
+665,IE00BLCHJN13,Global X Lithium & Battery Tech UCITS ETF,nan,Unknown
+666,US37959E1029,Globe Life Inc,Life & Health Insurance,Unknown
+667,INE671B01034,Globsyn Technologies Limited**,IT - Services,Unknown
+668,INE615I01010,Globus Spirits Limited,Beverages,Small Cap
+669,INE0CU601026,Gmr Power & Urban Infra Ltd.,Power,Small Cap
+670,INE03JT01014,Go Digit General Insurance Limited,Insurance,Small Cap
+671,INE0BJS01011,Go Fashion (India) Limited,Retailing,Small Cap
+672,US3802371076,GoDaddy Inc,Internet Services & Infrastructure,Unknown
+673,INE497S01012,Godavari Biorefineries Limited,Diversified FMCG,Small Cap
+674,INE177H01039,Godawari Power And Ispat limited,Industrial Products,Small Cap
+675,INE260B01028,Godfrey Phillips India Limited,Cigarettes & Tobacco Products,Mid Cap
+676,INE850D01014,Godrej Agrovet Limited,Food Products,Small Cap
+677,INE102D01028,Godrej Consumer Products Limited,Personal Products,Large Cap
+678,INE233A01035,Godrej Industries Limited,Diversified,Mid Cap
+679,INE484J01027,Godrej Properties Limited,Realty,Mid Cap
+680,INE887G01027,Gokaldas Exports Limited,Textiles & Apparels,Small Cap
+681,INE314T01025,Gokul Agro Resources Limited,Agricultural Food & other Products,Small Cap
+682,INE025B01025,Goldiam International Limited,Consumer Durables,Small Cap
+683,US38141G1040,Goldman Sachs Group Inc.,Financial Services,Unknown
+684,INE127I01024,Goodluck India Limited,Industrial Products,Small Cap
+685,INE533A01012,Goodyear India Ltd.,Auto Components,Small Cap
+686,INE0L9R01028,Gopal Snacks Ltd.,Food Products,Small Cap
+687,KYG4124C1096,Grab Holdings Ltd,Passenger Ground Transportation,Unknown
+688,INE101D01020,Granules India Limited,Pharmaceuticals & Biotechnology,Small Cap
+689,INE371A01025,Graphite India Limited,Industrial Products,Small Cap
+690,INE047A01021,Grasim Industries Limited,Cement & Cement Products,Large Cap
+691,INE266D01021,Grauer & Weil (India) Limited,Chemicals & Petrochemicals,Small Cap
+692,INE024L01027,Gravita India Limited,Minerals & Mining,Small Cap
+693,INE224A01026,Greaves Cotton Ltd.,Industrial Products,Small Cap
+694,INE544R01021,Greenlam Industries Ltd.,Consumer Durables,Small Cap
+695,INE08ZM01014,Greenpanel Industries Limited,Consumer Durables,Small Cap
+696,INE461C01038,Greenply Industries Ltd.,Consumer Durables,Small Cap
+697,INE536A01023,Grindwell Norton Limited,Industrial Products,Small Cap
+698,INE742B01025,Gufic Biosciences Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+699,INE186A01019,Gujarat Alkalies and Chemicals Ltd.,Chemicals & Petrochemicals,Small Cap
+700,INE036B01030,Gujarat Ambuja Exports Ltd.,Agricultural Food & other Products,Small Cap
+701,INE09N301011,Gujarat Fluorochemicals Limited,Chemicals & Petrochemicals,Mid Cap
+702,INE844O01030,Gujarat Gas Limited,Gas,Mid Cap
+703,INE162A01010,Gujarat Industries Power Co. Ltd.,Power,Small Cap
+704,INE131A01031,Gujarat Mineral Development Corporation Limited,Minerals & Mining,Small Cap
+705,INE113A01013,Gujarat Narmada Valley Fertilizers and Chemicals Limited,Chemicals & Petrochemicals,Small Cap
+706,INE517F01014,Gujarat Pipavav Port Limited,Transport Infrastructure,Small Cap
+707,INE026A01025,Gujarat State Fertilizers & Chemicals,Fertilizers & Agrochemicals,Small Cap
+708,INE246F01010,Gujarat State Petronet Limited,Gas,Small Cap
+709,INE942C01045,Gujarat Themis Biosyn Limited,Pharmaceuticals & Biotechnology,Small Cap
+710,INE635Q01029,Gulf Oil Lubricants India Ltd.,Petroleum Products,Small Cap
+711,INE926X01010,H.G. Infra Engineering Ltd.,Construction,Small Cap
+712,US4062161017,HALLIBURTON CO,Oil & Gas Equipment & Services,Unknown
+713,US4180561072,HASBRO INC COM,Leisure Products,Unknown
+714,INE292B01021,HBL Engineering Limited,Industrial Products,Small Cap
+715,US40412C1018,HCA HEALTHCARE INC,Health Care Facilities,Unknown
+716,INE860A01027,HCL Technologies Limited,IT - Software,Large Cap
+717,INE756I01012,HDB Financial Services Limited,Finance,Unknown
+718,INE127D01025,HDFC Asset Management Company Limited,Capital Markets,Mid Cap
+719,INE040A01034,HDFC Bank Limited,Banks,Large Cap
+720,INE795G01014,HDFC Life Insurance Company Limited,Insurance,Large Cap
+721,INE545A01024,HEG Limited,Industrial Products,Small Cap
+722,US8064071025,HENRY SCHEIN INC COM USD0.01,Health Care Distributors,Unknown
+723,US40434L1052,HEWLETT PACKARD CO,"Technology Hardware, Storage & Peripherals",Unknown
+724,INE548A01028,HFCL Limited,Telecom - Services,Small Cap
+725,INE461D01028,HLE Glascoat Limited,Industrial Manufacturing,Small Cap
+726,INE0ECP01024,HMA Agro Industries Limited,Food Products,Small Cap
+727,GB0005405286,HSBC HOLDINGS PLC,Diversified Banks,Unknown
+728,KYG4290A1013,Haidilao International Holding Ltd,Restaurants,Unknown
+729,CNE1000048K8,Haier Smart Home Co Ltd.,Home appliances,Unknown
+730,HK0101000591,Hang Lung Properties Ltd,Real Estate Operating Companies,Unknown
+731,HK0011000095,Hang Seng Bank,Diversified Banks,Unknown
+732,KYG549581067,Hansoh Pharmaceutical Group Company Limited,Pharmaceuticals,Unknown
+733,INE419U01012,Happiest Minds Technologies Limited,IT - Software,Small Cap
+734,INE330T01021,Happy Forgings Limited,Industrial Products,Small Cap
+735,INE0JUS01029,Harsha Engineers International Limited,Industrial Products,Small Cap
+736,INE982F01036,Hathway Cable and Datacom Ltd.,Entertainment,Small Cap
+737,INE473B01035,Hatsun Agro Products Ltd,Food Products,Small Cap
+738,INE176B01034,Havells India Limited,Consumer Durables,Large Cap
+739,INE979B01015,Hawkins Cookers Limited,Consumer Durables,Small Cap
+740,INE075I01017,Healthcare Global Enterprises Limited,Healthcare Services,Small Cap
+741,US42250P1030,Healthpeak Properties Inc,Health Care REITs,Unknown
+742,INE578A01017,HeidelbergCement India Limited,Cement & Cement Products,Small Cap
+743,INE0AJG01018,Hemisphere Properties India Ltd.,Commercial Services & Supplies,Small Cap
+744,HK0012000102,Henderson Land Development Co Limited,Real Estate Development,Unknown
+745,KYG4402L1510,Hengan International Group Co Ltd,Personal Care Products,Unknown
+746,INE978A01027,Heritage Foods Ltd.,Food Products,Small Cap
+747,INE158A01026,Hero MotoCorp Limited,Automobiles,Mid Cap
+748,US4278661081,Hershey Co,Consumer Non Durables,Unknown
+749,INE782E01017,Hester Biosciences Limited,Pharmaceuticals & Biotechnology,Small Cap
+750,US42824C1099,Hewlett Packard Enterprise Co,"Technology Hardware, Storage & Peripherals",Unknown
+751,INE093A01041,Hexaware Technologies Limited,IT - Software,Mid Cap
+752,INE475B01022,Hikal Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+753,US43300A2033,Hilton Worldwide Holdings Inc,"Hotels, Resorts & Cruise Lines",Unknown
+754,INE019C01026,Himadri Speciality Chemical Limited,Chemicals & Petrochemicals,Small Cap
+755,INE049A01027,Himatsingka Seide Limited,Textiles & Apparels,Small Cap
+756,INE038A01020,Hindalco Industries Limited,Non - Ferrous Metals,Large Cap
+757,INE170I01016,Hinduja Global Solutions Limited,Commercial Services & Supplies,Small Cap
+758,INE066F01020,Hindustan Aeronautics Limited,Aerospace & Defense,Large Cap
+759,INE549A01026,Hindustan Construction Company Ltd.,Construction,Small Cap
+760,INE531E01026,Hindustan Copper Limited,Non - Ferrous Metals,Small Cap
+761,INE254N01026,Hindustan Foods Limited,Diversified FMCG,Small Cap
+762,INE345A01011,Hindustan Oil Exploration Company Limited,Oil,Small Cap
+763,INE094A01015,Hindustan Petroleum Corporation Limited,Petroleum Products,Mid Cap
+764,INE030A01027,Hindustan Unilever Limited,Diversified FMCG,Large Cap
+765,INE267A01025,Hindustan Zinc Limited,Non - Ferrous Metals,Large Cap
+766,INE05AN01011,Hindware Home Innovation Limited,Consumer Durables,Small Cap
+767,INE07Y701011,Hitachi Energy India Limited,Electrical Equipment,Mid Cap
+768,JP3788600009,Hitachi Ltd,Industrial Conglomerates,Unknown
+769,TW0002049004,Hiwin Technologies Corp,Industrial Machinery & Supplies & Components,Unknown
+770,US4364401012,Hologic Inc,Health Care Equipment,Unknown
+771,US4370761029,Home Depot Inc,Home Improvement Retail,Unknown
+772,INE481N01025,Home First Finance Company India Limited,Finance,Small Cap
+773,TW0002317005,Hon Hai Precision Industry Co Ltd,Electronic Manufacturing Services,Unknown
+774,INE0J5401028,Honasa Consumer Limited,Personal Products,Small Cap
+775,INE634A01018,Honda India Power Products Limited,Industrial Manufacturing,Small Cap
+776,INE671A01010,Honeywell Automation India Limited,Industrial Manufacturing,Mid Cap
+777,US4385161066,Honeywell Internation India Pvt Ltd,Industrial Conglomerates,Unknown
+778,HK0388045442,Hong Kong Exchanges and Clearing Ltd,Financial Exchanges & Data,Unknown
+779,KYG4602S1057,Horizon Robotics Inc,software and services,Unknown
+780,US4404521001,Hormel Foods Corp,Packaged Foods & Meats,Unknown
+781,US44107P1049,Host Hotels & Resorts Inc,Hotel & Resort REITs,Unknown
+782,INE031A01017,Housing & Urban Development Corporation Limited,Finance,Mid Cap
+783,US4432011082,Howmet Aerospace Inc,Aerospace & Defense,Unknown
+784,HK0000218211,Hua Hong Semiconductor Ltd.,Semiconductors,Unknown
+785,US4435106079,Hubbell Inc,Electrical Components & Equipment,Unknown
+786,INE275B01026,Huhtamaki India Limited,Industrial Products,Small Cap
+787,US4448591028,Humana Inc,Managed Health Care,Unknown
+788,US4461501045,Huntington Bancshares Inc,Regional Banks,Unknown
+789,US4464131063,Huntington Ingalls Industries Inc,Aerospace & Defense,Unknown
+790,INE0V6F01027,Hyundai Motor India Ltd,Automobiles,Large Cap
+791,INE090A01021,ICICI Bank Limited,Banks,Large Cap
+792,INE765G01017,ICICI Lombard General Insurance Company Limited,Insurance,Mid Cap
+793,INE726G01019,ICICI Prudential Life Insurance Company Limited,Insurance,Mid Cap
+794,INE725G01011,ICRA Ltd.,Capital Markets,Small Cap
+795,INE008A01015,IDBI Bank Limited,Banks,Mid Cap
+796,US45167R1041,IDEX Corp,Capital Goods,Unknown
+797,US45168D1046,IDEXX Laboratories Inc,Health Care Equipment,Unknown
+798,INE092T01019,IDFC First Bank Limited,Banks,Mid Cap
+799,INE559A01017,IFB Industries Ltd.,Consumer Durables,Small Cap
+800,INE039A01010,IFCI Limited,Finance,Small Cap
+801,INE204A01010,IG Petrochemicals Limited,Chemicals & Petrochemicals,Small Cap
+802,INE489L01022,"IIFL Capital Services
+ Ltd.",Capital Markets,Small Cap
+803,INE530B01024,IIFL Finance Limited,Finance,Small Cap
+804,INE0LOJ01019,IKIO Technologies Limited,Consumer Durables,Small Cap
+805,US4601461035,INTERNATIONALPAPER CO,Paper & Plastic Packaging Products & Materials,Unknown
+806,US46120E6023,INTUITIVE SURGICAL INC COM,Health Care Equipment,Unknown
+807,INE485C01029,IOL Chemicals and Pharmaceuticals Limited,Pharmaceuticals & Biotechnology,Small Cap
+808,INE570A01022,ION EXCHANGE (INDIA) LIMITED,Other Utilities,Small Cap
+809,INE571A01038,IPCA Laboratories Limited,Pharmaceuticals & Biotechnology,Mid Cap
+810,INE821I01022,IRB Infrastructure Developers Limited,Construction,Small Cap
+811,INE962Y01021,IRCON International Limited,Construction,Small Cap
+812,INE858B01029,ISGEC Heavy Engineering Ltd.,Construction,Small Cap
+813,INE379A01028,ITC Hotels Limited,Leisure Services,Mid Cap
+814,INE154A01025,ITC Limited,Diversified FMCG,Large Cap
+815,INE686A01026,ITD Cementation India Ltd.,Construction,Small Cap
+816,INE248A01017,ITI Limited,Telecom - Equipment & Accessories,Small Cap
+817,INE349Y01013,Ideaforge Technology Limited,Aerospace & Defense,Small Cap
+818,INE133Y01011,Ifgl Refractories Limited (Erst Ifgl Exports Limited),Industrial Products,Small Cap
+819,INE188B01013,Igarashi Motors India Limited,Auto Components,Small Cap
+820,US4523081093,Illinois Tool Works Inc,Industrial Machinery & Supplies & Components,Unknown
+821,INE172N01012,Imagicaaworld Entertainment Ltd.,Leisure Services,Small Cap
+822,US45337C1027,Incyte Corp,Biotechnology,Unknown
+823,INE065X01017,Indegene Limited,Healthcare Services,Small Cap
+824,INE560A01015,India Glycols Ltd.,Beverages,Small Cap
+825,INE0D6701023,India Pesticides Limited,Fertilizers & Agrochemicals,Small Cap
+826,INE922K01024,India Shelter Finance Corporation Limited,Finance,Small Cap
+827,INE353K01014,India Tourism Development Corporation Limited,Leisure Services,Small Cap
+828,INE933S01016,Indiamart Intermesh Limited,Retailing,Small Cap
+829,INE562A01011,Indian Bank,Banks,Mid Cap
+830,INE022Q01020,Indian Energy Exchange Limited,Capital Markets,Small Cap
+831,INE919H01018,Indian Metals & Ferro Alloys Ltd.,Ferrous Metals,Small Cap
+832,INE242A01010,Indian Oil Corporation Limited,Petroleum Products,Large Cap
+833,INE565A01014,Indian Overseas Bank,Banks,Mid Cap
+834,INE335Y01020,Indian Railway Catering And Tourism Corporation Limited,Leisure Services,Mid Cap
+835,INE053F01010,Indian Railway Finance Corporation Limited,Finance,Large Cap
+836,INE202E01016,Indian Renewable Energy Development Agency Limited,Finance,Mid Cap
+837,INE09VQ01012,Indigo Paints Limited,Consumer Durables,Small Cap
+838,INE06ST01018,Indiqube Spaces Limited,Commercial Services & Supplies,Unknown
+839,INE483B01026,Indo Count Industries Ltd.,Textiles & Apparels,Small Cap
+840,INE896L01010,IndoStar Capital Finance Limited,Finance,Small Cap
+841,INE873D01024,Indoco Remedies Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+842,INE203G01027,Indraprastha Gas Limited,Gas,Small Cap
+843,INE681B01017,Indraprastha Medical Corporation Limited,Healthcare Services,Small Cap
+844,INE0NHL23019,Indus Infra Trust,Transport Infrastructure,Unknown
+845,INE121J01017,Indus Towers Limited,Telecom - Services,Large Cap
+846,INE095A01012,IndusInd Bank Limited,Banks,Mid Cap
+847,CNE1000003G1,Industrial and Commercial Bank of China Ltd,Diversified Banks,Unknown
+848,INE483S01020,Infibeam Avenues Ltd.,Financial Technology (Fintech),Small Cap
+849,INE663F01032,Info Edge (India) Limited,Retailing,Large Cap
+850,INE009A01021,Infosys Limited,IT - Software,Large Cap
+851,US45687V1061,Ingersoll Rand Inc,Industrial Machinery & Supplies & Components,Unknown
+852,INE177A01018,Ingersoll-Rand (India) Ltd.,Industrial Products,Small Cap
+853,INE0DUT01020,Innova Captab Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+854,INE549I01011,Innoventive Industries Limited**,Industrial Products,Unknown
+855,INE510W01014,Inox Green Energy Services Ltd.,Power,Small Cap
+856,INE616N01034,Inox India Limited,Industrial Products,Small Cap
+857,INE066P01011,Inox Wind Limited,Electrical Equipment,Small Cap
+858,INE066P20011,Inox Wind Limited,Electrical Equipment,Unknown
+859,INE070I01018,Insecticides (India) Ltd.,Fertilizers & Agrochemicals,Small Cap
+860,US45784P1012,Insulet Corp,Health Care Equipment,Unknown
+861,US4581401001,Intel Corp,Semiconductors,Unknown
+862,INE306R01017,Intellect Design Arena Limited,IT - Software,Small Cap
+863,INE646L01027,InterGlobe Aviation Limited,Transport Services,Large Cap
+864,INE00M901018,Interarch Building Solutions Ltd.,Construction,Small Cap
+865,US45866F1049,Intercontinental Exchange Inc,Financial Exchanges & Data,Unknown
+866,US4592001014,International Business Machines Corp,software and services,Unknown
+867,US4595061015,International Flavors & Fragrances Inc,Specialty Chemicals,Unknown
+868,INE0Q9301021,International Gemmological Institute India Ltd,Commercial Services & Supplies,Small Cap
+869,US4606901001,Interpublic Group of Companies Inc,Advertising,Unknown
+870,US4612021034,Intuit Inc,Application Software,Unknown
+871,INE115Q01022,Inventurus Knowledge Solutions Limited,IT - Services,Small Cap
+872,BMG491BT1088,Invesco Ltd,Asset Management & Custody Banks,Unknown
+873,US46187W1071,Invitation Homes Inc,Single-Family Residential REITs,Unknown
+874,US46266C1053,Iqvia Holdings,Life Sciences Tools & Services,Unknown
+875,US46284V1017,Iron Mountain Inc,Other Specialized REITs,Unknown
+876,US4456581077,J B Hunt Transport Services Inc,Cargo Ground Transportation,Unknown
+877,INE576I01022,J.Kumar Infraprojects Ltd.,Construction,Small Cap
+878,INE572A01036,JB Chemicals & Pharmaceuticals Limited,Pharmaceuticals & Biotechnology,Small Cap
+879,INE927D01051,JBM Auto Limited,Auto Components,Small Cap
+880,US47215P1066,JD Com Inc,Broadline Retail,Unknown
+881,KYG5074A1004,JD Health International Inc,Drug Retail,Unknown
+882,KYG8208B1014,JD.com Inc,Broadline Retail,Unknown
+883,INE823G01014,JK Cement Limited,Cement & Cement Products,Mid Cap
+884,INE786A01032,JK Lakshmi Cement Limited,Cement & Cement Products,Small Cap
+885,INE789E01012,JK Paper Ltd.,"Paper, Forest & Jute Products",Small Cap
+886,INE573A01042,JK Tyre & Industries Limited,Auto Components,Small Cap
+887,INE780C01023,JM Financial Limited,Finance,Small Cap
+888,US8326964058,JM Smucker Co/The,Packaged Foods & Meats,Unknown
+889,INE0OAF01028,JNK India Limited,Industrial Manufacturing,Small Cap
+890,INE121E01018,JSW Energy Limited,Power,Mid Cap
+891,INE824G01012,JSW Holdings Limited,Finance,Small Cap
+892,INE880J01026,JSW Infrastructure Ltd,Transport Infrastructure,Mid Cap
+893,INE019A01038,JSW Steel Limited,Ferrous Metals,Large Cap
+894,INE643A01035,JTEKT India Ltd.,Auto Components,Small Cap
+895,INE643A20019,JTEKT India Ltd.(Right Share),Auto Components,Unknown
+896,INE391J01032,JTL Industries Ltd.,Industrial Products,Small Cap
+897,US4663131039,Jabil Inc,Electronic Manufacturing Services,Unknown
+898,US4262811015,Jack Henry & Associates Inc,Transaction & Payment Processing Services,Unknown
+899,US46982L1089,Jacobs Solutions Inc,Research & Consulting Services,Unknown
+900,INE199G01027,Jagran Prakashan Ltd.,Media,Small Cap
+901,INE091G01026,Jai Balaji Industries Ltd.,Ferrous Metals,Small Cap
+902,INE070D01027,Jai Corp Ltd.,Industrial Products,Small Cap
+903,INE175A01038,Jain Irrigation Systems Ltd.,Industrial Products,Small Cap
+904,INE351F01018,Jaiprakash Power Ventures Limited,Power,Small Cap
+905,INE039C01032,Jamna Auto Industries Ltd.,Auto Components,Small Cap
+906,INE953L01027,Jana Small Finance Bank Ltd.,Banks,Small Cap
+907,INE854B01010,Jayaswal Neco Industries Limited,Industrial Products,Small Cap
+908,TW0003653002,Jentech Precision Industrial Co Ltd,Semiconductors,Unknown
+909,INE197D01010,Jindal Poly Films Limited,Industrial Products,Small Cap
+910,INE324A01032,Jindal Saw Limited,Industrial Products,Small Cap
+911,INE220G01021,Jindal Stainless Limited,Ferrous Metals,Mid Cap
+912,INE749A01030,Jindal Steel & Power Limited,Ferrous Metals,Large Cap
+913,INE247D01039,Jindal Worldwide Ltd.,Textiles & Apparels,Small Cap
+914,INE758E01017,Jio Financial Services Limited,Finance,Large Cap
+915,US4781601046,Johnson & Johnson,Pharmaceuticals,Unknown
+916,US003CVR0169,Johnson & Johnson,Pharmaceuticals,Unknown
+917,IE00BY7QL619,Johnson Controls International PLC,Building Products,Unknown
+918,INE782A01015,Johnson Controls-Hitachi Air Conditioning India Ltd.,Consumer Durables,Small Cap
+919,US46625H1005,Jpmorgan Chase & Co.,Diversified Banks,Unknown
+920,INE797F01020,Jubilant Foodworks Limited,Leisure Services,Mid Cap
+921,INE0BY001018,Jubilant Ingrevia Limited,Chemicals & Petrochemicals,Small Cap
+922,INE700A01033,Jubilant Pharmova Limited,Pharmaceuticals & Biotechnology,Small Cap
+923,INE696F01016,Juniper Hotels Limited,Leisure Services,Small Cap
+924,INE682M01012,Jupiter Life Line Hospitals Limited,Healthcare Services,Small Cap
+925,INE209L01016,Jupiter Wagons Limited,Industrial Manufacturing,Small Cap
+926,INE599M01018,Just Dial Limited,Retailing,Small Cap
+927,INE668F01031,Jyothy Labs Limited,Household Products,Small Cap
+928,INE980O01024,Jyoti CNC Automation Ltd,Industrial Manufacturing,Small Cap
+929,INE577D01013,Jyoti Resins & Adhesives Limited,Miscellaneous,Small Cap
+930,INE930H01031,K.P.R. Mill Limited,Textiles & Apparels,Mid Cap
+931,INE291D01011,KDDL Limited,Consumer Durables,Small Cap
+932,INE389H01022,KEC International Limited,Construction,Small Cap
+933,INE878B01027,KEI Industries Limited,Industrial Products,Mid Cap
+934,INE138Y01010,KFin Technologies Limited,Capital Markets,Small Cap
+935,INE880L01014,KIOCL Ltd,Ferrous Metals,Small Cap
+936,US48251W1045,KKR & Co Inc,Asset Management & Custody Banks,Unknown
+937,US4824801009,KLA-Tencor corp,Semiconductor Equipment,Unknown
+938,INE879K01018,KMC Speciality Hospitals (India) Limited,Healthcare Services,Small Cap
+939,INE634I01029,KNR Constructions Limited,Construction,Small Cap
+940,INE04I401011,KPIT Technologies Limited,IT - Software,Mid Cap
+941,INE001B01026,KRBL Ltd.,Agricultural Food & other Products,Small Cap
+942,INE0Q3J01015,KRN Heat Exchanger And Refrigeration Limited,Industrial Products,Small Cap
+943,INE999A01023,KSB Ltd.,Industrial Products,Small Cap
+944,INE217B01036,Kajaria Ceramics Limited,Consumer Durables,Small Cap
+945,INE227J01012,Kalpataru Ltd.,Realty,Unknown
+946,INE220B01022,Kalpataru Projects International Limited,Construction,Small Cap
+947,INE303R01014,Kalyan Jewellers India Limited,Consumer Durables,Mid Cap
+948,INE907A01026,Kalyani Steels Ltd,Industrial Products,Small Cap
+949,INE411F01010,Kama Holdings Limited,Finance,Small Cap
+950,INE531A01024,Kansai Nerolac Paints Limited,Consumer Durables,Small Cap
+951,JP3205800000,Kao Corporation,Personal Care Products,Unknown
+952,INE036D01028,Karur Vysya Bank Limited,Banks,Small Cap
+953,INE455I01029,Kaveri Seed Company Ltd.,Agricultural Food & other Products,Small Cap
+954,INE918Z01012,Kaynes Technology India Limited,Industrial Manufacturing,Mid Cap
+955,US4878361082,Kellogg Co,Packaged Foods & Meats,Unknown
+956,INE717A01029,Kennametal India Limited,Industrial Manufacturing,Small Cap
+957,US49177J1025,Kenvue Inc,Consumer Non Durables,Unknown
+958,US49271V1008,Keurig Dr Pepper Inc.,Soft Drinks,Unknown
+959,INE401H01017,Kewal Kiran Clothing Ltd.,Textiles & Apparels,Small Cap
+960,US4932671088,KeyCorp,Diversified Banks,Unknown
+961,JP3236200006,Keyence Corp,Electronic Equipment & Instruments,Unknown
+962,US49338L1035,Keysight Technologies Inc,Electronic Equipment & Instruments,Unknown
+963,INE263M01029,Keystone Realtors Limited,Realty,Small Cap
+964,US4943681035,Kimberly-Clark Corp,Household Products,Unknown
+965,US49446R1095,Kimco Realty Corp,Retail REITs,Unknown
+966,US49456B1017,Kinder Morgan Inc,Oil & Gas Storage & Transportation,Unknown
+967,TW0002449006,King Yuan Electronics Co Ltd,Semiconductors,Unknown
+968,KYG525681477,Kingdee International Software Ltd.,Application Software,Unknown
+969,INE473D01015,Kingfa Science & Technology (India) Limited,Industrial Products,Small Cap
+970,KYG5264Y1089,Kingsoft Corp Ltd.,Interactive Home Entertainment,Unknown
+971,INE415I01015,Kiri Industries Limited,Chemicals & Petrochemicals,Small Cap
+972,INE732A01036,Kirloskar Brothers Limited,Industrial Products,Small Cap
+973,INE884B01025,Kirloskar Ferrous Industries Ltd.,Ferrous Metals,Small Cap
+974,INE250A01039,Kirloskar Industries Limited,Industrial Products,Small Cap
+975,INE146L01010,Kirloskar Oil Engines Limited,Industrial Products,Small Cap
+976,INE811A01020,Kirloskar Pneumatic Ltd.,Industrial Products,Small Cap
+977,INE602G01020,Kitex Garments Limited,Textiles & Apparels,Small Cap
+978,INE094I01018,Kolte Patil Developers Limited,Realty,Small Cap
+979,JP3304200003,Komatsu Ltd,Construction Machinery & Heavy Transportation Equipment,Unknown
+980,INE082A01010,Kopran Limited,Pharmaceuticals & Biotechnology,Small Cap
+981,INE237A01028,Kotak Mahindra Bank Limited,Banks,Large Cap
+982,INE177F01017,Kovai Medical Center and Hospital Limited,Healthcare Services,Small Cap
+983,INE542W01025,Kpi Green Energy Ltd.,Power,Small Cap
+984,US5007541064,Kraft Heinz Co/The,Packaged Foods & Meats,Unknown
+985,INE967H01025,Krishna Institute Of Medical Sciences Limited,Healthcare Services,Small Cap
+986,US5010441013,Kroger Co,Food Retail,Unknown
+987,INE0O6601022,Kross Limited,Auto Components,Small Cap
+988,INE08LI01020,Krsnaa Diagnostics Limited,Healthcare Services,Small Cap
+989,KYG532631028,Kuaishou Technology,Interactive Media & Services,Unknown
+990,INE498L01015,L&T Finance Limited,Finance,Mid Cap
+991,INE010V01017,L&T Technology Services Limited,IT - Services,Mid Cap
+992,US5024311095,L3Harris Technologies Inc,Aerospace & Defense,Unknown
+993,INE337A01034,LG Balakrishnan & Bros Ltd.,Auto Components,Small Cap
+994,INE115A01026,LIC Housing Finance Limited,Finance,Mid Cap
+995,US5018892084,LKQ Corp,Distributors,Unknown
+996,INE269B01029,LMW Limited,Industrial Manufacturing,Small Cap
+997,INE818H01020,LT Foods Limited,Agricultural Food & other Products,Small Cap
+998,INE214T01019,LTIMindtree Limited,IT - Software,Large Cap
+999,INE059D01020,La Opala RG Limited,Consumer Durables,Small Cap
+1000,US5049221055,Labcorp Holdings Inc,Health Care Services,Unknown
+1001,US5128073062,Lam Research Corporation,Semiconductor Equipment,Unknown
+1002,US5132721045,Lamb Weston Holdings Inc,Packaged Foods & Meats,Unknown
+1003,TW0003081006,LandMark Optoelectronics Corporation,Semiconductor Materials & Equipment,Unknown
+1004,INE559R01029,Landmark Cars Limited,Automobiles,Small Cap
+1005,INE018A01030,Larsen & Toubro Limited,Construction,Large Cap
+1006,US5178341070,Las Vegas Sands Corp,Casinos & Gaming,Unknown
+1007,INE0I7C01011,Latent View Analytics Limited,IT - Software,Small Cap
+1008,INE947Q01028,Laurus Labs Limited,Pharmaceuticals & Biotechnology,Mid Cap
+1009,INE0WO601020,Laxmi Dental Limited,Healthcare Equipment & Supplies,Small Cap
+1010,INE576O01020,Laxmi Organic Industries Ltd.,Chemicals & Petrochemicals,Small Cap
+1011,INE0HV901016,Le Travenues Technology Limited,Leisure Services,Small Cap
+1012,US5253271028,Leidos Holdings Inc,Research & Consulting Services,Unknown
+1013,INE970X01018,Lemon Tree Hotels Limited,Leisure Services,Small Cap
+1014,US5260571048,Lennar Corp,Homebuilding,Unknown
+1015,US5261071071,Lennox International Inc,Building Products,Unknown
+1016,HK0992009065,Lenovo Group Ltd.,"Technology Hardware, Storage & Peripherals",Unknown
+1017,KYG5479M1050,Li Auto Inc,Automobile Manufacturers,Unknown
+1018,KYG5496K1242,Li Ning Company Limited,"Apparel, Accessories and Luxury Goods",Unknown
+1019,US5312297717,Liberty Media Formula One Ser A,Movies & Entertainment,Unknown
+1020,US5312297550,Liberty Media Formula One Ser C,Movies & Entertainment,Unknown
+1021,US5312297485,Liberty Media Live Ser A,Movies & Entertainment,Unknown
+1022,US5312297220,Liberty Media Live Ser C,Movies & Entertainment,Unknown
+1023,INE0J1Y01017,Life Insurance Corporation Of India,Insurance,Large Cap
+1024,INE405C01035,Lincoln Pharmaceuticals Limited,Pharmaceuticals & Biotechnology,Small Cap
+1025,INE473A01011,Linde India Limited,Chemicals & Petrochemicals,Mid Cap
+1026,IE000S9YS762,Linde Plc,Diversified Chemicals,Unknown
+1027,HK0823032773,Link REIT NPV,Retail REITs,Unknown
+1028,US5380341090,Live Nation Entertainment Inc,Movies & Entertainment,Unknown
+1029,INE093R01011,Lloyds Engineering Works Ltd.,Industrial Manufacturing,Small Cap
+1030,INE080I01025,Lloyds Enterprises Ltd.,Metals & Minerals Trading,Small Cap
+1031,INE281B01032,Lloyds Metals And Energy Limited,Minerals & Mining,Mid Cap
+1032,US5398301094,Lockheed Martin Corp,Aerospace & Defense,Unknown
+1033,INE670K01029,Lodha Developers Limited,Realty,Large Cap
+1034,US5404241086,Loews Corp,Property & Casualty Insurance,Unknown
+1035,KYG5635P1090,Longfor Group Holdings Ltd,Real Estate Development,Unknown
+1036,US54338V1017,Lonza Group,Pharmaceuticals & Biotechnology,Unknown
+1037,US5486611073,Lowes Cos Inc,Home Improvement Retail,Unknown
+1038,US5500211090,Lululemon Athletica Inc,"Apparel, Accessories & Luxury Goods",Unknown
+1039,INE872H01027,Lumax Auto Technologies Limited,Auto Components,Small Cap
+1040,INE162B01018,Lumax Industries Ltd,Auto Components,Small Cap
+1041,INE326A01037,Lupin Limited,Pharmaceuticals & Biotechnology,Large Cap
+1042,INE150G01020,Lux Industries Ltd.,Textiles & Apparels,Small Cap
+1043,NL0009434992,Lyondellbasell Industries N.V.,Commodity Chemicals,Unknown
+1044,INE08N601015,M&B Engineering Limited **,Industrial Products,Unknown
+1045,US55261F1049,M&T Bank Corp,Regional Banks,Unknown
+1046,INE750C01026,MARKSANS PHARMA Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+1047,INE776I01010,MEP Infrastructure Developers Ltd.,Transport Infrastructure,Small Cap
+1048,INE317I01021,METRO BRANDS LIMITED,Consumer Durables,Mid Cap
+1049,US5529531015,MGM Resorts International,Casinos & Gaming,Unknown
+1050,TW0003706008,MITAC Holdings Corporation,"Technology Hardware, Storage & Peripherals",Unknown
+1051,JP3900000005,MITSUBISHI HEAVY ORD,Industrial Machinery & Supplies & Components,Unknown
+1052,INE227C01017,MM Forgings Ltd.,Auto Components,Small Cap
+1053,INE123F01029,MMTC Limited,Commercial Services & Supplies,Small Cap
+1054,INE490G01020,MOIL Ltd.,Minerals & Mining,Small Cap
+1055,INE943D01017,MPS Limited,Other Consumer Services,Small Cap
+1056,INE883A01011,MRF Limited,Auto Components,Mid Cap
+1057,US55354G1004,MSCI Inc,Financial Exchanges & Data,Unknown
+1058,INE255X01014,MSTC Ltd.,Commercial Services & Supplies,Small Cap
+1059,INE864I01014,MTAR Technologies Limited,Aerospace & Defense,Small Cap
+1060,HK0066009694,MTR Corp Limited,Rail Transportation,Unknown
+1061,INE613C01026,Magellanic Cloud Ltd,IT - Software,Small Cap
+1062,INE002S01010,Mahanagar Gas Limited,Gas,Small Cap
+1063,INE153A01019,Mahanagar Telephone Nigam Limited,Telecom - Services,Small Cap
+1064,INE288A01013,Maharashtra Scooters Limited,Finance,Small Cap
+1065,INE271B01025,Maharashtra Seamless Limited,Industrial Products,Small Cap
+1066,INE774D01024,Mahindra & Mahindra Financial Services Limited,Finance,Mid Cap
+1067,INE101A01026,Mahindra & Mahindra Limited,Automobiles,Large Cap
+1068,INE998I01010,Mahindra Holidays & Resorts Ind Ltd.,Leisure Services,Small Cap
+1069,INE813A01018,Mahindra Lifespace Developers Limited,Realty,Small Cap
+1070,INE766P01016,Mahindra Logistics Limited,Transport Services,Small Cap
+1071,INE766P20016,Mahindra Logistics Limited,Transport Services,Unknown
+1072,INE949H01023,Man Infraconstruction Ltd.,Construction,Small Cap
+1073,INE522D01027,Manappuram Finance Limited,Finance,Small Cap
+1074,INE558B01017,Mangalore Chemicals & Fertilizers Ltd,Fertilizers & Agrochemicals,Small Cap
+1075,INE103A01014,Mangalore Refinery and Petrochemicals Limited,Petroleum Products,Small Cap
+1076,US5627501092,Manhattan Associates Inc,Application Software,Unknown
+1077,INE634S01028,Mankind Pharma Limited,Pharmaceuticals & Biotechnology,Large Cap
+1078,INE00VM01036,Manorama Industries Limited,Food Products,Small Cap
+1079,US56585A1025,Marathon Petroleum Corp,Oil & Gas Refining & Marketing,Unknown
+1080,INE196A01026,Marico Limited,Agricultural Food & other Products,Mid Cap
+1081,US57060D1081,MarketAxess Holdings Inc,Capital Markets,Unknown
+1082,US5719032022,Marriott International,"Hotels, Resorts & Cruise Lines",Unknown
+1083,US5717481023,Marsh & McLennan Cos Inc,Insurance Brokers,Unknown
+1084,US5732841060,Martin Marietta Materials Inc,Construction Materials,Unknown
+1085,INE585B01010,Maruti Suzuki India Limited,Automobiles,Large Cap
+1086,US5738741041,Marvell Technology Inc,Semiconductors,Unknown
+1087,INE348L01012,Mas Financial Services Limited,Finance,Small Cap
+1088,US5745991068,Masco Corp.,Building Products,Unknown
+1089,INE759A01021,Mastek Limited,IT - Software,Small Cap
+1090,US57636Q1040,Mastercard Incorporated Class A,Transaction & Payment Processing Services,Unknown
+1091,US57667L1070,Match Group Inc,Interactive Media & Services,Unknown
+1092,INE866R01028,Matrimony.com Ltd.,Retailing,Small Cap
+1093,INE03EI01018,Max Estates Ltd.,Realty,Small Cap
+1094,INE180A01020,Max Financial Services Limited,Insurance,Mid Cap
+1095,INE027H01010,Max Healthcare Institute Limited,Healthcare Services,Large Cap
+1096,INE040D01038,Mayur Uniquoters Ltd.,Consumer Durables,Small Cap
+1097,INE249Z01020,Mazagon Dock Shipbuilders Limited,Industrial Manufacturing,Large Cap
+1098,US5797802064,McCormick & Co Inc,Packaged Foods & Meats,Unknown
+1099,US58155Q1031,McKesson Corp.,Health Care Distributors,Unknown
+1100,US5801351017,Mcdonald'S Corpopration,Restaurants,Unknown
+1101,INE804L01022,MedPlus Health Services Limited,Retailing,Small Cap
+1102,INE456Z01021,Medi Assist Healthcare Services Limited,Insurance,Small Cap
+1103,TW0002454006,MediaTek Incorporation,Semiconductors,Unknown
+1104,IE00BTN1Y115,Medtronic Plc,Health Care Equipment,Unknown
+1105,INE0CT101020,Meghmani Organics Limited,Fertilizers & Agrochemicals,Small Cap
+1106,KYG596691041,Meituan,Restaurants,Unknown
+1107,US58733R1023,MercadoLibre Inc,Broadline Retail,Unknown
+1108,US58933Y1055,Merck & Co. Inc,Pharmaceuticals,Unknown
+1109,US30303M1027,Meta Platforms Registered Shares A,Interactive Media & Services,Unknown
+1110,US59156R1086,Metlife Inc,Life & Health Insurance,Unknown
+1111,INE112L01020,Metropolis Healthcare Limited,Healthcare Services,Small Cap
+1112,US5926881054,Mettler-Toledo International Inc,Life Sciences Tools & Services,Unknown
+1113,TW0002377009,Micro-Star International Co Ltd,"Technology Hardware, Storage & Peripherals",Unknown
+1114,US5950171042,Microchip Technology Inc.,Semiconductors,Unknown
+1115,US5951121038,Micron Technology Inc,Semiconductors,Unknown
+1116,US5949181045,Microsoft Corp,Systems Software,Unknown
+1117,US5949724083,Microstrategy Inc. - Class A,Application Software,Unknown
+1118,US59522J1034,Mid-America Apartment Communities Inc,Multi-Family Residential REITs,Unknown
+1119,CNE100006M58,Midea Group Co Ltd.,Home appliances,Unknown
+1120,INE842C01021,Minda Corporation Limited,Auto Components,Small Cap
+1121,INE099Z01011,Mishra Dhatu Nigam Ltd.,Aerospace & Defense,Small Cap
+1122,JP3898400001,Mitsubishi Corp,Trading Companies & Distributors,Unknown
+1123,JP3902900004,Mitsubishi UFJ Financial Group Inc,Diversified Banks,Unknown
+1124,JP3893200000,Mitsui Fudosan Co,Diversified Real Estate Activities,Unknown
+1125,US60770K1079,Moderna Inc,Biotechnology,Unknown
+1126,US6081901042,Mohawk Industries Inc,Home Furnishings,Unknown
+1127,INE893J01029,Mold-Tek Packaging Ltd,Industrial Products,Small Cap
+1128,US60855R1005,Molina Healthcare,Managed Health Care,Unknown
+1129,US60871R2094,Molson Coors Beverage Co,Brewers,Unknown
+1130,US6092071058,Mondelez International Inc,Packaged Foods & Meats,Unknown
+1131,US60937P1066,MongoDB Inc,Internet Services & Infrastructure,Unknown
+1132,TW0002376001,MongoDB Inc,"Technology Hardware, Storage & Peripherals",Unknown
+1133,US6098391054,Monolithic Power Systems Inc,Technology,Unknown
+1134,US61174X1090,Monster Beverage Corporation,Soft Drinks,Unknown
+1135,US6153691059,Moody's Corp,Financial Exchanges & Data,Unknown
+1136,INE083A01026,Morepen Laboratories Limited,Pharmaceuticals & Biotechnology,Small Cap
+1137,US6174464486,Morgan Stanley,Investment Banking & Brokerage,Unknown
+1138,INE0FS801015,Motherson Sumi Wiring India Limited,Auto Components,Small Cap
+1139,INE338I01027,Motilal Oswal Financial Services Limited,Capital Markets,Mid Cap
+1140,US6200763075,Motorola Solutions Inc,Communications Equipment,Unknown
+1141,INE356A01018,Mphasis Limited,IT - Software,Mid Cap
+1142,TW0006223001,Mpi Corporation,Semiconductor Materials & Equipment,Unknown
+1143,INE495P01012,Mrs. Bectors Food Specialities Limited,Food Products,Small Cap
+1144,INE304A01026,Mukand Limited,Ferrous Metals,Small Cap
+1145,INE745G01035,Multi Commodity Exchange of India Limited,Capital Markets,Mid Cap
+1146,INE414G01012,Muthoot Finance Limited,Finance,Mid Cap
+1147,INE046W01019,Muthoot Microfin Ltd,Finance,Small Cap
+1148,INE295D01020,NACL Industries Limited,Fertilizers & Agrochemicals,Small Cap
+1149,INE095N01031,NBCC (India) Limited,Construction,Small Cap
+1150,INE868B01028,NCC Limited,Construction,Small Cap
+1151,INE045B01015,NELCO Limited,IT - Hardware,Small Cap
+1152,US64110D1046,NETAPP INC,"Technology Hardware, Storage & Peripherals",Unknown
+1153,INE887E01022,NGL Fine Chem Limited,Pharmaceuticals & Biotechnology,Small Cap
+1154,INE848E01016,NHPC Limited,Power,Mid Cap
+1155,INE342G01023,NIIT Learning Systems Ltd,Other Consumer Services,Small Cap
+1156,INE161A01038,NIIT Limited,Other Consumer Services,Small Cap
+1157,INE589A01014,NLC India Limited,Power,Mid Cap
+1158,INE584A01023,NMDC Limited,Minerals & Mining,Mid Cap
+1159,INE0NNS01018,NMDC Steel Limited,Ferrous Metals,Small Cap
+1160,INE349A01021,NRB Bearing Ltd.,Auto Components,Small Cap
+1161,US6293775085,NRG Energy Inc,Electric Utilities,Unknown
+1162,INE0ONG01011,NTPC Green Energy Limited,Power,Mid Cap
+1163,INE733E01010,NTPC Limited,Power,Large Cap
+1164,JP3735400008,NTT Corp,Integrated Telecommunication Services,Unknown
+1165,US62944T1051,NVR Inc,Homebuilding,Unknown
+1166,NL0009538784,NXP Semiconductors NV,Semiconductors,Unknown
+1167,INE410P01011,Narayana Hrudayalaya Limited,Healthcare Services,Mid Cap
+1168,US6311031081,Nasdaq Inc,Financial Exchanges & Data,Unknown
+1169,INE987B01026,Natco Pharma Limited,Pharmaceuticals & Biotechnology,Small Cap
+1170,US6323071042,Natera Inc,Biotechnology,Unknown
+1171,INE139A01034,National Aluminium Company Limited,Non - Ferrous Metals,Mid Cap
+1172,INE870D01012,National Fertilizers Ltd.,Fertilizers & Agrochemicals,Small Cap
+1173,INE163A01018,National Organic Chemical Ltd.,Chemicals & Petrochemicals,Small Cap
+1174,INE301O01023,National Securities Depository Limited,Miscellaneous,Unknown
+1175,INE725A01030,Nava Limited,Power,Small Cap
+1176,INE048G01026,Navin Fluorine International Limited,Chemicals & Petrochemicals,Small Cap
+1177,INE060A01024,Navneet Education Ltd.,Printing & Publication,Small Cap
+1178,INE418L01021,Nazara Technologies Limited,Entertainment,Small Cap
+1179,INE136S01016,Neogen Chemicals Limited,Chemicals & Petrochemicals,Small Cap
+1180,INE317F01035,Nesco Ltd.,Commercial Services & Supplies,Small Cap
+1181,INE239A01024,Nestle India Limited,Food Products,Large Cap
+1182,KYG6427A1022,Netease Inc,Interactive Home Entertainment,Unknown
+1183,US64110L1061,Netflix Inc,Movies & Entertainment,Unknown
+1184,INE0NT901020,Netweb Technologies India Limited,IT - Services,Small Cap
+1185,INE870H01013,Network18 Media & Investments Limited,Entertainment,Small Cap
+1186,INE794A01010,Neuland Laboratories Limited,Pharmaceuticals & Biotechnology,Small Cap
+1187,KYG6470A1168,New Oriental Education & Technology Group Inc,Education Services,Unknown
+1188,INE619B01017,Newgen Software Technologies Limited,IT - Software,Small Cap
+1189,US6516391066,Newmont Corporation,Gold,Unknown
+1190,US65249B1098,News Corp,Publishing,Unknown
+1191,US65249B2088,News Corp,Publishing,Unknown
+1192,US65339F1012,NextEra Energy Inc,Electric Utilities,Unknown
+1193,INE0NDH25011,Nexus Select Trust,Realty,Unknown
+1194,US65473P1057,NiSource Inc,Multi-Utilities,Unknown
+1195,US6541061031,Nike Inc,Footwear,Unknown
+1196,INE310A01015,Nilkamal Ltd.,Consumer Durables,Small Cap
+1197,KYG6525F1028,Nio Inc,Automobile Manufacturers,Unknown
+1198,INE298J01013,Nippon Life India Asset Management Limited,Capital Markets,Mid Cap
+1199,JP3753000003,Nippon Yusen Kabushiki Kaisha,Marine Transportation,Unknown
+1200,INE910A01012,Nirlon Ltd.,Commercial Services & Supplies,Small Cap
+1201,INE229H01012,Nitin Spinners Limited,Textiles & Apparels,Small Cap
+1202,JP3756100008,Nitori Holdings Co Ltd,Homefurnishing Retail,Unknown
+1203,INE995S01015,Niva Bupa Health Insurance Company Limited,Insurance,Small Cap
+1204,CNE100004272,Nongfu Spring Co. Limited,Soft Drinks & Non-alcoholic Beverages,Unknown
+1205,US6556631025,Nordson Corporation .,Industrial Machinery,Unknown
+1206,US6558441084,Norfolk Southern Corp,Rail Transportation,Unknown
+1207,US6658591044,Northern Trust Corp,Asset Management & Custody Banks,Unknown
+1208,US6668071029,Northrop Grumman Corp,Aerospace & Defense,Unknown
+1209,BMG667211046,Norwegian Cruise Line Holdings Ltd,"Hotels, Resorts & Cruise Lines",Unknown
+1210,INE234A01025,Novartis India Limited,Pharmaceuticals & Biotechnology,Small Cap
+1211,US6701002056,Novo Nordisk A/S,Pharmaceuticals,Unknown
+1212,INE096B01018,Nucleus Software Exports Limited,IT - Software,Small Cap
+1213,US6703461052,Nucor Corporation,Steel,Unknown
+1214,US67059N1081,Nutanix Inc,Application Software,Unknown
+1215,INE531F01015,Nuvama Wealth Management Limited,Capital Markets,Small Cap
+1216,INE118D01016,Nuvoco Vistas Corporation Ltd.,Cement & Cement Products,Small Cap
+1217,US67066G1040,Nvidia Corp Com,Semiconductors,Unknown
+1218,INE0PK601023,OCCL Limited,Chemicals & Petrochemicals,Small Cap
+1219,US6821891057,ON Semiconductor Corp,Semiconductors,Unknown
+1220,US6826801036,ONEOK Inc,Oil & Gas Storage & Transportation,Unknown
+1221,JP3188200004,OTSUKA Corp,IT Consulting & Other Services,Unknown
+1222,INE093I01010,Oberoi Realty Limited,Realty,Mid Cap
+1223,US6745991058,Occidental Petroleum Corp,Oil & Gas Exploration & Production,Unknown
+1224,INE213A01029,Oil & Natural Gas Corporation Limited,Oil,Large Cap
+1225,INE274J01014,Oil India Limited,Oil,Mid Cap
+1226,US6792951054,Okta Inc,Internet Services & Infrastructure,Unknown
+1227,INE0LXG01040,Ola Electric Mobility Ltd,Automobiles,Small Cap
+1228,US6795801009,Old Dominion Freight Line Inc,Road & Rail,Unknown
+1229,INE260D01016,Olectra Greentech Limited,Automobiles,Small Cap
+1230,US6819191064,Omnicom Group Inc,Advertising,Unknown
+1231,INE982J01020,One 97 Communications Limited,Financial Technology (Fintech),Mid Cap
+1232,INE0HLU01028,One MobiKwik Systems Limited,Financial Technology (Fintech),Small Cap
+1233,INE013P01021,Onesource Specialty Pharma Limited,Pharmaceuticals & Biotechnology,Small Cap
+1234,INE229A01017,Onward Technologies Ltd,It - Services,Small Cap
+1235,INE350C01017,Optiemus Infracom Ltd.,Telecom - Equipment & Accessories,Small Cap
+1236,US68389X1054,Oracle Corp,Software,Unknown
+1237,INE881D01027,Oracle Financial Services Software Limited,IT - Software,Mid Cap
+1238,INE191A01027,Orchid Pharma Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+1239,US67103H1077,Oreilly Automotive Inc,Automotive Retail,Unknown
+1240,INE876N01018,Orient Cement Ltd.,Cement & Cement Products,Small Cap
+1241,INE142Z01019,Orient Electric Limited,Consumer Durables,Small Cap
+1242,BMG677491539,Orient Overseas (International) Limited,Marine Transportation,Unknown
+1243,INE750A01020,Oriental Hotels Limited,Leisure Services,Small Cap
+1244,JP3200450009,Orix Corporation,Diversified Financial Services,Unknown
+1245,INE0BYP01024,Oswal Pumps Ltd,Industrial Products,Small Cap
+1246,US68902V1070,Otis Worldwide Corp,Industrial Machinery & Supplies & Components,Unknown
+1247,INE953R01016,P N Gadgil Jewellers Limited,Consumer Durables,Small Cap
+1248,INE111F01016,PAUSHAK LIMITED,Chemicals & Petrochemicals,Small Cap
+1249,INE417T01026,PB Fintech Limited,Financial Technology (Fintech),Mid Cap
+1250,INE785M01021,PC Jeweller Ltd.,Consumer Durables,Small Cap
+1251,INE602A01031,PCBL Chemical Limited,Chemicals & Petrochemicals,Small Cap
+1252,INE111Q01021,PDS Limited,Textiles & Apparels,Small Cap
+1253,INE940H01022,PEARL GLOBAL INDUSTRIES LIMITED,Textiles & Apparels,Small Cap
+1254,INE457L01029,PG Electroplast Limited,Consumer Durables,Small Cap
+1255,US69331C1080,PG&E Corporation,Electric Utilities,Unknown
+1256,INE603J01030,PI Industries Limited,Fertilizers & Agrochemicals,Mid Cap
+1257,INE859A01011,PNB Gilts Limited,Finance,Small Cap
+1258,INE572E01012,PNB Housing Finance Limited,Finance,Small Cap
+1259,US6934751057,PNC Financial Services Group Inc,Diversified Banks,Unknown
+1260,INE195J01029,PNC Infratech Limited,Construction,Small Cap
+1261,US6935061076,PPG Industries,Specialty Chemicals,Unknown
+1262,US69351T1060,PPL Corp,Electric Utilities,Unknown
+1263,INE488V01015,PSP Projects Ltd,Construction,Small Cap
+1264,US69370C1009,PTC Inc,Application Software,Unknown
+1265,INE877F01012,PTC India Ltd.,Power,Small Cap
+1266,INE596F01018,PTC Industries Limited,Industrial Products,Small Cap
+1267,INE191H01014,PVR INOX Limited,Entertainment,Small Cap
+1268,US6937181088,Paccar Inc,Construction Machinery & Heavy,Unknown
+1269,US6951561090,Packaging Corp of America,Paper & Plastic Packaging Products & Materials,Unknown
+1270,INE761H01022,Page Industries Limited,Textiles & Apparels,Mid Cap
+1271,INE420C01059,Paisalo Digital Ltd.,Finance,Small Cap
+1272,INE551D01018,Pakka Ltd.,"Paper, Forest & Jute Products",Small Cap
+1273,US69608A1088,Palantir Technologies Inc.,Application Software,Unknown
+1274,US6974351057,Palo Alto Networks INC,Software,Unknown
+1275,INE305C01029,Panama Petrochem Limited,Petroleum Products,Small Cap
+1276,INE088F01024,Paradeep Phosphates Limited,Fertilizers & Agrochemicals,Small Cap
+1277,INE883N01014,Parag Milk Foods Limited,Food Products,Small Cap
+1278,US92556H2067,Paramount Global Class B,Broadcasting,Unknown
+1279,INE045601023,Paras Defence And Space Technologies Ltd.,Aerospace & Defense,Unknown
+1280,US7010941042,Parker-Hannifin Corp,Industrial Machinery & Supplies & Components,Unknown
+1281,INE619A01035,Patanjali Foods Limited,Agricultural Food & other Products,Mid Cap
+1282,INE244B01030,Patel Engineering Ltd.,Construction,Small Cap
+1283,US7043261079,Paychex Inc,Data Processing & Outsourced Services,Unknown
+1284,US70432V1026,Paycom Software Inc,Human Resource & Employment Services,Unknown
+1285,US70450Y1038,Paypal Holdings Inc,Data Processing & Outsourced Services,Unknown
+1286,IE00BLS09M33,Pentair PLC,Industrial Machinery & Supplies & Components,Unknown
+1287,US7134481081,Pepsico Inc,Soft Drinks,Unknown
+1288,INE262H01021,Persistent Systems Limited,IT - Software,Mid Cap
+1289,CNE1000003W8,Petrochina Company Ltd,Integrated Oil & Gas,Unknown
+1290,US71654V4086,Petroleo Brasileiro Sa - Petro-Adr,Oil & Gas,Unknown
+1291,INE347G01014,Petronet LNG Limited,Gas,Mid Cap
+1292,US7170811035,Pfizer Inc,Pharmaceuticals,Unknown
+1293,INE182A01018,Pfizer Limited,Pharmaceuticals & Biotechnology,Small Cap
+1294,US7181721090,Philip Morris International Ord,Tobacco,Unknown
+1295,US7185461040,Phillips 66,Oil & Gas Refining & Marketing,Unknown
+1296,INE318A01026,Pidilite Industries Limited,Chemicals & Petrochemicals,Large Cap
+1297,INE417C01014,Pilani Investment and Industries Corporation Limited,Finance,Small Cap
+1298,US7223041028,Pinduoduo Inc - ADR,Internet & Direct Marketing Retail,Unknown
+1299,CNE1000003X6,Ping An Insurance Group Co Of China Ltd,Life & Health Insurance,Unknown
+1300,US7234841010,Pinnacle West Capital Corp,Electric Utilities,Unknown
+1301,INE140A01024,Piramal Enterprises Limited,Finance,Small Cap
+1302,INE0DK501011,Piramal Pharma Limited,Pharmaceuticals & Biotechnology,Small Cap
+1303,INE450D01021,Pitti Engineering Limited,Industrial Manufacturing,Small Cap
+1304,INE751B01018,Pix Transmissions Limited,Industrial Products,Small Cap
+1305,TW0003227005,PixArt Imaging Inc,Semiconductors,Unknown
+1306,INE637C01025,Pokarna Limited,Consumer Durables,Small Cap
+1307,INE205C01021,Poly Medicure Limited,Healthcare Equipment & Supplies,Small Cap
+1308,INE455K01017,Polycab India Limited,Industrial Products,Mid Cap
+1309,INE633B01018,Polyplex Corporation Ltd.,Industrial Products,Small Cap
+1310,US73278L1052,Pool Corp,Distributors,Unknown
+1311,INE511C01022,Poonawalla Fincorp Limited,Finance,Small Cap
+1312,INE772T01024,Popular Vehicles and Services Limited,Automobiles,Small Cap
+1313,HK0006000050,Power Assets Holdings Ltd,Electric Utilities,Unknown
+1314,INE134E01011,Power Finance Corporation Limited,Finance,Large Cap
+1315,INE752E01010,Power Grid Corporation of India Limited,Power,Large Cap
+1316,INE211R01019,Power Mech Projects Ltd.,Construction,Small Cap
+1317,INE074A01025,Praj Industries Limited,Industrial Manufacturing,Small Cap
+1318,INE603A01013,Prakash Industries Limited,Ferrous Metals,Small Cap
+1319,INE393P01035,Prataap Snacks Limited,Food Products,Small Cap
+1320,INE484I01029,Precision Camshafts Limited,Auto Components,Small Cap
+1321,INE0BS701011,Premier Energies Limited,Electrical Equipment,Mid Cap
+1322,INE863B01029,Premier Explosives Ltd.,Chemicals & Petrochemicals,Small Cap
+1323,INE811K01011,Prestige Estates Projects Limited,Realty,Mid Cap
+1324,INE726V01018,Pricol Ltd,Auto Components,Small Cap
+1325,INE367G01038,Prime Focus Limited,Entertainment,Small Cap
+1326,INE689W01016,Prince Pipes And Fittings Ltd.,Industrial Products,Small Cap
+1327,US74251V1026,Principal Financial Group Inc,Life & Health Insurance,Unknown
+1328,INE010A01011,Prism Johnson Ltd.,Cement & Cement Products,Small Cap
+1329,INE959A01019,Privi Speciality Chemicals Limited,Chemicals & Petrochemicals,Small Cap
+1330,US7427181091,Procter & Gamble Co,Household Products,Unknown
+1331,INE199A01012,Procter & Gamble Health Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+1332,INE179A01014,Procter & Gamble Hygiene & Healthca,Personal Products,Mid Cap
+1333,US7433151039,Progressive Corp,Property & Casualty Insurance,Unknown
+1334,US74340W1036,Prologis Inc,Industrial REITs,Unknown
+1335,INE004A01022,Protean eGov Technologies Limited,IT - Services,Small Cap
+1336,INE00F201020,Prudent Corporate Advisory Services Limited,Capital Markets,Small Cap
+1337,US7443201022,Prudential Financial Inc,Life & Health Insurance,Unknown
+1338,US7445731067,Public Service Enterprise Group Inc,Multi-Utilities,Unknown
+1339,US74460D1090,Public Storage,Self Storage REITs,Unknown
+1340,US7458671010,PulteGroup Inc,Homebuilding,Unknown
+1341,INE608A01012,Punjab & Sind Bank,Banks,Small Cap
+1342,INE160A01022,Punjab National Bank,Banks,Large Cap
+1343,US7475251036,Qualcomm Inc.,Semiconductors,Unknown
+1344,TW0002382009,Quanta Computer Inc.,"Technology Hardware, Storage & Peripherals",Unknown
+1345,US74762E1029,Quanta Services Inc,Construction & Engineering,Unknown
+1346,INE615P01015,Quess Corp Ltd.,Commercial Services & Supplies,Small Cap
+1347,US74834L1008,Quest Diagnostics Inc,Health Care Services,Unknown
+1348,INE306L01010,Quick Heal Technologies Limited,IT - Software,Small Cap
+1349,INE0NQ801033,R K Swamy Ltd,Media,Small Cap
+1350,INE777K01022,R R Kabel Limited,Industrial Products,Small Cap
+1351,INE411H01032,R Systems International Limited,IT - Services,Small Cap
+1352,INE976G01028,RBL Bank Limited,Banks,Small Cap
+1353,INE020B01018,REC Limited,Finance,Large Cap
+1354,INE743M01012,RHI Magnesita India Limited,Industrial Products,Small Cap
+1355,INE320J01015,RITES Limited,Construction,Small Cap
+1356,INE105J01010,RPG Life Sciences Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+1357,INE425Y01011,RPSG Ventures Limited,Commercial Services & Supplies,Small Cap
+1358,US75513E1010,RTX Corporation,Aerospace & Defense,Unknown
+1359,INE944F01028,Radico Khaitan Limited,Beverages,Mid Cap
+1360,INE415G01027,Rail Vikas Nigam Limited,Construction,Mid Cap
+1361,INE0DD101019,RailTel Corporation of India Limited,Telecom - Services,Small Cap
+1362,INE855B01025,Rain Industries Ltd.,Chemicals & Petrochemicals,Small Cap
+1363,INE961O01016,Rainbow Childrens Medicare Limited,Healthcare Services,Small Cap
+1364,INE343B01030,Rajesh Exports Ltd.,Consumer Durables,Small Cap
+1365,INE451D01029,Rajratan Global Wire Limited,Auto Components,Small Cap
+1366,INE613A01020,Rallis India Ltd.,Fertilizers & Agrochemicals,Small Cap
+1367,US7512121010,Ralph Lauren Corp,"Apparel, Accessories and Luxury Goods",Unknown
+1368,INE230R01035,Rama Steel Tubes Limited,Industrial Products,Small Cap
+1369,INE614A01028,Ramco Industries Limited,Other Construction Materials,Small Cap
+1370,INE246B01019,Ramco Systems Ltd.,IT - Software,Small Cap
+1371,INE399G01023,Ramkrishna Forgings Limited,Auto Components,Small Cap
+1372,INE874I01013,Ramky Infrastructure Limited,Construction,Small Cap
+1373,INE384A01010,Rane Holdings Limited,Finance,Small Cap
+1374,INE0J1F01024,Rashi Peripherals Ltd,It - Hardware,Small Cap
+1375,INE027A01015,Rashtriya Chemicals and Fertilizers Limited,Fertilizers & Agrochemicals,Small Cap
+1376,INE0CLI01024,Rategain Travel Technologies Limited,IT - Software,Small Cap
+1377,INE703B01027,Ratnamani Metals & Tubes Ltd,Industrial Products,Small Cap
+1378,INE834M01019,RattanIndia Enterprises Limited,Retailing,Small Cap
+1379,INE399K01017,Rattanindia Power Ltd.,Power,Small Cap
+1380,US7547301090,Raymond James Financial Inc,Investment Banking & Brokerage,Unknown
+1381,INE02ID01020,Raymond Lifestyle Limited,Textiles & Apparels,Small Cap
+1382,INE301A01014,Raymond Limited,Realty,Small Cap
+1383,INE1SY401010,Raymond Realty Limited,Realty,Unknown
+1384,US7561091049,Realty Income Corp,Retail REITs,Unknown
+1385,JP3970300004,Recruit Holdings Co Ltd,Human Resource & Employment Services,Unknown
+1386,INE891D01026,Redington Limited,Commercial Services & Supplies,Small Cap
+1387,INE0LXT01019,Redtape Limited,Consumer Durables,Small Cap
+1388,INE056I01025,Refex Industries Ltd.,Chemicals & Petrochemicals,Small Cap
+1389,US7588491032,Regency Centers Corp,Retail REITs,Unknown
+1390,US75886F1075,Regeneron Pharmaceuticals Inc,Biotechnology,Unknown
+1391,US7591EP1005,Regions Financial Corp,Regional Banks,Unknown
+1392,INE131B01039,Relaxo Footwears Ltd,Consumer Durables,Small Cap
+1393,INE002A01018,Reliance Industries Limited,Petroleum Products,Large Cap
+1394,INE036A01016,Reliance Infrastructure Ltd.,Power,Small Cap
+1395,INE614G01033,Reliance Power Limited,Power,Small Cap
+1396,INE621H01010,Religare Enterprises Ltd.,Finance,Small Cap
+1397,GB00B2B0DG97,Relx Plc,Research & Consulting Services,Unknown
+1398,GB00BNQMPN80,Renew Energy Global,Power,Unknown
+1399,INE612J01015,Repco Home Finance Ltd.,Finance,Small Cap
+1400,US7607591002,Republic Services Inc,Environmental & Facilities Services,Unknown
+1401,US7611521078,ResMed Inc,Health Care Equipment,Unknown
+1402,INE688D01026,Responsive Industries Ltd.,Consumer Durables,Small Cap
+1403,INE07T201019,Restaurant Brands Asia Limited,Leisure Services,Small Cap
+1404,US7140461093,Revvity Inc,Life Sciences Tools & Services,Unknown
+1405,INE0N2P01017,Rishabh instruments Limited,Electrical Equipment,Small Cap
+1406,US76954A1034,Rivian Automotive Inc-A,Automobile Manufacturers,Unknown
+1407,US7739031091,Rockwell Automation Inc,Electrical Components & Equipment,Unknown
+1408,INE645S01016,Rolex Rings Limited,Auto Components,Small Cap
+1409,US7757111049,Rollins Inc,Environmental & Facilities Services,Unknown
+1410,US7766961061,Roper Technologies Inc,Industrial Conglomerates,Unknown
+1411,US7782961038,Ross Stores Inc,Apparel Retail,Unknown
+1412,INE02A801020,Rossari Biotech Ltd.,Chemicals & Petrochemicals,Small Cap
+1413,INE450U01017,Route Mobile Limited,Telecom - Services,Small Cap
+1414,LR0008862868,Royal Caribbean Cruises Ltd,"Hotels, Resorts & Cruise Lines",Unknown
+1415,INE895B01021,Rupa & Company Limited,Textiles & Apparels,Small Cap
+1416,INE500L01026,S H Kelkar and Company Limited,Chemicals & Petrochemicals,Small Cap
+1417,US78409V1044,S&P Global Inc,Financial Exchanges & Data,Unknown
+1418,INE284S01014,S.J.S. Enterprises Limited,Auto Components,Small Cap
+1419,US8030542042,SAP SE,Application Software,Unknown
+1420,US78410G1040,SBA Communications Corp,Telecom Tower REITs,Unknown
+1421,INE423Y01016,SBFC Finance Limited,Finance,Small Cap
+1422,INE018E01016,SBI Cards and Payment Services Limited,Finance,Mid Cap
+1423,INE123W01016,SBI Life Insurance Company Limited,Insurance,Large Cap
+1424,INE964H01014,SEPC Limited,Construction,Small Cap
+1425,INE618R01015,SG Finserve Limited,Finance,Small Cap
+1426,INE385F01024,SG Mart Limited,Miscellaneous,Small Cap
+1427,INE285J01028,SIS Ltd.,Other Consumer Services,Small Cap
+1428,INE002L01015,SJVN Limited,Power,Mid Cap
+1429,INE640A01023,SKF India Limited,Industrial Products,Small Cap
+1430,US83088M1027,SKYWORKS SOLUTIONS INC COM,Semiconductors,Unknown
+1431,JP3162600005,SMC Corp,Industrial Machinery & Supplies & Components,Unknown
+1432,INE294B01019,SML Isuzu Limited,"Agricultural, Commercial & Construction Vehicles",Small Cap
+1433,INE812G01025,SMS Pharmaceuticals Limited,Pharmaceuticals & Biotechnology,Small Cap
+1434,INE647A01010,SRF Limited,Chemicals & Petrochemicals,Mid Cap
+1435,US78467J1007,SS&C Technologies Holdings Inc,Data Processing & Outsourced Services,Unknown
+1436,IE00BFY8C754,STERIS PLC,Health Care Equipment,Unknown
+1437,INE089C01029,STERLITE TECHNOLOGIES LIMITED,Telecom -  Equipment & Accessories,Small Cap
+1438,INE1VXE01018,STL NETWORKS LIMITED **,Telecom - Services,Unknown
+1439,INE142Q01026,SULA VINEYARDS LIMITED,Beverages,Small Cap
+1440,INE764L01010,Sadbhav Infrastructure Project Ltd.,Construction,Small Cap
+1441,INE429E01023,Safari Industries (India) Ltd.,Consumer Durables,Small Cap
+1442,INE229C01021,Sagar Cements Ltd.,Cement & Cement Products,Small Cap
+1443,INE0W2G01015,Sagility India Limited,IT - Services,Small Cap
+1444,INE570L01029,Sai Life Sciences Limited,Pharmaceuticals & Biotechnology,Small Cap
+1445,INE438K01021,Sai Silks (Kalamandir) Limited,Retailing,Small Cap
+1446,INE170V01027,Salasar Techno Engineering Limited,Industrial Manufacturing,Small Cap
+1447,US79466L3024,Salesforce Inc,Application Software,Unknown
+1448,INE12NJ01018,Sambhv Steel Tubes Ltd,Industrial Products,Unknown
+1449,INE08U801020,Samhi Hotels Ltd.,Leisure Services,Small Cap
+1450,INE148I01020,Sammaan Capital Limited,Finance,Small Cap
+1451,INE775A01035,Samvardhana Motherson International Limited,Auto Components,Large Cap
+1452,INE775A08105,Samvardhana Motherson International Ltd. **,Auto Components,Unknown
+1453,INE0JPD01013,Sanathan Textiles Limited,Textiles & Apparels,Small Cap
+1454,INE278H01035,Sandhar Technologies Ltd.,Auto Components,Small Cap
+1455,KYG7800X1079,Sands China Ltd,Casinos & Gaming,Unknown
+1456,INE149K01016,Sandur Manganese And Iron Ores Ltd,Consumable Fuels,Small Cap
+1457,INE495C01010,Sangam (India) Limited,Textiles & Apparels,Small Cap
+1458,INE999B01013,Sanghi Industries Limited,Cement & Cement Products,Small Cap
+1459,INE989A01032,Sanghvi Movers Limited,Commercial Services & Supplies,Small Cap
+1460,INE0UOS01011,Sanofi Consumer Healthcare India Ltd,Pharmaceuticals & Biotechnology,Small Cap
+1461,INE058A01010,Sanofi India Limited,Pharmaceuticals & Biotechnology,Small Cap
+1462,INE953O01021,Sansera Engineering Limited,Auto Components,Small Cap
+1463,INE806T01020,Sapphire Foods India Limited,Leisure Services,Small Cap
+1464,INE385C01021,Sarda Energy & Minerals Limited,Ferrous Metals,Small Cap
+1465,INE979A01025,Saregama India Limited,Entertainment,Small Cap
+1466,INE231F01020,Sasken Technologies Limited,IT - Services,Small Cap
+1467,INE019J01013,Sastasundar Ventures Limited,Healthcare Services,Small Cap
+1468,INE836B01017,Satin Creditcare Network Limited,Finance,Small Cap
+1469,INE035D01020,Savita Oil Technologies Ltd.,Petroleum Products,Small Cap
+1470,INE513A01022,Schaeffler India Limited,Auto Components,Mid Cap
+1471,INE0AQ201015,Schloss Bangalore Limited,Leisure Services,Small Cap
+1472,AN8068571086,Schlumberger Ltd,Oil & Gas Equipment & Services,Unknown
+1473,INE839M01018,Schneider Electric Infrastructure Limited,Electrical Equipment,Small Cap
+1474,IE00BKVD2N49,Seagate Technology Holdings PLC,"Technology Hardware, Storage & Peripherals",Unknown
+1475,INE497B01018,Seamec Limited,Transport Services,Small Cap
+1476,KYG8020E1199,Semiconductor Manufacturing International Corp,Semiconductors,Unknown
+1477,US8168511090,Sempra Energy,Multi-Utilities,Unknown
+1478,INE602W01027,Senco Gold Ltd.,Consumer Durables,Small Cap
+1479,INE0RB801010,Senores Pharmaceuticals Ltd,Pharmaceuticals & Biotechnology,Small Cap
+1480,KYG8062L1041,SenseTime Group Inc,Application Software,Unknown
+1481,INE807F01027,Sequent Scientific Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+1482,US81762P1021,ServiceNow Inc,Systems Software,Unknown
+1483,INE630A01024,Seshasayee Paper and Boards Limited,"Paper, Forest & Jute Products",Small Cap
+1484,INE151G01028,Shaily Engineering Plastics Ltd.,Industrial Products,Small Cap
+1485,INE908D01010,Shakti Pumps (India) Ltd.,Industrial Products,Small Cap
+1486,INE597J01018,Shalby Limited,Healthcare Services,Small Cap
+1487,INE274V01019,Shankara Building Products Limited,Retailing,Small Cap
+1488,INE631A01022,Shanthi Gears Limited,Industrial Manufacturing,Small Cap
+1489,INE221J01015,Sharda Cropchem Ltd.,Fertilizers & Agrochemicals,Small Cap
+1490,INE597I01028,Sharda Motor Industries Ltd.,Auto Components,Small Cap
+1491,INE932X01026,Share India Securities Ltd.,Capital Markets,Small Cap
+1492,KYG8068L1086,SharkNinja INC,Household Appliances,Unknown
+1493,INE916U01025,Sheela Foam Ltd.,Consumer Durables,Small Cap
+1494,KYG8087W1015,Shenzhou International Group Holdings Ltd,"Apparel, Accessories and Luxury Goods",Unknown
+1495,US8243481061,Sherwin-Williams Co/The,Specialty Chemicals,Unknown
+1496,INE024F01011,Shilchar Technologies Ltd,Electrical Equipment,Small Cap
+1497,INE790G01031,Shilpa Medicare Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+1498,JP3371200001,Shin Etsu Chemical Co,Specialty Chemicals,Unknown
+1499,INE109A01011,Shipping Corporation Of India Limited,Transport Services,Small Cap
+1500,INE386D01027,Shivalik Bimetal Controls Ltd.,Industrial Products,Small Cap
+1501,CA82509L1076,Shopify Inc,Internet & Direct Marketing Retail,Unknown
+1502,INE498B01024,Shoppers Stop Ltd.,Retailing,Small Cap
+1503,INE070A01015,Shree Cement Limited,Cement & Cement Products,Large Cap
+1504,INE087H01022,Shree Renuka Sugars Limited,Agricultural Food & other Products,Small Cap
+1505,INE721A01047,Shriram Finance Limited,Finance,Large Cap
+1506,INE526E01018,Shriram Pistons & Rings Ltd.,Auto Components,Small Cap
+1507,INE217L01019,Shriram Properties Limited,Realty,Small Cap
+1508,INE810G01011,Shyam Metalics and Energy Limited,Industrial Products,Small Cap
+1509,INE1NPP01017,Siemens Energy India Limited,Electrical Equipment,Large Cap
+1510,INE003A01024,Siemens Limited,Electrical Equipment,Large Cap
+1511,INE0D0K01022,Sigachi Industries Limited,Pharmaceuticals & Biotechnology,Small Cap
+1512,INE903U01023,SignatureGlobal (India) Limited,Realty,Small Cap
+1513,US8288061091,Simon Property Group Inc,Retail REITs,Unknown
+1514,INE325D01025,Sindhu Trade Links Ltd.,Transport Services,Small Cap
+1515,KYG8167W1380,Sino Biopharmaceutical Ltd,Pharmaceuticals,Unknown
+1516,CNE100000FN7,Sinopharm Group Co Ltd,Health Care Distributors,Unknown
+1517,INE792Z01011,Sirca Paints India Limited,Consumer Durables,Small Cap
+1518,INE076B01028,Siyaram Silk Mills Limited,Textiles & Apparels,Small Cap
+1519,INE439E01022,Skipper Ltd.,Electrical Equipment,Small Cap
+1520,INE01IU01018,Sky Gold And Diamonds Limited,Consumer Durables,Small Cap
+1521,IE00028FXN24,Smurfit WestRock plc,Paper & Plastic Packaging Products & Materials,Unknown
+1522,US8330341012,Snap-on Inc,Industrial Machinery & Supplies & Components,Unknown
+1523,INE671H01015,Sobha Limited,Realty,Small Cap
+1524,INE343H01029,Solar Industries India Limited,Chemicals & Petrochemicals,Large Cap
+1525,INE624Z01016,Solara Active Pharma Sciences Limited,Pharmaceuticals & Biotechnology,Small Cap
+1526,US83444M1018,Solventum Corp,Health Care Supplies,Unknown
+1527,INE355A01028,Somany Ceramics Ltd.,Consumer Durables,Small Cap
+1528,INE073K01018,Sona BLW Precision Forgings Limited,Auto Components,Mid Cap
+1529,INE269A01021,Sonata Software Limited,IT - Software,Small Cap
+1530,JP3435000009,Sony Group Corporation,Consumer Electronics,Unknown
+1531,US8356993076,Sony Group Corporation - ADR,Consumer Electronics,Unknown
+1532,US8425871071,Southern Co/The,Electric Utilities,Unknown
+1533,US84265V1052,Southern Copper Corp,Metals & Mining,Unknown
+1534,US8447411088,Southwest Airlines Co,Passenger Airlines,Unknown
+1535,INE572J01011,Spandana Sphoorty Financial Ltd.,Finance,Small Cap
+1536,INE572J20011,Spandana Sphoorty Financial Ltd.R** A**,Finance,Unknown
+1537,LU1778762911,Spotify Technology SA,Movies & Entertainment,Unknown
+1538,US85208M1027,Sprouts Farmers Market Inc,Food Retail,Unknown
+1539,US8545021011,Stanley Black & Decker Inc,Industrial Machinery & Supplies & Components,Unknown
+1540,INE01A001028,Stanley Lifestyles Limited,Consumer Durables,Small Cap
+1541,INE460H01021,Star Cement Ltd,Cement & Cement Products,Small Cap
+1542,INE575P01011,Star Health And Allied Insurance Company Limited,Insurance,Small Cap
+1543,US8552441094,Starbucks  (US),Restaurants,Unknown
+1544,INE062A01020,State Bank of India,Banks,Large Cap
+1545,US8574771031,State Street Corp,Asset Management & Custody Banks,Unknown
+1546,INE114A01011,Steel Authority of India Limited,Ferrous Metals,Mid Cap
+1547,US8581191009,Steel Dynamics Inc,Steel,Unknown
+1548,INE802C01033,Steel Strips Wheels Limited,Auto Components,Small Cap
+1549,INE00M201021,Sterling And Wilson Renewable Energy Limited,Construction,Small Cap
+1550,INE334A01023,Sterling Tools Limited,Auto Components,Small Cap
+1551,INE00IN01015,Stove Kraft Limited,Consumer Durables,Small Cap
+1552,INE939A01011,Strides Pharma Science Limited,Pharmaceuticals & Biotechnology,Small Cap
+1553,US8636671013,Stryker Corp,Health Care Equipment,Unknown
+1554,INE239C01020,Stylam Industries Ltd.,Consumer Durables,Small Cap
+1555,INE189B01011,Styrenix Performance Materials Limited,Chemicals & Petrochemicals,Small Cap
+1556,INE287B01021,Subros Ltd.,Industrial Products,Small Cap
+1557,INE659A01023,Sudarshan Chemical Industries Limited,Chemicals & Petrochemicals,Small Cap
+1558,INE258G01013,Sumitomo Chemical India Limited,Fertilizers & Agrochemicals,Small Cap
+1559,JP3407400005,Sumitomo Elec Indust,Automotive Parts & Equipment,Unknown
+1560,HK0016000132,Sun Hung Kai Properties,Diversified Real Estate Activities,Unknown
+1561,INE232I01014,Sun Pharma Advanced Research Co. Ltd,Pharmaceuticals & Biotechnology,Small Cap
+1562,INE044A01036,Sun Pharmaceutical Industries Limited,Pharmaceuticals & Biotechnology,Large Cap
+1563,INE424H01027,Sun TV Network Limited,Entertainment,Small Cap
+1564,INE0Q3R01026,Sundaram Clayton DCD Ltd.,Auto Components,Small Cap
+1565,INE202Z01029,Sundaram Finance Holdings Limited,Finance,Small Cap
+1566,INE660A01013,Sundaram Finance Limited,Finance,Mid Cap
+1567,INE387A01021,Sundram Fasteners Limited,Auto Components,Small Cap
+1568,INE209A01019,Sundrop Brands Ltd,Agricultural Food & other Products,Small Cap
+1569,INE947A01014,Sunflag Iron & Steel Company Ltd.,Industrial Products,Small Cap
+1570,KYG8586D1097,Sunny Optical Tech,Electronic Components,Unknown
+1571,INE805D01034,Sunteck Realty Ltd.,Realty,Small Cap
+1572,US86800U3023,Super Micro Computer Inc,"Technology Hardware, Storage & Peripherals",Unknown
+1573,INE399C01030,Suprajit Engineering Limited,Auto Components,Small Cap
+1574,INE195A01028,Supreme Industries Limited,Industrial Products,Mid Cap
+1575,INE663A01033,Supreme Petrochem Ltd.,Chemicals & Petrochemicals,Small Cap
+1576,INE07RO01027,Supriya Lifescience Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+1577,INE877V01027,Suraksha Diagnostic Limited,Healthcare Services,Small Cap
+1578,INE335A01020,Surya Roshni Ltd.,Industrial Products,Small Cap
+1579,INE428Q01011,Suryoday Small Finance Bank Limited,Banks,Small Cap
+1580,INE495B01038,Suven Life Sciences Limited,Healthcare Services,Small Cap
+1581,INE040H01021,Suzlon Energy Limited,Electrical Equipment,Mid Cap
+1582,INE665A01038,Swan Energy Limited,Chemicals & Petrochemicals,Small Cap
+1583,INE277A01016,Swaraj Engines Limited,Industrial Products,Small Cap
+1584,INE00H001014,Swiggy Limited,Retailing,Mid Cap
+1585,INE225D01027,Symphony Limited,Consumer Durables,Small Cap
+1586,TW0006438005,Symtek Automation Asia Co. Ltd,Industrial Machinery & Supplies & Components,Unknown
+1587,US87165B1035,Synchrony Financial,Consumer Finance,Unknown
+1588,INE312C01025,Syncom Formulations India Limited,Pharmaceuticals & Biotechnology,Small Cap
+1589,INE398R01022,Syngene International Limited,Healthcare Services,Small Cap
+1590,US8716071076,Synopsys Inc,Application Software,Unknown
+1591,INE0DYJ01015,Syrma SGS Technology Limited,Industrial Manufacturing,Small Cap
+1592,US8718291078,Sysco Corp,Food Distributors,Unknown
+1593,US74144T1088,T ROWE PRICE GROUP I,Asset Management & Custody Banks,Unknown
+1594,US8725901040,T- Mobile Us Inc,Wireless Telecommunication Services,Unknown
+1595,INE038F01029,T. V. Today Network Ltd.,Entertainment,Small Cap
+1596,INE673O01025,TBO Tek Limited,Leisure Services,Small Cap
+1597,INE586V01016,TCI Express Ltd.,Transport Services,Small Cap
+1598,INE822C01015,TCPL PACKAGING LIMITED,Industrial Products,Small Cap
+1599,INE419M01027,TD Power Systems Ltd.,Electrical Equipment,Small Cap
+1600,JP3538800008,TDK Corp,Electronic Components,Unknown
+1601,IE000IVNQZ81,TE Connectivity plc,Electronic Manufacturing Services,Unknown
+1602,INE011K01018,TEGA INDUSTRIES LIMITED,Industrial Manufacturing,Small Cap
+1603,US8807701029,TERADYNE INC,Semiconductor Equipment,Unknown
+1604,INE064A01026,TIMEX GROUP INDIA LIMITED,Consumer Durables,Small Cap
+1605,US8725401090,TJX ORD,Apparel Retail,Unknown
+1606,US87256C1018,TKO Group Holdings,Movies & Entertainment,Unknown
+1607,US8936411003,TRANSDIGM GROUP INC,Aerospace & Defense,Unknown
+1608,US89400J1079,TRANSUNION,Household Appliances,Unknown
+1609,INE910C01018,TTK Healthcare Limited,Diversified,Small Cap
+1610,INE690A01028,TTK Prestige Limited,Consumer Durables,Small Cap
+1611,INE105A01035,TVS Holdings Limited,Finance,Small Cap
+1612,INE494B01023,TVS Motor Company Limited,Automobiles,Large Cap
+1613,INE421C01016,TVS Srichakra Limited,Auto Components,Small Cap
+1614,INE395N01027,TVS Supply Chain Solutions Ltd.,Transport Services,Small Cap
+1615,US9024941034,TYSON FOODS INC,Packaged Foods & Meats,Unknown
+1616,TW0002330008,Taiwan Semiconductor Manufacturing Co Ltd,Semiconductors,Unknown
+1617,US8740391003,Taiwan Semiconductor Sp ADR,Semiconductors,Unknown
+1618,INE586B01026,Taj GVK Hotels & Resorts Limited,Leisure Services,Small Cap
+1619,US8740541094,Take-Two Interactive Software Inc,Software,Unknown
+1620,INE668A01016,Tamilnad Mercantile Bank Limited,Banks,Small Cap
+1621,INE107A01015,Tamilnadu Newsprint & Papers Ltd.,"Paper, Forest & Jute Products",Small Cap
+1622,INE639B01015,Tanfac Industries Limited,Chemicals & Petrochemicals,Small Cap
+1623,INE483C01032,Tanla Platforms Limited,IT - Software,Small Cap
+1624,US8760301072,Tapestry Inc,"Apparel, Accessories and Luxury Goods",Unknown
+1625,INE0EK901012,Tarc Ltd.,Realty,Small Cap
+1626,US87612G1013,Targa Resources Corp,Oil & Gas Storage & Transportation,Unknown
+1627,US87612E1064,Target Corp,Consumer Staples Merchandise Retail,Unknown
+1628,INE144Z01023,Tarsons Products Limited,Healthcare Equipment & Supplies,Small Cap
+1629,INE488B01017,Tasty Bite Eatables Limited,Food Products,Small Cap
+1630,INE092A01019,Tata Chemicals Limited,Chemicals & Petrochemicals,Small Cap
+1631,INE151A01013,Tata Communications Limited,Telecom - Services,Mid Cap
+1632,INE467B01029,Tata Consultancy Services Limited,IT - Software,Large Cap
+1633,INE192A01025,Tata Consumer Products Limited,Agricultural Food & other Products,Large Cap
+1634,INE670A01012,Tata Elxsi Limited,IT - Software,Mid Cap
+1635,INE672A01018,Tata Investment Corporation Limited,Finance,Mid Cap
+1636,INE155A01022,Tata Motors Limited,Automobiles,Large Cap
+1637,INE245A01021,Tata Power Company Limited,Power,Large Cap
+1638,INE081A01020,Tata Steel Limited,Ferrous Metals,Large Cap
+1639,INE142M01025,Tata Technologies Limited,IT - Services,Small Cap
+1640,INE517B01013,Tata Teleservices (Maharashtra) Limited,Telecom - Services,Small Cap
+1641,INE0GK401011,Tatva Chintan Pharma Chem Ltd.,Chemicals & Petrochemicals,Small Cap
+1642,INE985S01024,TeamLease Services Limited,Commercial Services & Supplies,Small Cap
+1643,INE669C01036,Tech Mahindra Limited,IT - Software,Large Cap
+1644,INE285K01026,Techno Electric & Engineering Company Limited,Construction,Small Cap
+1645,INE545H01011,Technocraft Industries (India) Ltd,Industrial Products,Small Cap
+1646,HK0669013440,Techtronic Industries Co Ltd.,Industrial Machinery & Supplies & Components,Unknown
+1647,INE010J01012,Tejas Networks Limited,Telecom - Equipment & Accessories,Small Cap
+1648,US8793601050,Teledyne Technologies Inc,Electronic Equipment & Instruments,Unknown
+1649,KYG875721634,Tencent Holdings Ltd.,Interactive Media & Services,Unknown
+1650,KYG875771134,Tencent Music Entertainment Gr,media and entertainment,Unknown
+1651,JP3546800008,Terumo Corp,Health Care Equipment,Unknown
+1652,US88160R1014,Tesla Inc,Automobile Manufacturers,Unknown
+1653,US8825081040,Texas Instrument Inc,Semiconductors,Unknown
+1654,US88262P1021,Texas Pacific Land Corporation,Oil & Gas Exploration & Production,Unknown
+1655,INE621L01012,Texmaco Rail & Engineering Ltd.,Industrial Manufacturing,Small Cap
+1656,US8832031012,Textron Inc,Aerospace & Defense,Unknown
+1657,INE085J01014,Thangamayil Jewellery Ltd.,Consumer Durables,Small Cap
+1658,INE294Z01018,The Anup Engineering Limited,Industrial Manufacturing,Small Cap
+1659,US0640581007,The Bank of New York Mellon Corporation,Asset Management & Custody Banks,Unknown
+1660,US1255231003,The Cigna Group,Health Care Services,Unknown
+1661,US1890541097,The Clorox Company,Consumer Non Durables,Unknown
+1662,INE04TZ01018,The Ethos Ltd.,Consumer Durables,Small Cap
+1663,INE171A01029,The Federal Bank Limited,Banks,Mid Cap
+1664,INE017A01032,The Great Eastern Shipping Company Limited,Transport Services,Small Cap
+1665,US4165151048,The Hartford Insurance Group Inc,Property & Casualty Insurance,Unknown
+1666,HK0003000038,The Hong Kong China Gas Company Limited,Gas Utilities,Unknown
+1667,INE383A01012,The India Cements Limited,Cement & Cement Products,Small Cap
+1668,INE053A01029,The Indian Hotels Company Limited,Leisure Services,Large Cap
+1669,INE168A01041,The Jammu & Kashmir Bank Limited,Banks,Small Cap
+1670,INE614B01018,The Karnataka Bank Ltd.,Banks,Small Cap
+1671,US61945C1036,The Mosaic Company Ltd,Fertilizers & Agricultural Chemicals,Unknown
+1672,INE470Y01017,The New India Assurance Company Limited,Insurance,Small Cap
+1673,INE725E01024,The Orissa Minerals Development Co.Ltd.,Minerals & Mining,Small Cap
+1674,INE211B01039,The Phoenix Mills Limited,Realty,Mid Cap
+1675,INE331A01037,The Ramco Cements Limited,Cement & Cement Products,Small Cap
+1676,INE683A01023,The South Indian Bank Ltd.,Banks,Small Cap
+1677,INE083B01024,Themis Medicare Limited,Pharmaceuticals & Biotechnology,Small Cap
+1678,INE152A01029,Thermax Limited,Electrical Equipment,Mid Cap
+1679,US8835561023,Thermo Fisher Scientific Inc,Life Sciences Tools & Services,Unknown
+1680,INE338A01024,Thirumalai Chemicals Ltd,Chemicals & Petrochemicals,Small Cap
+1681,INE332A01027,Thomas Cook (India) Ltd.,Leisure Services,Small Cap
+1682,CA8849038085,Thomson Reuters Corp,Software,Unknown
+1683,INE594H01019,Thyrocare Technologies Ltd.,Healthcare Services,Small Cap
+1684,INE133E01013,Tilaknagar Industries Ltd.,Beverages,Small Cap
+1685,INE508G01029,Time Technoplast Limited,Industrial Products,Small Cap
+1686,INE325A01013,Timken India Limited,Industrial Products,Small Cap
+1687,KYG8878S1030,Tingyi (Cayman Islands) Holdings Corp,Packaged Foods & Meats,Unknown
+1688,INE015C01016,Tinna Rubber And Infrastructure Ltd.,Industrial Products,Small Cap
+1689,INE716B01029,Tips Music Ltd.,Entertainment,Small Cap
+1690,INE615H01020,Titagarh Rail Systems Limited,Industrial Manufacturing,Small Cap
+1691,INE280A01028,Titan Company Limited,Consumer Durables,Large Cap
+1692,JP3910660004,Tokio Marine Holdings Inc,Property & Casualty Insurance,Unknown
+1693,JP3571400005,Tokyo Electron Ltd,Semiconductor Materials & Equipment,Unknown
+1694,KYG8918W1069,Tongcheng-Elong Holdings Ltd.,"Hotels, Resorts & Cruise Lines",Unknown
+1695,INE685A01028,Torrent Pharmaceuticals Limited,Pharmaceuticals & Biotechnology,Large Cap
+1696,INE813H01021,Torrent Power Limited,Power,Mid Cap
+1697,JP3633400001,Toyota Motor Corp,Automobile Manufacturers,Unknown
+1698,US8923561067,Tractor Supply Co,Other Specialty Retail,Unknown
+1699,INE0HMF01019,Tracxn Technologies Ltd,Commercial Services & Supplies,Small Cap
+1700,US88339J1051,Trade Desk Inc,It - Services,Unknown
+1701,IE00BK9ZQ967,Trane Technologies Plc,Building Products,Unknown
+1702,INE763I01026,Transformers And Rectifiers (India) Limited,Electrical Equipment,Small Cap
+1703,INE688A01022,Transport Corporation of India Ltd.,Transport Services,Small Cap
+1704,INE454P01035,Transrail Lighting Ltd.,Electrical Equipment,Small Cap
+1705,INE103V01028,Travel Food Services Limited,Leisure Services,Unknown
+1706,US89417E1091,Travelers Cos Inc/The,Property & Casualty Insurance,Unknown
+1707,INE849A01020,Trent Limited,Retailing,Large Cap
+1708,INE064C01022,Trident Limited,Textiles & Apparels,Small Cap
+1709,US8962391004,Trimble Inc,Electronic Equipment & Instruments,Unknown
+1710,US89677Q1076,Trip.com Group Ltd,"Hotels, Resorts & Cruise Lines",Unknown
+1711,KYG9066F1019,Trip.com Group Ltd.,"Hotels, Resorts & Cruise Lines",Unknown
+1712,INE256C01024,Triveni Engineering & Industries Limited,Agricultural Food & other Products,Small Cap
+1713,INE152M01016,Triveni Turbine Limited,Electrical Equipment,Small Cap
+1714,US89832Q1094,Truist Financial Corp,Regional Banks,Unknown
+1715,INE974X01010,Tube Investments of India Limited,Auto Components,Mid Cap
+1716,US9022521051,Tyler Technologies Inc,Application Software,Unknown
+1717,INE691A01018,UCO Bank,Banks,Mid Cap
+1718,INE225C01029,UDAIPUR CEMENT WORKS,Cement & Cement Products,Small Cap
+1719,US9026531049,UDR Inc,Multi-Family Residential REITs,Unknown
+1720,INE244O01017,UNIPARTS INDIA LIMITED,Auto Components,Small Cap
+1721,INE405E01023,UNO Minda Limited,Auto Components,Mid Cap
+1722,INE628A01036,UPL Limited,Fertilizers & Agrochemicals,Mid Cap
+1723,IN9628A01026,UPL Ltd.,Fertilizers & Agrochemicals,Unknown
+1724,US9029733048,US Bancorp Inc,Banks,Unknown
+1725,INE094J01016,UTI Asset Management Company Limited,Capital Markets,Small Cap
+1726,US90353T1007,Uber Technologies Inc,Passenger Ground Transportation,Unknown
+1727,INE516A01017,Uflex Limited,Industrial Products,Small Cap
+1728,INE583D01011,Ugro Capital Limited,Finance,Small Cap
+1729,INE551W01018,Ujjivan Small Finance Bank Ltd.,Banks,Small Cap
+1730,US90384S3031,Ulta Beauty Inc,Other Specialty Retail,Unknown
+1731,INE481G01011,UltraTech Cement Limited,Cement & Cement Products,Large Cap
+1732,INE351A01035,Unichem Laboratories Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+1733,INE00U401027,Unicommerce eSolutions Limited,IT - Software,Small Cap
+1734,INE0U3I01011,Unimech Aerospace and Manufacturing Ltd.,Aerospace & Defense,Small Cap
+1735,INE692A01016,Union Bank of India,Banks,Large Cap
+1736,US9078181081,Union Pacific Ord,Rail Transportation,Unknown
+1737,US9100471096,United Airlines Holdings Ord,Passenger Airlines,Unknown
+1738,INE686F01025,United Breweries Limited,Beverages,Mid Cap
+1739,US9113121068,United Parcel Service Inc,Industrial Products,Unknown
+1740,US9113631090,United Rentals Inc,Trading Companies & Distributors,Unknown
+1741,INE854D01024,United Spirits Limited,Beverages,Large Cap
+1742,US91324P1021,Unitedhealth Group Inc.,Managed Health Care,Unknown
+1743,INE279A01012,Universal Cables Ltd,Industrial Products,Small Cap
+1744,US9139031002,Universal Health Services Inc,Health Care Facilities,Unknown
+1745,INE851I01011,Updater Services Ltd,Commercial Services & Supplies,Small Cap
+1746,INE228A01035,Usha Martin Limited,Industrial Products,Small Cap
+1747,INE735W01017,Utkarsh Small Finance Bank Ltd,Banks,Small Cap
+1748,INE951I01027,V-Guard Industries Limited,Consumer Durables,Small Cap
+1749,INE665J01013,V-Mart Retail Limited,Retailing,Small Cap
+1750,INE764D01017,V.S.T Tillers Tractors Ltd.,"Agricultural, Commercial & Construction Vehicles",Small Cap
+1751,INE945H01013,V2 Retail Limited,Retailing,Small Cap
+1752,INE956G01038,VA Tech Wabag Limited,Other Utilities,Small Cap
+1753,US92343E1029,VERISIGN INC COM,Internet Services & Infrastructure,Unknown
+1754,US9256521090,VICI Properties Inc,Other Specialized REITs,Unknown
+1755,INE054A01027,VIP Industries Ltd.,Consumer Durables,Small Cap
+1756,INE366I01010,VRL Logistics Ltd.,Transport Services,Small Cap
+1757,INE710A01016,VST Industries Limited,Cigarettes & Tobacco Products,Small Cap
+1758,INE694D01016,Vadilal Industries Limited,Food Products,Small Cap
+1759,INE884A01027,Vaibhav Global Ltd.,Consumer Durables,Small Cap
+1760,INE051B01021,Vakrangee Limited,IT - Services,Small Cap
+1761,US91913Y1001,Valero Energy Corporation Ltd,Oil & Gas Refining & Marketing,Unknown
+1762,INE879I01012,Valor Estate Limited,Leisure Services,Small Cap
+1763,US9229083632,Vanguard S&P 500 ETF,nan,Unknown
+1764,INE050M01012,Vardhman Special Steels Ltd.,Industrial Products,Small Cap
+1765,INE825A01020,Vardhman Textiles Limited,Textiles & Apparels,Small Cap
+1766,INE665L01035,Varroc Engineering Limited,Auto Components,Small Cap
+1767,INE200M01039,Varun Beverages Limited,Beverages,Large Cap
+1768,INE825V01034,Vedant Fashions Limited,Retailing,Small Cap
+1769,INE205A01025,Vedanta Limited,Diversified Metals,Large Cap
+1770,US9224751084,Veeva Systems Inc,Health Care Technology,Unknown
+1771,INE398A01010,Venky's (India) Limited,Food Products,Small Cap
+1772,US92276F1003,Ventas Inc,Health Care REITs,Unknown
+1773,INE781S01027,Ventive Hospitality Limited,Leisure Services,Small Cap
+1774,INE0JA001018,Venus Pipes And Tubes Ltd.,Industrial Products,Small Cap
+1775,US92338C1036,Veralto Corp,Environmental & Facilities Services,Unknown
+1776,INE0IQ001011,Veranda Learning Solutions Ltd,Other Consumer Services,Small Cap
+1777,US92345Y1064,Verisk Analytics Inc,Research & Consulting Services,Unknown
+1778,US92343V1044,Verizon Communications Inc,Integrated Telecommunication Services,Unknown
+1779,US92532F1003,Vertex Pharmaceuticals Inc,Biotechnology,Unknown
+1780,INE386A01023,Vesuvius India Limited,Industrial Products,Small Cap
+1781,US92556V1061,Viatris Inc.,Pharmaceuticals,Unknown
+1782,INE632C01026,Vidhi Specialty Food Ingredients Limited,Chemicals & Petrochemicals,Small Cap
+1783,INE043W01024,Vijaya Diagnostic Centre Limited,Healthcare Services,Small Cap
+1784,INE579C01029,Vimta Labs Limited,Healthcare Services,Small Cap
+1785,INE410B01037,Vinati Organics Ltd,Chemicals & Petrochemicals,Small Cap
+1786,INE707A01012,Vindhya Telelinks Limited,Telecom - Services,Small Cap
+1787,US92826C8394,Visa Inc,Transaction & Payment Processing Services,Unknown
+1788,INE01EA01019,Vishal Mega Mart Limited,Retailing,Mid Cap
+1789,INE270I01022,Vishnu Chemicals Limited,Chemicals & Petrochemicals,Small Cap
+1790,INE0AE001013,Vishnu Prakash R Punglia Limited,Construction,Small Cap
+1791,US92840M1027,Vistra Corp,Independent Power Producers & Energy Traders,Unknown
+1792,TW0002455003,Visual Photonics Epitaxy Co Ltd,Semiconductor Materials & Equipment,Unknown
+1793,INE669E01016,Vodafone Idea Limited,Telecom - Services,Mid Cap
+1794,INE540H01012,Voltamp Transformers Limited,Electrical Equipment,Small Cap
+1795,INE226A01021,Voltas Limited,Consumer Durables,Mid Cap
+1796,US9291601097,Vulcan Materials Co,Construction Materials,Unknown
+1797,US9314271084,WALGREENS BOOTS ALLIANCE INC WBA,Drug Retail,Unknown
+1798,US9344231041,WARNER BROS DISCOVERY INC,Film & Tv,Unknown
+1799,US92939U1060,WEC Energy Group Inc,Multi-Utilities,Unknown
+1800,INE274C01019,WENDT (India) Ltd.,Industrial Products,Small Cap
+1801,INE976A01021,WEST COAST PAPER MILLS LIMITED,"Paper, Forest & Jute Products",Small Cap
+1802,US9581021055,WESTERN DIGITAL CORP COM,"Technology Hardware, Storage & Peripherals",Unknown
+1803,KYG960071028,WH Group Limited,Packaged Foods & Meats,Unknown
+1804,IE00BDB6Q211,WILLIS TOWERS WATSON PLC,Insurance Brokers,Unknown
+1805,INE765D01022,WPIL LIMITED,Industrial Products,Small Cap
+1806,US0844231029,WR Berkley Corp,Property & Casualty Insurance,Unknown
+1807,US3848021040,WW Grainger Inc,Trading Companies & Distributors,Unknown
+1808,US9831341071,WYNN RESORTS LTD,Casinos & Gaming,Unknown
+1809,INE377N01017,Waaree Energies Limited,Electrical Equipment,Mid Cap
+1810,US9311421039,Walmart Inc,Consumer Staples Merchandise Retail,Unknown
+1811,US2546871060,Walt Disney,Media & Entertainment,Unknown
+1812,US94106L1098,Waste Management Inc,Environmental & Facilities Services,Unknown
+1813,US9418481035,Waters Corp,Life Sciences Tools & Services,Unknown
+1814,INE855C01015,Websol Energy System Ltd.,Electrical Equipment,Small Cap
+1815,US9497461015,Wells Fargo & Co,Diversified Banks,Unknown
+1816,US95040Q1040,Welltower Inc,Health Care REITs,Unknown
+1817,INE191B01025,Welspun Corp Limited,Industrial Products,Small Cap
+1818,INE625G01013,Welspun Enterprises Ltd.,Construction,Small Cap
+1819,INE192B01031,Welspun Living Limited,Textiles & Apparels,Small Cap
+1820,US9553061055,West Pharmaceutical Services Inc,Pharmaceuticals,Unknown
+1821,US9297401088,Westinghouse Air Brake Technologies Corp,Construction Machinery & Heavy Transportation Equipment,Unknown
+1822,INE274F01020,Westlife Foodworld Limited,Leisure Services,Small Cap
+1823,US9621661043,Weyerhaeuser Co,Timber REITs,Unknown
+1824,KYG9593A1040,Wharf Real Estate Investment Company Ltd,Real Estate Operating Companies,Unknown
+1825,INE715A01015,Wheels India Ltd.,Auto Components,Small Cap
+1826,INE716A01013,Whirlpool of India Limited,Consumer Durables,Small Cap
+1827,US9694571004,Williams Cos Inc/The,Oil & Gas Storage & Transportation,Unknown
+1828,US9699041011,Williams-Sonoma Inc,Homefurnishing Retail,Unknown
+1829,INE0H5O01029,Windlas Biotech Ltd.,Pharmaceuticals & Biotechnology,Small Cap
+1830,INE075A01022,Wipro Limited,IT - Software,Large Cap
+1831,INE049B01025,Wockhardt Limited,Pharmaceuticals & Biotechnology,Small Cap
+1832,INE066O01014,Wonderla Holidays Ltd.,Leisure Services,Small Cap
+1833,US98138H1014,Workday Inc,Application Software,Unknown
+1834,CNE100003F19,WuXi AppTec Co.Limited,Life Sciences Tools & Services,Unknown
+1835,KYG970081173,WuXi Biologics (Cayman) Inc.,Life Sciences Tools & Services,Unknown
+1836,KYG982AW1003,XPeng Inc,Automobile Manufacturers,Unknown
+1837,US98389B1008,Xcel Energy Inc,Electric Utilities,Unknown
+1838,KYG9830T1067,Xiaomi Corporation,"Technology Hardware, Storage & Peripherals",Unknown
+1839,KYG9828G1082,Xinyi Glass Holdings Ltd,Building Products,Unknown
+1840,KYG9829N1025,Xinyi Solar Holdings Limited,Semiconductor Materials & Equipment,Unknown
+1841,US2330518794,Xtrackers Harvest CSI 300 China A-Shares ETF,Financial Services,Unknown
+1842,US98419M1009,Xylem Inc/NY,Industrial Machinery & Supplies & Components,Unknown
+1843,INE616Z01012,Yasho Industries Limited,Chemicals & Petrochemicals,Small Cap
+1844,INE0JO301016,Yatharth Hospital & Trauma Care Services Pvt Ltd,Healthcare Services,Small Cap
+1845,INE0JR601024,Yatra Online Ltd,Leisure Services,Small Cap
+1846,INE528G01035,Yes Bank Limited,Banks,Mid Cap
+1847,US98850P1093,Yum China Holdings Inc.,Consumer Non Durables,Unknown
+1848,US9884981013,Yum! Brands Inc,Restaurants,Unknown
+1849,INE342J01019,ZF Commercial Vehicle Control Systems India Limited,Auto Components,Small Cap
+1850,KYG9897K1058,ZTO Express (Cayman) Inc,Air Freight & Logistics,Unknown
+1851,INE07K301024,Zaggle Prepaid Ocean Services Ltd.,It - Services,Small Cap
+1852,US9892071054,Zebra Technologies Corp,Electronic Equipment & Instruments,Unknown
+1853,INE256A01028,Zee Entertainment Enterprises Limited,Entertainment,Small Cap
+1854,INE251B01027,Zen Technologies Limited,Aerospace & Defense,Small Cap
+1855,INE520A01027,Zensar Technologies Limited,IT - Software,Small Cap
+1856,KYG9894K1085,Zhongsheng Group Holdings Limited,Automotive Retail,Unknown
+1857,CNE100000502,Zijin Mining Group Co Ltd,Gold,Unknown
+1858,US98954M1018,Zillow Group Inc Rg-A,Real Estate Services,Unknown
+1859,US98954M2008,Zillow Group Inc Rg-C,Real Estate Services,Unknown
+1860,US98956P1021,Zimmer Biomet Holdings Inc,Health Care Equipment,Unknown
+1861,INE0UIZ01018,Zinka Logistics Solutions Ltd,Transport Services,Small Cap
+1862,US98978V1035,Zoetis Inc,Pharmaceuticals,Unknown
+1863,US98980L1017,Zoom Video Communications Inc,Application Software,Unknown
+1864,US98980G1022,Zscaler INC,Software,Unknown
+1865,INE010B01027,Zydus Lifesciences Limited,Pharmaceuticals & Biotechnology,Large Cap
+1866,INE768C01010,Zydus Wellness Ltd,Food Products,Small Cap
+1867,INE738I01010,eClerx Services Limited,Commercial Services & Supplies,Small Cap
+1868,TW0003529004,eMemory Technology Inc,Semiconductors,Unknown
+1869,INE01QM01018,eMudhra Ltd.,IT - Services,Small Cap
+1870,US4642863926,iShares MSCI World ETF,nan,Unknown

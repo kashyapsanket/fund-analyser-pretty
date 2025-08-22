@@ -109,7 +109,7 @@ def render(fund_info: pd.DataFrame):
             st.session_state.page_idx = 0
             st.rerun()
     with nn:
-        disabled = len(rows) == 0
+        disabled = False
         if st.button("Next • Add Stocks", type="primary", disabled=disabled, key="mf_next"):
             st.session_state.page_idx = 2
             st.rerun()

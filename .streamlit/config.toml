@@ -1,0 +1,5 @@
+[theme]
+base = "dark"
+primaryColor = "#1DA7E1"          # SKW Accent Blue
+backgroundColor = "#0B1321"       # Deep Navy
+secondaryBackgroundColor = "#111B2B"  # Cards

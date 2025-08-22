@@ -348,7 +348,7 @@ def render(
                     return np.nan
 
                 summary_row = {
-                    "Fund": "Weighted (by amount)",
+                    "Fund": "Weighted Average Portfolio Returns",
                     "Amount": df_tr["Amount"].sum(),
                     "Weight": 1.0,
                     "NAV": np.nan,
@@ -596,487 +596,9 @@ def render(
                     )
 
 
-
-    # ===========================================================
-    # TAB 3: COMBINED (placeholder for next steps)
-    # ===========================================================
 # ===========================================================
 # TAB 3: COMBINED (MF Net Equity + Direct)
 # ===========================================================
-    '''
-    with tabs[2]:
-        st.caption("Unified view: your MF net equity added to direct equity.")
-
-        # helpers (reuse if already defined once)
-        def donut(labels, values, title, subtitle, height=320):
-            fig = go.Figure(go.Pie(labels=labels, values=values, hole=0.45, textinfo="percent",
-                                hovertemplate="%{label}: ₹%{value:,.0f} (%{percent})<extra></extra>"))
-            fig.update_layout(height=height, margin=dict(l=10, r=10, t=64, b=10),
-                            showlegend=True, legend=dict(orientation="v", x=1.02, y=0.5),
-                            title={"text": f"<b>{title}</b><br><span style='font-size:12px;color:#A0A0A0'>{subtitle}</span>",
-                                    "y":0.98,"x":0.02,"xanchor":"left","yanchor":"top"})
-            return fig
-        def hbar(x, y, title, subtitle, height=300):
-            total = max(float(x.sum()), 1e-9)
-            fig = go.Figure()
-            fig.add_bar(x=x, y=y, orientation="h",
-                        text=[f"{(v/total*100):.1f}%" for v in x], textposition="auto",
-                        hovertemplate="%{y}: ₹%{x:,.0f} (%{text})<extra></extra>")
-            fig.update_layout(height=height, margin=dict(l=10, r=10, t=64, b=10),
-                            xaxis_title="Rupees", yaxis_title="",
-                            title={"text": f"<b>{title}</b><br><span style='font-size:12px;color:#A0A0A0'>{subtitle}</span>",
-                                    "y":0.98,"x":0.02,"xanchor":"left","yanchor":"top"})
-            return fig
-
-        mf_rows = st.session_state.get("mf_portfolio", [])
-        s_mf = mf_net_equity_series_by_fund_name(mf_rows, holdings_info)  # can include negatives
-        s_direct = stocks_equity_by_isin(st.session_state.get("stock_portfolio", []), equities_info)
-
-        # Split (positives only)
-        split_df = combined_composition_split(s_mf, s_direct)
-        total_pos = float(split_df["value"].sum())
-        if total_pos <= 0:
-            st.info("No positive equity exposures to display.")
-        else:
-            st.plotly_chart(
-                donut(split_df["label"], split_df["value"],
-                    "Portfolio Composition", "Positive exposures only: MF net equity vs direct equity."),
-                use_container_width=True
-            )
-
-            # Combined series for sector/mcap and top-10
-            s_combined = combined_equity_by_isin(s_mf, s_direct)
-            # pies
-            pies = sector_mcap_from_series(s_combined[s_combined > 0], equities_info, 0.03)
-            c1, c2 = st.columns(2)
-            with c1:
-                sd = pies["sector"]
-                st.plotly_chart(donut(sd["label"], sd["value"], "Combined Sector Distribution",
-                                    "MF net + Direct; positives only. Small slices grouped as Other."),
-                                use_container_width=True) if not sd.empty else st.info("No sector data.")
-            with c2:
-                mc = pies["market_cap"]
-                st.plotly_chart(donut(mc["label"], mc["value"], "Combined Market-Cap Distribution",
-                                    "MF net + Direct; positives only. Small slices grouped as Other."),
-                                use_container_width=True) if not mc.empty else st.info("No market-cap data.")
-
-            # Top 10 combined with MF/Direct breakdown in hover
-            top = top_holdings_from_series(s_combined, equities_info, top_n=10)
-            if top.empty:
-                st.info("No top holdings to display.")
-            else:
-                # Build custom hover with source mix
-                mf_vals = [float(max(s_mf.get(isin, 0.0), 0.0)) for isin in top["isin"]]
-                dx_vals = [float(max(s_direct.get(isin, 0.0), 0.0)) for isin in top["isin"]]
-                hover = [f"MF: ₹{mf_vals[i]:,.0f} | Direct: ₹{dx_vals[i]:,.0f}" for i in range(len(mf_vals))]
-                fig = go.Figure()
-                fig.add_bar(
-                    x=top["value"], y=top["company_name"], orientation="h",
-                    text=[f"{p:.1f}%" for p in top["pct_of_equity"]],
-                    textposition="auto",
-                    hovertemplate="%{y}: ₹%{x:,.0f} (%{text})<br>%{customdata}<extra></extra>",
-                    customdata=hover,
-                )
-                fig.update_layout(height=360, margin=dict(l=10, r=10, t=64, b=10),
-                                xaxis_title="Rupees", yaxis_title="",
-                                title={"text":"<b>Top 10 Combined Holdings</b><br><span style='font-size:12px;color:#A0A0A0'>MF net + Direct; hover shows source mix.</span>",
-                                        "y":0.98,"x":0.02,"xanchor":"left","yanchor":"top"})
-                st.plotly_chart(fig, use_container_width=True)
-
-            # Overlap with your direct stocks (quick table)
-            inter = set((s_direct or pd.Series(dtype=float)).index) & set((s_mf or pd.Series(dtype=float)).index)
-            if inter:
-                rows = []
-                for isin in inter:
-                    d = float(max(s_direct.get(isin, 0.0), 0.0))
-                    m = float(max(s_mf.get(isin, 0.0), 0.0))
-                    tot = d + m
-                    rows.append({"isin": isin, "company_name": _map_isin_to_attrs(pd.Series([isin],[isin]), equities_info)["company_name"].iloc[0]
-                                if isin in (s_direct.index.union(s_mf.index)) else isin,
-                                "Direct (₹)": d, "MF net (₹)": m, "Total (₹)": tot, "% Duplicate": (m / tot * 100.0 if tot > 0 else 0.0)})
-                dup_df = pd.DataFrame(rows).sort_values("% Duplicate", ascending=False)
-                dup_df[["Direct (₹)","MF net (₹)","Total (₹)"]] = dup_df[["Direct (₹)","MF net (₹)","Total (₹)"]].applymap(lambda v: f"₹{v:,.0f}")
-                dup_df["% Duplicate"] = dup_df["% Duplicate"].map(lambda v: f"{v:.1f}%")
-                with st.expander("Overlap with your Direct Stocks", expanded=False):
-                    st.dataframe(dup_df[["company_name","isin","Direct (₹)","MF net (₹)","Total (₹)","% Duplicate"]],
-                                hide_index=True, use_container_width=True)
-    '''
-
-# --- COMBINED PORTFOLIO TAB ---------------------------------------------------
-    '''
-    with tabs[2]:
-        import re
-
-        try:
-            # If available, use the core helper
-            from core.transforms import _mf_user_scaled_net_equity_series_by_isin as _mf_series_by_isin  # type: ignore
-        except Exception:
-            _mf_series_by_isin = None  # we'll fallback below
-
-        try:
-            from core.transforms import stocks_equity_by_isin as stocks_equity_by_isin
-        except Exception:
-            stocks_equity_by_isin = None
-        # ── helpers (same look/feel as other tabs) ─────────────────────────────────
-        PLOT_CFG = {"displaylogo": False, "modeBarButtonsToRemove": ["lasso2d", "select2d"]}
-        EPS = 1e-8
-
-        def _z(v: float) -> float:
-            return 0.0 if abs(float(v)) < EPS else float(v)
-
-        def _fmt_inr(v: float) -> str:
-            return f"₹{_z(float(v)):,.0f}"
-
-        def chart_heading(title: str, subtitle: str = ""):
-            st.markdown(
-                f"""
-                <div style="padding:6px 4px 2px 4px">
-                <div style="font-weight:700; font-size:1.02rem; line-height:1.35">{title}</div>
-                <div style="color:#A0A0A0; font-size:0.84rem; margin-top:2px">{subtitle}</div>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-
-        def donut(labels, values, height=360):
-            vals = [_z(v) for v in values]
-            fig = go.Figure(
-                go.Pie(
-                    labels=labels, values=vals, hole=0.45, textinfo="percent",
-                    hovertemplate="%{label}: ₹%{value:,.0f} (%{percent})<extra></extra>",
-                )
-            )
-            fig.update_layout(
-                height=height,
-                margin=dict(l=16, r=16, t=16, b=16),
-                showlegend=True,
-                legend=dict(orientation="v", x=1.02, y=0.5),
-            )
-            return fig
-
-        def hbar_with_text(x, y, text, height=360):
-            xx = [_z(v) for v in x]
-            tt = [str(t) for t in text]
-            fig = go.Figure()
-            fig.add_bar(
-                x=xx, y=y, orientation="h",
-                text=tt, textposition="auto",
-                hovertemplate="%{y}: ₹%{x:,.0f} (%{text})<extra></extra>",
-            )
-            fig.update_layout(
-                height=height,
-                margin=dict(l=16, r=16, t=16, b=16),
-                xaxis_title="Rupees", yaxis_title="",
-            )
-            return fig
-
-        def _fold_small_slices(df: pd.DataFrame, label_col: str, value_col: str, pct_col: str, thr: float = 0.03) -> pd.DataFrame:
-            if df.empty:
-                return df
-            # thr is fraction (e.g., 0.03 -> 3%)
-            small = df[pct_col] < (thr * 100.0)
-            if not small.any():
-                return df
-            big = df.loc[~small, [label_col, value_col, pct_col]]
-            other = pd.DataFrame([{
-                label_col: "Other",
-                value_col: float(df.loc[small, value_col].sum()),
-                pct_col: float(df.loc[small, pct_col].sum()),
-            }])
-            out = pd.concat([big, other], ignore_index=True).sort_values(value_col, ascending=False, ignore_index=True)
-            # renormalize pct to 100
-            ps = float(out[pct_col].sum())
-            if ps not in (0.0, 100.0):
-                out[pct_col] = out[pct_col] * (100.0 / ps)
-            return out
-
-        def _is_axis_or_motilal(amc: str) -> bool:
-            s = (str(amc) or "").strip().lower()
-            return ("axis" in s) or ("motilal oswal" in s)
-
-        def _build_mf_series_fallback(mf_rows: list[dict], holdings_df: pd.DataFrame) -> pd.Series:
-            """If core helper isn't available, compute user-scaled net equity per ISIN here."""
-            if holdings_df is None or holdings_df.empty or not mf_rows:
-                return pd.Series(dtype=float)
-            df = holdings_df.copy()
-            for c in ["fund_name","category","isin","company_name","market_value","amc"]:
-                if c not in df.columns:
-                    df[c] = "" if c not in ("market_value",) else 0.0
-            df["fund_name_norm"] = df["fund_name"].astype(str).str.strip().str.lower()
-            df["market_value"] = pd.to_numeric(df["market_value"], errors="coerce").fillna(0.0)
-
-            result: dict[str, float] = {}
-            for r in mf_rows:
-                fn = (r.get("fund_name") or "").strip()
-                amt = float(r.get("amount", 0) or 0)
-                amc = r.get("amc_name","")
-                if not fn or amt <= 0:
-                    continue
-                sub = df[df["fund_name_norm"] == fn.lower()]
-                if sub.empty:
-                    continue
-
-                raw_eq  = float(sub.loc[sub["category"] == "Equity",      "market_value"].sum())
-                raw_deb = float(sub.loc[sub["category"] == "Debt",        "market_value"].sum())
-                raw_csh = float(sub.loc[sub["category"] == "Cash",        "market_value"].sum())
-                raw_der = float(sub.loc[sub["category"] == "Derivatives", "market_value"].sum())
-
-                net_equity = raw_eq + raw_der
-                net_debt   = raw_deb
-                net_cash   = raw_csh if _is_axis_or_motilal(amc) else (raw_csh - raw_der)
-
-                adjusted_aum = net_equity + net_debt + net_cash
-                if adjusted_aum <= 0:
-                    continue
-                scale = amt / adjusted_aum
-
-                # per-ISIN net equity (equity + matched derivatives), then scale
-                eq = sub[sub["category"] == "Equity"]
-                der = sub[sub["category"] == "Derivatives"]
-                der_map = der.groupby("isin")["market_value"].sum().to_dict()
-                for _, row in eq.iterrows():
-                    isin = str(row.get("isin",""))
-                    base = float(row.get("market_value", 0.0))
-                    adj  = base + float(der_map.get(isin, 0.0))
-                    if adj <= 0:
-                        continue  # pies/top-10 use positives only
-                    result[isin] = result.get(isin, 0.0) + (adj * scale)
-
-            return pd.Series(result, dtype=float)
-
-        def _combined_equity_series(mf_rows: list[dict], holdings_df: pd.DataFrame, s_direct: pd.Series) -> pd.Series:
-            """MF net (scaled) + Direct; positives only for pies/top-10."""
-            s_mf = pd.Series(dtype=float)
-            if _mf_series_by_isin:
-                try:
-                    s_mf = _mf_series_by_isin(mf_rows, holdings_df)
-                except Exception:
-                    s_mf = _build_mf_series_fallback(mf_rows, holdings_df)
-            else:
-                s_mf = _build_mf_series_fallback(mf_rows, holdings_df)
-            s_mf = s_mf[s_mf > 0] if isinstance(s_mf, pd.Series) and not s_mf.empty else pd.Series(dtype=float)
-            s_dir = s_direct[s_direct > 0] if isinstance(s_direct, pd.Series) and not s_direct.empty else pd.Series(dtype=float)
-            # align and sum
-            combined = s_mf.add(s_dir, fill_value=0.0)
-            return combined[combined > 0] if not combined.empty else pd.Series(dtype=float)
-
-        def _pies_from_series(s: pd.Series, equities_info: pd.DataFrame, label_col: str, small_thr: float = 0.03) -> pd.DataFrame:
-            """Build a donut data df with columns [label,value,pct] using a label from equities_info."""
-            if s is None or not isinstance(s, pd.Series) or s.empty:
-                return pd.DataFrame(columns=["label","value","pct"])
-            eq = equities_info.copy() if equities_info is not None else pd.DataFrame()
-            for c in ["isin", label_col]:
-                if c not in eq.columns:
-                    eq[c] = "" if c == "isin" else "Unknown"
-            eq["isin"] = eq["isin"].astype(str)
-            eq[label_col] = eq[label_col].astype(str).replace({"": "Unknown"})
-
-            m = pd.DataFrame({"isin": s.index.astype(str), "value": s.values}).merge(
-                eq[["isin", label_col]], on="isin", how="left"
-            )
-            m[label_col] = m[label_col].fillna("Unknown")
-            total = float(m["value"].sum())
-            g = (
-                m.groupby(label_col, as_index=False)["value"]
-                .sum()
-                .sort_values("value", ascending=False, ignore_index=True)
-            )
-            g["pct"] = (g["value"] / total * 100.0) if total != 0 else 0.0
-            g = g.rename(columns={label_col: "label"})
-            g = _fold_small_slices(g, "label", "value", "pct", thr=small_thr)
-            return g
-
-        def _parse_amount(val) -> float:
-            if val is None:
-                return 0.0
-            if isinstance(val, (int, float, np.number)):
-                try:
-                    return float(val)
-                except Exception:
-                    return 0.0
-            s = re.sub(r"[^0-9\.\-]", "", str(val))
-            try:
-                return float(s) if s not in ("", "-", ".", "-.", ".-") else 0.0
-            except Exception:
-                return 0.0
-
-        # ── content ────────────────────────────────────────────────────────────────
-        st.caption("Unified view: Mutual Funds + Direct Stocks.")
-
-        mf_rows = st.session_state.get("mf_portfolio", []) or []
-        stock_rows = st.session_state.get("stock_portfolio", []) or []
-
-        # Direct series from your existing helper (already computed earlier tab)
-        try:
-            # Reuse same helper you used in Direct tab
-            from core.transforms import stocks_equity_by_isin
-            s_direct = stocks_equity_by_isin(stock_rows, equities_info)
-        except Exception:
-            s_direct = pd.Series(dtype=float)
-
-        total_direct_investment = float(s_direct[s_direct > 0].sum()) if isinstance(s_direct, pd.Series) else 0.0
-        total_mf_investment = sum(_parse_amount(r.get("amount")) for r in mf_rows if (r.get("fund_name") or "").strip())
-        total_combined_investment = total_mf_investment + total_direct_investment
-
-        if (total_combined_investment <= 0) or (not mf_rows and (s_direct is None or s_direct.empty)):
-            st.info("Add mutual funds (Step 1) and/or direct stocks (Step 2) to see the combined view.")
-        else:
-            # 1) Combined Asset Allocation (Equity/Debt/Cash)
-            alloc_df, meta = mf_asset_allocation_by_fund_name(mf_rows, holdings_info)
-            mf_equity = float(alloc_df.loc[alloc_df["asset_class"] == "Equity", "value"].sum()) if not alloc_df.empty else 0.0
-            mf_debt   = float(alloc_df.loc[alloc_df["asset_class"] == "Debt",   "value"].sum()) if not alloc_df.empty else 0.0
-            mf_cash   = float(alloc_df.loc[alloc_df["asset_class"] == "Cash",   "value"].sum()) if not alloc_df.empty else 0.0
-
-            direct_equity = float(s_direct.sum()) if isinstance(s_direct, pd.Series) and not s_direct.empty else 0.0
-
-            comb_equity = _z(mf_equity + direct_equity)
-            comb_debt   = _z(mf_debt)
-            comb_cash   = _z(mf_cash)
-
-            # Title & chart
-            chart_heading(
-                "Combined Asset Allocation",
-                "MF (scaled net buckets) + Direct stocks. If Equity is negative, we switch to a bar."
-            )
-            df_mix = pd.DataFrame([
-                {"asset_class":"Equity","value": comb_equity},
-                {"asset_class":"Debt",  "value": comb_debt},
-                {"asset_class":"Cash",  "value": comb_cash},
-            ])
-            # Percent vs total combined *investment* (MF invested + direct rupees)
-            denom = max(total_combined_investment, 1e-9)
-            df_mix["pct"] = df_mix["value"] / denom * 100.0
-            df_mix["Value (₹)"] = df_mix["value"].map(_fmt_inr)
-            df_mix["% of Total"] = df_mix["pct"].map(lambda v: f"{float(v):.1f}%")
-
-            display_as_bar = (comb_equity < -EPS) or (df_mix["value"] < -EPS).any()
-            if display_as_bar:
-                plot_df = df_mix.sort_values("value", ascending=True)
-                st.plotly_chart(
-                    hbar_with_text(plot_df["value"], plot_df["asset_class"], plot_df["% of Total"]),
-                    use_container_width=True, config=PLOT_CFG
-                )
-            else:
-                st.plotly_chart(
-                    donut(df_mix["asset_class"], df_mix["value"]),
-                    use_container_width=True, config=PLOT_CFG
-                )
-            with st.expander("Details", expanded=False):
-                st.dataframe(df_mix[["asset_class","Value (₹)","% of Total"]], hide_index=True, use_container_width=True)
-
-            st.markdown("---")
-
-            # 2) Equity Source Split (MF vs Direct) — within Equity only
-            mf_eq = _z(mf_equity)
-            dir_eq = _z(direct_equity)
-            chart_heading(
-                "Equity Source Split",
-                "Share of your combined equity coming from Mutual Funds vs Direct stocks."
-            )
-            if mf_eq < -EPS:
-                # show bar if MF equity is truly negative
-                df_src = pd.DataFrame([
-                    {"source":"Direct Equity","value": dir_eq},
-                    {"source":"MF Equity","value": mf_eq},
-                ])
-                total_eq = max(abs(df_src["value"]).sum(), 1e-9)
-                df_src["% of Equity"] = df_src["value"] / total_eq * 100.0
-                st.plotly_chart(
-                    hbar_with_text(df_src["value"], df_src["source"], df_src["% of Equity"].map(lambda v: f"{float(v):.1f}%")),
-                    use_container_width=True, config=PLOT_CFG
-                )
-            else:
-                vals = [dir_eq, mf_eq]
-                labels = ["Direct Equity","MF Equity"]
-                st.plotly_chart(donut(labels, vals), use_container_width=True, config=PLOT_CFG)
-
-            st.markdown("---")
-
-            # 3 & 4) Combined pies (industry_rating + market_cap)
-            comb_series = _combined_equity_series(mf_rows, holdings_info, s_direct)
-            if comb_series is None or comb_series.empty:
-                st.info("No positive combined equity exposure available to analyze.")
-            else:
-                c1, c2 = st.columns(2)
-
-                with c1:
-                    chart_heading(
-                        "Combined Net Industry Distribution",
-                        "User-weighted (MF) + Direct; positives only. Small slices grouped as Other."
-                    )
-                    sector_df = _pies_from_series(comb_series, equities_info, label_col="industry_rating", small_thr=0.03)
-                    if sector_df.empty:
-                        st.info("No industry data.")
-                    else:
-                        st.plotly_chart(donut(sector_df["label"], sector_df["value"]), use_container_width=True, config=PLOT_CFG)
-                        with st.expander("Details", expanded=False):
-                            show = sector_df.copy()
-                            show["Value (₹)"] = show["value"].map(_fmt_inr)
-                            show["% of Equity"] = show["pct"].map(lambda v: f"{float(v):.1f}%")
-                            st.dataframe(show[["label","Value (₹)","% of Equity"]].rename(columns={"label":"Industry (rating)"}),
-                                        hide_index=True, use_container_width=True)
-
-                with c2:
-                    chart_heading(
-                        "Combined Net Market-Cap Distribution",
-                        "User-weighted (MF) + Direct; positives only. Small slices grouped as Other."
-                    )
-                    mcap_df = _pies_from_series(comb_series, equities_info, label_col="market_cap", small_thr=0.03)
-                    if mcap_df.empty:
-                        st.info("No market-cap data.")
-                    else:
-                        st.plotly_chart(donut(mcap_df["label"], mcap_df["value"]), use_container_width=True, config=PLOT_CFG)
-                        with st.expander("Details", expanded=False):
-                            show = mcap_df.copy()
-                            show["Value (₹)"] = show["value"].map(_fmt_inr)
-                            show["% of Equity"] = show["pct"].map(lambda v: f"{float(v):.1f}%")
-                            st.dataframe(show[["label","Value (₹)","% of Equity"]].rename(columns={"label":"Market Cap"}),
-                                        hide_index=True, use_container_width=True)
-
-            st.markdown("---")
-
-            # 5) Top-10 Combined Underlying Stock Holdings
-            if comb_series is None or comb_series.empty:
-                st.info("No positive combined equity exposure available to rank.")
-            else:
-                top_n = 10
-                s_sorted = comb_series.sort_values(ascending=False).head(top_n)
-                # % label should be % of TOTAL COMBINED INVESTMENT (MF invested + Direct invested)
-                denom = max(total_combined_investment, 1e-9)
-                pct_of_investment = (s_sorted / denom * 100.0).astype(float)
-
-                # Map ISIN -> company name
-                eq = equities_info.copy() if equities_info is not None else pd.DataFrame()
-                if "isin" not in eq.columns: eq["isin"] = ""
-                if "company_name" not in eq.columns: eq["company_name"] = ""
-                eq["isin"] = eq["isin"].astype(str)
-                name_map = dict(eq[["isin","company_name"]].astype(str).values)
-
-                df_top = pd.DataFrame({
-                    "isin": s_sorted.index.astype(str),
-                    "company_name": [name_map.get(isin, isin) for isin in s_sorted.index.astype(str)],
-                    "value": s_sorted.values,
-                    "pct_of_total_investment": pct_of_investment.values,
-                })
-
-                chart_heading(
-                    "Top 10 Combined Underlying Stock Holdings",
-                    "Labels show % of your total Combined Investment (MF invested + Direct invested)."
-                )
-                labels_pct = df_top["pct_of_total_investment"].map(lambda v: f"{float(v):.1f}%")
-                st.plotly_chart(
-                    hbar_with_text(df_top["value"], df_top["company_name"], labels_pct),
-                    use_container_width=True, config=PLOT_CFG
-                )
-                with st.expander("Details", expanded=False):
-                    show = df_top.copy()
-                    show["Value (₹)"] = show["value"].map(_fmt_inr)
-                    show["% of Total Investment"] = show["pct_of_total_investment"].map(lambda v: f"{float(v):.1f}%")
-                    st.dataframe(
-                        show[["company_name","isin","Value (₹)","% of Total Investment"]].rename(columns={"company_name":"Company"}),
-                        hide_index=True, use_container_width=True
-                    )
-    '''
 
 # --- COMBINED PORTFOLIO TAB ---------------------------------------------------
     with tabs[2]:
@@ -1127,7 +649,7 @@ def render(
             )
             fig.update_layout(
                 height=height, margin=dict(l=16, r=16, t=16, b=16),
-                xaxis_title="Rupees", yaxis_title="",
+                xaxis_title="", yaxis_title="",
             )
             return fig
 
@@ -1300,7 +822,7 @@ def render(
             df_mix = pd.DataFrame([
                 {"asset_class":"Equity","value": comb_equity},
                 {"asset_class":"Debt",  "value": comb_debt},
-                {"asset_class":"Cash",  "value": comb_cash},
+                {"asset_class":"Cash & Others",  "value": comb_cash},
             ])
             denom = max(total_combined_investment, 1e-9)
             df_mix["pct"] = df_mix["value"] / denom * 100.0
@@ -1441,82 +963,6 @@ def render(
     # ===========================================================
     '''
     with tabs[3]:
-        st.caption("How similar your selected funds are to each other. "
-                "Overlap is computed on **positive** net equity exposures and scaled to your invested amounts.")
-
-        # Ensure these imports exist at top of file:
-        # from core.transforms import fund_net_equity_series_map, fund_overlap_matrix
-
-        mf_rows = st.session_state.get("mf_portfolio", [])
-        series_map = fund_net_equity_series_map(mf_rows, holdings_info)  # per-fund ISIN→₹ (positives only)
-
-        if not series_map:
-            st.info("Add mutual funds in Step 1 to see the overlap matrix.")
-        else:
-            # Build overlap matrix (values in [0,1], diagonal == 1)
-            mat = fund_overlap_matrix(series_map)
-
-            # Heatmap
-            names = mat.index.tolist()
-            z = mat.values.astype(float)
-
-            heat = go.Figure(
-                data=go.Heatmap(
-                    z=z,
-                    x=names,
-                    y=names,
-                    colorscale="Blues",
-                    zmin=0,
-                    zmax=1,
-                    hovertemplate="%{y} vs %{x}: %{z:.1%}<extra></extra>",
-                    showscale=True,
-                )
-            )
-            heat.update_layout(
-                height=520,
-                margin=dict(l=10, r=10, t=64, b=10),
-                title={
-                    "text": (
-                        "<b>Fund–Fund Overlap</b>"
-                        "<br><span style='font-size:12px;color:#A0A0A0'>"
-                        "Definition: Overlap(i, j) = shared positive rupee exposure ÷ smaller fund’s positive equity."
-                        "</span>"
-                    ),
-                    "y": 0.98, "x": 0.02, "xanchor": "left", "yanchor": "top",
-                },
-            )
-            st.plotly_chart(heat, use_container_width=True)
-
-            st.markdown("—")
-
-            # Top overlapping pairs (upper triangle only)
-            pairs = []
-            n = len(names)
-            for i in range(n):
-                for j in range(i + 1, n):
-                    v = float(mat.iat[i, j])
-                    pairs.append({
-                        "Fund A": names[i],
-                        "Fund B": names[j],
-                        "Overlap % of smaller": v * 100.0,
-                    })
-
-            if pairs:
-                top_df = (
-                    pd.DataFrame(pairs)
-                    .sort_values("Overlap % of smaller", ascending=False, ignore_index=True)
-                )
-                top_df["Overlap % of smaller"] = top_df["Overlap % of smaller"].map(lambda x: f"{x:.1f}%")
-                st.markdown("#### Top Overlapping Fund Pairs")
-                st.dataframe(
-                    top_df.head(15),
-                    hide_index=True,
-                    use_container_width=True,
-                )
-            else:
-                st.info("No meaningful overlap detected between the selected funds.")
-    '''
-    with tabs[3]:
         from core.transforms import mf_overlap_matrix_by_pct_net_assets
 
         PLOT_CFG = {"displaylogo": False, "modeBarButtonsToRemove": ["lasso2d", "select2d"]}
@@ -1616,7 +1062,141 @@ def render(
                         hide_index=True,
                         use_container_width=True,
                     )
-                
+    '''
+
+    with tabs[3]:
+        from core.transforms import mf_overlap_matrix_by_pct_net_assets
+
+        PLOT_CFG = {"displaylogo": False, "modeBarButtonsToRemove": ["lasso2d", "select2d"]}
+
+        def chart_heading(title: str, subtitle: str = ""):
+            st.markdown(
+                f"""
+                <div style="padding:6px 4px 2px 4px">
+                <div style="font-weight:700; font-size:1.02rem; line-height:1.35">{title}</div>
+                <div style="color:#A0A0A0; font-size:0.84rem; margin-top:2px">{subtitle}</div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+        # Compact label generator: Fund A, Fund B, ... Fund Z, Fund AA, Fund AB, ...
+        def _fund_labels(n: int):
+            labels = []
+            i = 0
+            while len(labels) < n:
+                q = i
+                s = ""
+                while True:
+                    s = chr(65 + (q % 26)) + s
+                    q = q // 26 - 1
+                    if q < 0:
+                        break
+                labels.append(f"Fund {s}")
+                i += 1
+            return labels
+
+        st.caption("Fund-to-fund overlap to determine similarity between funds")
+
+        mf_rows = st.session_state.get("mf_portfolio", []) or []
+        if len([r for r in mf_rows if (r.get("fund_name") or "").strip()]) < 2:
+            st.info("Add at least two mutual funds in Step 1 to see the overlap matrix.")
+        else:
+            out = mf_overlap_matrix_by_pct_net_assets(
+                mf_rows,
+                holdings_info,
+                equities_info=equities_info,
+                top_common_names=3,
+            )
+
+            M = out.get("overlap_pct", pd.DataFrame())
+            C = out.get("common_count", pd.DataFrame())
+            T = out.get("top_common", pd.DataFrame())
+
+            if M is None or M.empty:
+                st.info("No overlapping equity holdings found among the selected funds.")
+            else:
+                # Build compact labels for axes (keep real names separately for details)
+                rows_real = M.index.tolist()
+                cols_real = M.columns.tolist()
+                n_funds   = len(rows_real)
+                labels    = _fund_labels(n_funds)
+                real_to_label = {real: labels[i] for i, real in enumerate(rows_real)}
+                # Axis labels become compact
+                x_labels = [real_to_label[c] for c in cols_real]
+                y_labels = [real_to_label[r] for r in rows_real]
+
+                chart_heading(
+                    "How similar are the mutual funds you have invested in?",
+                    "Mutual Fund Overlap matrix"
+                )
+
+                # Build text/hover matrices (show compact labels in hover too)
+                txt = M.applymap(lambda v: f"{float(v):.1f}%")
+                hover = []
+                for i, rname in enumerate(rows_real):
+                    row_ht = []
+                    for j, cname in enumerate(cols_real):
+                        ov  = float(M.iat[i, j])
+                        cnt = int(C.iat[i, j]) if not C.empty else 0
+                        top = str(T.iat[i, j]) if not T.empty else ""
+                        h = f"A: {real_to_label[rname]}<br>B: {real_to_label[cname]}<br>Overlap: {ov:.2f}%<br>Common names: {cnt}"
+                        if top:
+                            h += f"<br>Top: {top}"
+                        row_ht.append(h)
+                    hover.append(row_ht)
+
+                fig = go.Figure(
+                    data=go.Heatmap(
+                        z=M.values,
+                        x=x_labels,               # compact labels on X
+                        y=y_labels,               # compact labels on Y
+                        colorscale="Blues",
+                        zmin=0, zmax=100,
+                        text=txt.values,
+                        texttemplate="%{text}",
+                        hovertemplate="%{customdata}<extra></extra>",
+                        customdata=np.array(hover),
+                        colorbar=dict(title="%"),
+                    )
+                )
+                fig.update_layout(
+                    height=520,
+                    margin=dict(l=16, r=16, t=16, b=16),
+                )
+                st.plotly_chart(fig, use_container_width=True, config=PLOT_CFG, key="gamma_9")
+
+                # NEW: Legend (dropdown) mapping compact labels -> real fund names
+                with st.expander("Fund label legend (show real names)", expanded=False):
+                    map_df = pd.DataFrame({
+                        "Label": [real_to_label[name] for name in rows_real],
+                        "Fund Name": rows_real,
+                    })
+                    st.dataframe(map_df, hide_index=True, use_container_width=True)
+
+                # Pairwise details (UNCHANGED: still uses real names)
+                with st.expander("Pairwise details", expanded=False):
+                    # Flatten to a long table for sorting/filtering
+                    pairs = []
+                    for i, fa in enumerate(rows_real):
+                        for j, fb in enumerate(cols_real):
+                            if i >= j:  # keep upper triangle only
+                                continue
+                            pairs.append({
+                                "Fund A": fa,
+                                "Fund B": fb,
+                                "Overlap %": float(M.iat[i, j]),
+                                "Common names (#)": int(C.iat[i, j]) if not C.empty else 0,
+                                "Top common names": (str(T.iat[i, j]) if not T.empty else ""),
+                            })
+                    df_pairs = pd.DataFrame(pairs).sort_values(["Overlap %","Common names (#)"], ascending=[False, False])
+                    df_pairs["Overlap %"] = df_pairs["Overlap %"].map(lambda v: f"{float(v):.2f}%")
+                    st.dataframe(
+                        df_pairs[["Fund A","Fund B","Overlap %","Common names (#)","Top common names"]],
+                        hide_index=True,
+                        use_container_width=True,
+                    )
+                             
     # ---------- Nav row (Back left, Reset right — like Stocks page) ----------
     st.markdown('<div class="skw-nav">', unsafe_allow_html=True)
     left, spacer, right = st.columns([1, 6, 1])

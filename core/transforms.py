@@ -1065,7 +1065,7 @@ def mf_asset_allocation_by_fund_name(
         [
             {"asset_class": "Equity", "value": equity_total},
             {"asset_class": "Debt",   "value": debt_total},
-            {"asset_class": "Cash",   "value": cash_total},
+            {"asset_class": "Cash & Others",   "value": cash_total},
         ]
     )
     # percent out of total user MF rupees

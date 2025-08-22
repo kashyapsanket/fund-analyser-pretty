@@ -105,7 +105,7 @@ def render(equities_info: pd.DataFrame):
             st.session_state.page_idx = 1  # back to Mutual Funds
             st.rerun()
     with next_col:
-        disabled = len(rows) == 0
+        disabled = False
         if st.button("Next • Analysis", type="primary", disabled=disabled, key="stk_next"):
             st.session_state.page_idx = 3  # go to Analysis
             st.rerun()

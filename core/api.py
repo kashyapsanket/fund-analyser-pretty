@@ -24,8 +24,21 @@ def _closest_past(d: pd.DataFrame, target: datetime) -> float:
     s = d[d["date"] <= target]
     return float(s["nav"].iloc[-1]) if not s.empty else float(d["nav"].iloc[0])
 
+def _absolute_return(start_nav: float, end_nav: float) -> float:
+    """
+    Calculates the simple absolute return. Used for periods < 1 year.
+    """
+    if not pd.notna(start_nav) or not pd.notna(end_nav) or start_nav <= 0:
+        return float("nan")
+    try:
+        return (end_nav / start_nav) - 1.0
+    except Exception:
+        return float("nan")
+
 def _cagr(start_nav: float, end_nav: float, years: float) -> float:
-    """Compound annual growth rate (decimal)."""
+    """
+    Compound annual growth rate (decimal). Used for periods >= 1 year.
+    """
     if not pd.notna(start_nav) or not pd.notna(end_nav) or start_nav <= 0 or years <= 0:
         return float("nan")
     try:
@@ -36,7 +49,9 @@ def _cagr(start_nav: float, end_nav: float, years: float) -> float:
 @st.cache_data(ttl=6 * 60 * 60, show_spinner=False)
 def get_fund_performance(fund_code: int | str | None):
     """
-    Fetch NAV time series from mfapi.in and compute CAGR returns.
+    Fetch NAV time series from mfapi.in and compute returns.
+    - Absolute returns for < 1Y.
+    - CAGR for >= 1Y.
     Returns:
       {
         "as_of": "YYYY-MM-DD",
@@ -81,15 +96,22 @@ def get_fund_performance(fund_code: int | str | None):
         "10Y": 365 * 10,
     }
 
-    # --- compute CAGR for each horizon ---
+    # --- compute returns for each horizon ---
     rets: dict[str, float] = {}
     for label, days in horizons.items():
         start_dt = end_dt - timedelta(days=days)
         start_nav = _closest_past(hist, start_dt)
-        years = days / 365.0
-        rets[label] = _cagr(start_nav, end_nav, years)
 
-    # --- since inception ---
+        # *** EDITED LOGIC HERE ***
+        # Use absolute return for periods shorter than a year
+        if days < 365:
+            rets[label] = _absolute_return(start_nav, end_nav)
+        # Use CAGR for periods of one year or more
+        else:
+            years = days / 365.0
+            rets[label] = _cagr(start_nav, end_nav, years)
+
+    # --- since inception (always CAGR) ---
     start_nav_si = float(hist["nav"].iloc[0])
     start_dt_si = pd.Timestamp(hist["date"].iloc[0]).to_pydatetime()
     years_si = max((end_dt - start_dt_si).days / 365.0, 1e-6)
